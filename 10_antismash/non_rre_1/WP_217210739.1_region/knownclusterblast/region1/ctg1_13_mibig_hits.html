@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AMK92574.1</td>
+              <td>hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001377.5">BGC0001377.5</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>86.7</td>
+              <td>241.0</td>
+              <td>8.37e-73</td>
+          </tr>
+    
+          <tr>
+              <td>AMK92575.1</td>
+              <td>hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001377.5">BGC0001377.5</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>86.0</td>
+              <td>238.0</td>
+              <td>1.57e-71</td>
+          </tr>
+    
+          <tr>
+              <td>SCL57594.1</td>
+              <td>TAP-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002387.2">BGC0002387.2</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>87.0</td>
+              <td>226.0</td>
+              <td>2e-67</td>
+          </tr>
+    
+          <tr>
+              <td>ACB47068.1</td>
+              <td>putative_secreted_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001060.5">BGC0001060.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>87.2</td>
+              <td>225.0</td>
+              <td>1.64e-66</td>
+          </tr>
+    
+          <tr>
+              <td>SCL57589.1</td>
+              <td>alpha/beta_hydrolase_fold</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002387.2">BGC0002387.2</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>80.5</td>
+              <td>212.0</td>
+              <td>7.81e-62</td>
+          </tr>
+    
+          <tr>
+              <td>ACO94476.1</td>
+              <td>putative_tripeptidylaminopeptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000029.5">BGC0000029.5</a></td>
+              <td>PKS:Type I</td>
+              <td>33.0</td>
+              <td>88.1</td>
+              <td>209.0</td>
+              <td>2.47e-60</td>
+          </tr>
+    
+          <tr>
+              <td>QDQ37893.1</td>
+              <td>alpha/_beta_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001979.4">BGC0001979.4</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>81.3</td>
+              <td>205.0</td>
+              <td>3.74e-59</td>
+          </tr>
+    
+          <tr>
+              <td>AAP85358.1</td>
+              <td>putative_secreted_tripeptidylaminopeptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000233.5">BGC0000233.5</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>85.4</td>
+              <td>204.0</td>
+              <td>1.4e-58</td>
+          </tr>
+    
+          <tr>
+              <td>AKT74279.1</td>
+              <td>TxnH1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002141.3">BGC0002141.3</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>80.8</td>
+              <td>193.0</td>
+              <td>1.02e-54</td>
+          </tr>
+    
+          <tr>
+              <td>BAW27668.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001764.4">BGC0001764.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>86.7</td>
+              <td>189.0</td>
+              <td>3.4e-53</td>
+          </tr>
+    
+          <tr>
+              <td>ATW51253.1</td>
+              <td>protease</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002788.2">BGC0002788.2</a></td>
+              <td>PKS:Modular type I</td>
+              <td>33.0</td>
+              <td>82.4</td>
+              <td>187.0</td>
+              <td>2.95e-52</td>
+          </tr>
+    
+          <tr>
+              <td>QED55424.1</td>
+              <td>alpha/beta_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001984.3">BGC0001984.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>87.9</td>
+              <td>181.0</td>
+              <td>5.68e-50</td>
+          </tr>
+    
+          <tr>
+              <td>AHZ61881.1</td>
+              <td>Lom47</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000240.5">BGC0000240.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>34.0</td>
+              <td>96.3</td>
+              <td>179.0</td>
+              <td>2.92e-49</td>
+          </tr>
+    
+          <tr>
+              <td>ARD70888.1</td>
+              <td>secreted_peptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001693.3">BGC0001693.3</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>84.9</td>
+              <td>177.0</td>
+              <td>9.88e-49</td>
+          </tr>
+    
+          <tr>
+              <td>ABP54663.1</td>
+              <td>TAP_domain_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000241.5">BGC0000241.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>34.0</td>
+              <td>87.9</td>
+              <td>173.0</td>
+              <td>3.67e-47</td>
+          </tr>
+    
+          <tr>
+              <td>AAP03104.1</td>
+              <td>putative_secreted_peptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000874.5">BGC0000874.5</a></td>
+              <td>other:other</td>
+              <td>39.0</td>
+              <td>38.7</td>
+              <td>148.0</td>
+              <td>3.33e-38</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

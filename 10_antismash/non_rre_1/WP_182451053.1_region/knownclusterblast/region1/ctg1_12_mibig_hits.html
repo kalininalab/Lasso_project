@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ATV95653.1</td>
+              <td>RNA_polymerase_sigma_factor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001503.4">BGC0001503.4</a></td>
+              <td>PKS</td>
+              <td>62.0</td>
+              <td>98.8</td>
+              <td>441.0</td>
+              <td>4e-154</td>
+          </tr>
+    
+          <tr>
+              <td>ABP55158.1</td>
+              <td>Sigma-70,_region_4_type_2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000150.4">BGC0000150.4</a></td>
+              <td>NRPS:Type I+PKS:Enediyne type I</td>
+              <td>55.0</td>
+              <td>101.0</td>
+              <td>392.0</td>
+              <td>4.22e-134</td>
+          </tr>
+    
+          <tr>
+              <td>ADR01063.1</td>
+              <td>Noc-2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000609.3">BGC0000609.3</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>53.0</td>
+              <td>98.5</td>
+              <td>332.0</td>
+              <td>2.38e-111</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54221.1</td>
+              <td>PauY1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001732.5">BGC0001732.5</a></td>
+              <td>other:other</td>
+              <td>52.0</td>
+              <td>98.8</td>
+              <td>318.0</td>
+              <td>7.29e-106</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54168.1</td>
+              <td>Pau1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001731.5">BGC0001731.5</a></td>
+              <td>other:other</td>
+              <td>51.0</td>
+              <td>98.8</td>
+              <td>314.0</td>
+              <td>1.66e-104</td>
+          </tr>
+    
+          <tr>
+              <td>AAT01810.1</td>
+              <td>extra_cytoplasmic_sigma_factor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000365.4">BGC0000365.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>51.0</td>
+              <td>95.3</td>
+              <td>298.0</td>
+              <td>6.57e-98</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

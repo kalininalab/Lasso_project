@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>EPH46601.1</td>
+              <td>putative_Daunorubicin/doxorubicin_resistance_ABC_transporter_permease_protein_DrrB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001519.5">BGC0001519.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>44.0</td>
+              <td>98.9</td>
+              <td>202.0</td>
+              <td>1.7e-64</td>
+          </tr>
+    
+          <tr>
+              <td>AGZ15463.1</td>
+              <td>ABC_transporter_system</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001036.5">BGC0001036.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>44.0</td>
+              <td>98.9</td>
+              <td>198.0</td>
+              <td>7.73e-63</td>
+          </tr>
+    
+          <tr>
+              <td>AKJ15894.1</td>
+              <td>ABC_transporter_permease</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002735.2">BGC0002735.2</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>42.0</td>
+              <td>94.3</td>
+              <td>178.0</td>
+              <td>2.57e-55</td>
+          </tr>
+    
+          <tr>
+              <td>sipT1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001452.5">BGC0001452.5</a></td>
+              <td>PKS</td>
+              <td>40.0</td>
+              <td>96.9</td>
+              <td>175.0</td>
+              <td>8.24e-54</td>
+          </tr>
+    
+          <tr>
+              <td>AWR88402.1</td>
+              <td>putative_ABC-2_type_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001522.5">BGC0001522.5</a></td>
+              <td>PKS</td>
+              <td>40.0</td>
+              <td>96.9</td>
+              <td>175.0</td>
+              <td>8.24e-54</td>
+          </tr>
+    
+          <tr>
+              <td>BAP34736.1</td>
+              <td>ABC-type_multidrug_transport_system</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000078.5">BGC0000078.5</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>98.5</td>
+              <td>173.0</td>
+              <td>4.63e-53</td>
+          </tr>
+    
+          <tr>
+              <td>OAP25823.1</td>
+              <td>Daunorubicin/doxorubicin_resistance_ABC_transporter_permease_protein_DrrB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001658.3">BGC0001658.3</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>99.6</td>
+              <td>169.0</td>
+              <td>3.85e-51</td>
+          </tr>
+    
+          <tr>
+              <td>AET98901.1</td>
+              <td>putative_ABC_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000415.5">BGC0000415.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>97.3</td>
+              <td>135.0</td>
+              <td>3.38e-38</td>
+          </tr>
+    
+          <tr>
+              <td>BAH04157.1</td>
+              <td>putative_ABC_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000450.5">BGC0000450.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>100.4</td>
+              <td>131.0</td>
+              <td>1.02e-36</td>
+          </tr>
+    
+          <tr>
+              <td>WP_051419344.1</td>
+              <td>ABC_transporter_permease</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001228.5">BGC0001228.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>100.0</td>
+              <td>128.0</td>
+              <td>2.11e-35</td>
+          </tr>
+    
+          <tr>
+              <td>BAI63277.1</td>
+              <td>putative_ABC_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000434.5">BGC0000434.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>95.8</td>
+              <td>123.0</td>
+              <td>1.32e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ABW00320.1</td>
+              <td>ABC-2_type_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000333.5">BGC0000333.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>92.7</td>
+              <td>117.0</td>
+              <td>2.24e-31</td>
+          </tr>
+    
+          <tr>
+              <td>QIQ28643.1</td>
+              <td>Nbc47</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002541.2">BGC0002541.2</a></td>
+              <td>other:other</td>
+              <td>29.0</td>
+              <td>100.0</td>
+              <td>115.0</td>
+              <td>1.51e-30</td>
+          </tr>
+    
+          <tr>
+              <td>AHH53500.1</td>
+              <td>ABC-type_multidrug_transport_system</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000439.5">BGC0000439.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>76.2</td>
+              <td>87.0</td>
+              <td>1.06e-19</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

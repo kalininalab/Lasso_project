@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AIL50153.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000213.4">BGC0000213.4</a></td>
+              <td>PKS:Type II</td>
+              <td>36.0</td>
+              <td>98.5</td>
+              <td>231.0</td>
+              <td>7.55e-69</td>
+          </tr>
+    
+          <tr>
+              <td>AOC89013.1</td>
+              <td>putative_gamma-glutamyltransferase-like_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001652.5">BGC0001652.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>111.3</td>
+              <td>203.0</td>
+              <td>8.98e-58</td>
+          </tr>
+    
+          <tr>
+              <td>ABW71837.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000303.5">BGC0000303.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>106.9</td>
+              <td>191.0</td>
+              <td>3.22e-53</td>
+          </tr>
+    
+          <tr>
+              <td>AEA29634.1</td>
+              <td>Por11</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000409.5">BGC0000409.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>109.8</td>
+              <td>179.0</td>
+              <td>6.85e-49</td>
+          </tr>
+    
+          <tr>
+              <td>ACN39748.1</td>
+              <td>SibY</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000428.5">BGC0000428.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>97.8</td>
+              <td>156.0</td>
+              <td>8.48e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ACN39025.1</td>
+              <td>putative_gamma-glutamyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000448.5">BGC0000448.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>90.0</td>
+              <td>139.0</td>
+              <td>7.46e-35</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

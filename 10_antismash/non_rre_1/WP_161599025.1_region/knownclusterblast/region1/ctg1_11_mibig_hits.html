@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>EHQ60560.1</td>
+              <td>asparagine_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001356.4">BGC0001356.4</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>29.0</td>
+              <td>92.8</td>
+              <td>182.0</td>
+              <td>2.55e-49</td>
+          </tr>
+    
+          <tr>
+              <td>ACY06297.1</td>
+              <td>asparagine_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001042.5">BGC0001042.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>32.0</td>
+              <td>44.4</td>
+              <td>129.0</td>
+              <td>5.44e-31</td>
+          </tr>
+    
+          <tr>
+              <td>AEI98663.1</td>
+              <td>CtcT</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000209.5">BGC0000209.5</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>91.4</td>
+              <td>122.0</td>
+              <td>9.85e-29</td>
+          </tr>
+    
+          <tr>
+              <td>ADN68491.1</td>
+              <td>SorQ</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000184.5">BGC0000184.5</a></td>
+              <td>PKS:Trans-AT type I</td>
+              <td>28.0</td>
+              <td>49.0</td>
+              <td>119.0</td>
+              <td>1.23e-27</td>
+          </tr>
+    
+          <tr>
+              <td>QSI97719.1</td>
+              <td>asparagine_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002499.2">BGC0002499.2</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>24.0</td>
+              <td>93.5</td>
+              <td>115.0</td>
+              <td>1.06e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AHX24690.1</td>
+              <td>amidotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000200.5">BGC0000200.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>31.0</td>
+              <td>44.9</td>
+              <td>112.0</td>
+              <td>1.02e-25</td>
+          </tr>
+    
+          <tr>
+              <td>PYC67626.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolyzing)</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001473.4">BGC0001473.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>28.0</td>
+              <td>47.1</td>
+              <td>110.0</td>
+              <td>5.55e-25</td>
+          </tr>
+    
+          <tr>
+              <td>ABW71832.1</td>
+              <td>putative_amidotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000303.5">BGC0000303.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>94.4</td>
+              <td>108.0</td>
+              <td>2.38e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AHE80999.1</td>
+              <td>PieD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001169.5">BGC0001169.5</a></td>
+              <td>PKS:Type I</td>
+              <td>23.0</td>
+              <td>101.6</td>
+              <td>107.0</td>
+              <td>4.1e-24</td>
+          </tr>
+    
+          <tr>
+              <td>WP_019634561.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolyzing)</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001443.5">BGC0001443.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>28.0</td>
+              <td>42.2</td>
+              <td>107.0</td>
+              <td>4.17e-24</td>
+          </tr>
+    
+          <tr>
+              <td>QED93092.1</td>
+              <td>asparagine_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002556.2">BGC0002556.2</a></td>
+              <td>other:other</td>
+              <td>28.0</td>
+              <td>41.4</td>
+              <td>100.0</td>
+              <td>1.22e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AFO59865.1</td>
+              <td>ChxD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000175.5">BGC0000175.5</a></td>
+              <td>PKS:Trans-AT type I</td>
+              <td>27.0</td>
+              <td>66.9</td>
+              <td>96.0</td>
+              <td>3.07e-20</td>
+          </tr>
+    
+          <tr>
+              <td>ADG29289.1</td>
+              <td>putative_asparagine_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000796.3">BGC0000796.3</a></td>
+              <td>saccharide</td>
+              <td>29.0</td>
+              <td>41.4</td>
+              <td>86.0</td>
+              <td>3.06e-17</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

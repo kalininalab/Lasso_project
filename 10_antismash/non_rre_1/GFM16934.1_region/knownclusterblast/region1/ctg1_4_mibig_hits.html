@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAK81834.1</td>
+              <td>glycolate_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000326.5">BGC0000326.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>98.7</td>
+              <td>207.0</td>
+              <td>3.42e-63</td>
+          </tr>
+    
+          <tr>
+              <td>AAT09795.1</td>
+              <td>NocN</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000395.5">BGC0000395.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>94.6</td>
+              <td>207.0</td>
+              <td>3.8e-63</td>
+          </tr>
+    
+          <tr>
+              <td>AAG29798.1</td>
+              <td>dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000833.4">BGC0000833.4</a></td>
+              <td>saccharide:hybrid/tailoring+other:aminocoumarin</td>
+              <td>38.0</td>
+              <td>96.7</td>
+              <td>207.0</td>
+              <td>3.81e-63</td>
+          </tr>
+    
+          <tr>
+              <td>DAB41472.1</td>
+              <td>2-hydroxy-acid_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001230.5">BGC0001230.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>36.0</td>
+              <td>92.3</td>
+              <td>201.0</td>
+              <td>5e-61</td>
+          </tr>
+    
+          <tr>
+              <td>ASX95242.1</td>
+              <td>IlaT</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001620.5">BGC0001620.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>35.0</td>
+              <td>97.4</td>
+              <td>200.0</td>
+              <td>5.61e-60</td>
+          </tr>
+    
+          <tr>
+              <td>EWS95127.1</td>
+              <td>L-lactate_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000306.5">BGC0000306.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>94.4</td>
+              <td>196.0</td>
+              <td>6.55e-59</td>
+          </tr>
+    
+          <tr>
+              <td>CAH18566.1</td>
+              <td>putative_L-lactate_dehydrogenase,_TobD3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000721.4">BGC0000721.4</a></td>
+              <td>saccharide</td>
+              <td>35.0</td>
+              <td>98.7</td>
+              <td>193.0</td>
+              <td>5.05e-58</td>
+          </tr>
+    
+          <tr>
+              <td>QYC40269.1</td>
+              <td>Hydroxymandelate_oxidase_Hmo</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002344.2">BGC0002344.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>94.4</td>
+              <td>192.0</td>
+              <td>1.85e-57</td>
+          </tr>
+    
+          <tr>
+              <td>AQZ69240.1</td>
+              <td>alpha-hydroxy-acid_oxidizing_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001635.4">BGC0001635.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>37.0</td>
+              <td>94.9</td>
+              <td>191.0</td>
+              <td>1.01e-56</td>
+          </tr>
+    
+          <tr>
+              <td>OLZ50902.1</td>
+              <td>alpha-hydroxy-acid_oxidizing_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001461.5">BGC0001461.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>95.4</td>
+              <td>189.0</td>
+              <td>2.99e-56</td>
+          </tr>
+    
+          <tr>
+              <td>AYA22315.1</td>
+              <td>Hmo</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001955.4">BGC0001955.4</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>36.0</td>
+              <td>95.4</td>
+              <td>189.0</td>
+              <td>2.99e-56</td>
+          </tr>
+    
+          <tr>
+              <td>CAD91196.1</td>
+              <td>putative_hydroxymandelate_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000289.5">BGC0000289.5</a></td>
+              <td>NRPS:Type I+saccharide:hybrid/tailoring</td>
+              <td>36.0</td>
+              <td>94.4</td>
+              <td>188.0</td>
+              <td>5.17e-56</td>
+          </tr>
+    
+          <tr>
+              <td>MCC5036799.1</td>
+              <td>alpha-hydroxy-acid_oxidizing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002638.3">BGC0002638.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>90.3</td>
+              <td>188.0</td>
+              <td>5.76e-56</td>
+          </tr>
+    
+          <tr>
+              <td>AIG79221.1</td>
+              <td>Hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000419.5">BGC0000419.5</a></td>
+              <td>NRPS:Type I+saccharide</td>
+              <td>35.0</td>
+              <td>95.4</td>
+              <td>187.0</td>
+              <td>1.56e-55</td>
+          </tr>
+    
+          <tr>
+              <td>AIE77079.1</td>
+              <td>putative_phenylglycolate_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000418.5">BGC0000418.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>94.9</td>
+              <td>184.0</td>
+              <td>1.19e-54</td>
+          </tr>
+    
+          <tr>
+              <td>AZM58098.1</td>
+              <td>alpha-hydroxy-acid_oxidizing_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002314.3">BGC0002314.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>94.9</td>
+              <td>182.0</td>
+              <td>7.2e-54</td>
+          </tr>
+    
+          <tr>
+              <td>ALK27900.1</td>
+              <td>hydroxymandelate_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001233.5">BGC0001233.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>97.2</td>
+              <td>182.0</td>
+              <td>1.16e-53</td>
+          </tr>
+    
+          <tr>
+              <td>RSO11547.1</td>
+              <td>alpha-hydroxy-acid_oxidizing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002637.3">BGC0002637.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>96.4</td>
+              <td>182.0</td>
+              <td>1.27e-53</td>
+          </tr>
+    
+          <tr>
+              <td>BCD33694.1</td>
+              <td>FMN-dependent_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002448.2">BGC0002448.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>95.4</td>
+              <td>179.0</td>
+              <td>1.32e-52</td>
+          </tr>
+    
+          <tr>
+              <td>AAM80552.1</td>
+              <td>Hmo</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000290.5">BGC0000290.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>94.9</td>
+              <td>179.0</td>
+              <td>1.76e-52</td>
+          </tr>
+    
+          <tr>
+              <td>CAC48372.1</td>
+              <td>putative_phenylglycolate_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000311.6">BGC0000311.6</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>33.0</td>
+              <td>95.9</td>
+              <td>179.0</td>
+              <td>2.03e-52</td>
+          </tr>
+    
+          <tr>
+              <td>OLZ52439.1</td>
+              <td>alpha-hydroxy-acid_oxidizing_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001462.5">BGC0001462.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>94.1</td>
+              <td>177.0</td>
+              <td>8.05e-52</td>
+          </tr>
+    
+          <tr>
+              <td>CAE53379.1</td>
+              <td>Hmo_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000440.5">BGC0000440.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>94.6</td>
+              <td>174.0</td>
+              <td>9.69e-51</td>
+          </tr>
+    
+          <tr>
+              <td>CAG15041.1</td>
+              <td>HmO_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000441.4">BGC0000441.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>94.6</td>
+              <td>174.0</td>
+              <td>9.69e-51</td>
+          </tr>
+    
+          <tr>
+              <td>AGS77333.1</td>
+              <td>Hmo</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001178.5">BGC0001178.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>95.4</td>
+              <td>174.0</td>
+              <td>1.46e-50</td>
+          </tr>
+    
+          <tr>
+              <td>EME52971.1</td>
+              <td>FMN-dependent_alpha-hydroxy_acid_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001460.5">BGC0001460.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>93.8</td>
+              <td>173.0</td>
+              <td>2.36e-50</td>
+          </tr>
+    
+          <tr>
+              <td>OKA09439.1</td>
+              <td>alpha-hydroxy-acid_oxidizing_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001459.5">BGC0001459.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>94.4</td>
+              <td>169.0</td>
+              <td>6.89e-49</td>
+          </tr>
+    
+          <tr>
+              <td>ABD65949.1</td>
+              <td>hydroxyphenylglycine_aminotransferase/hydroxymandelate_oxidase_fusion_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000341.5">BGC0000341.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>93.3</td>
+              <td>175.0</td>
+              <td>4.4e-48</td>
+          </tr>
+    
+          <tr>
+              <td>ALV82386.1</td>
+              <td>putative_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001370.4">BGC0001370.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>89.5</td>
+              <td>167.0</td>
+              <td>1.82e-47</td>
+          </tr>
+    
+          <tr>
+              <td>CAB38520.1</td>
+              <td>putative_glycolate_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000315.5">BGC0000315.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>89.2</td>
+              <td>165.0</td>
+              <td>4.24e-47</td>
+          </tr>
+    
+          <tr>
+              <td>AEI58882.1</td>
+              <td>phenylglycolate_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000455.6">BGC0000455.6</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>34.0</td>
+              <td>93.8</td>
+              <td>164.0</td>
+              <td>7.66e-47</td>
+          </tr>
+    
+          <tr>
+              <td>EWG54276.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001190.3">BGC0001190.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>91.8</td>
+              <td>142.0</td>
+              <td>3.38e-38</td>
+          </tr>
+    
+          <tr>
+              <td>simF</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000334.4">BGC0000334.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>30.0</td>
+              <td>92.3</td>
+              <td>134.0</td>
+              <td>8.07e-35</td>
+          </tr>
+    
+          <tr>
+              <td>EWG54275.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001190.3">BGC0001190.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>82.6</td>
+              <td>132.0</td>
+              <td>9.77e-35</td>
+          </tr>
+    
+          <tr>
+              <td>ATQ39431.1</td>
+              <td>cytochrome_b2-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001565.4">BGC0001565.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>90.5</td>
+              <td>131.0</td>
+              <td>9.2e-34</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

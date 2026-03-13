@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>WP_084703660.1</td>
+              <td>LacI_family_DNA-binding_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002656.2">BGC0002656.2</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>99.7</td>
+              <td>150.0</td>
+              <td>1.3e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ATJ33995.1</td>
+              <td>LacI_family_transcription_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001442.5">BGC0001442.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>101.4</td>
+              <td>137.0</td>
+              <td>3.82e-37</td>
+          </tr>
+    
+          <tr>
+              <td>ARW71474.1</td>
+              <td>LacI_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001812.3">BGC0001812.3</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>100.9</td>
+              <td>128.0</td>
+              <td>1.15e-33</td>
+          </tr>
+    
+          <tr>
+              <td>BAU79606.1</td>
+              <td>transcriptional_regulator,_LacI_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001810.3">BGC0001810.3</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>90.6</td>
+              <td>119.0</td>
+              <td>1.13e-30</td>
+          </tr>
+    
+          <tr>
+              <td>EHN79453.1</td>
+              <td>HTH-type_malR-like_transcriptional_regulator_ScarC1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000804.5">BGC0000804.5</a></td>
+              <td>saccharide</td>
+              <td>30.0</td>
+              <td>101.4</td>
+              <td>117.0</td>
+              <td>1.15e-29</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ64722.1</td>
+              <td>LacI-family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000087.5">BGC0000087.5</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>90.3</td>
+              <td>115.0</td>
+              <td>3.96e-29</td>
+          </tr>
+    
+          <tr>
+              <td>RMI88548.1</td>
+              <td>LacI_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002285.2">BGC0002285.2</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>31.0</td>
+              <td>88.9</td>
+              <td>114.0</td>
+              <td>8.37e-29</td>
+          </tr>
+    
+          <tr>
+              <td>ABC87507.1</td>
+              <td>LacI_family_transcription_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001011.5">BGC0001011.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>33.0</td>
+              <td>88.9</td>
+              <td>112.0</td>
+              <td>6.67e-28</td>
+          </tr>
+    
+          <tr>
+              <td>AKA87333.1</td>
+              <td>putative_LacI_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001735.5">BGC0001735.5</a></td>
+              <td>other:other</td>
+              <td>30.0</td>
+              <td>101.1</td>
+              <td>110.0</td>
+              <td>2.71e-27</td>
+          </tr>
+    
+          <tr>
+              <td>QRI43538.1</td>
+              <td>LacI_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002454.2">BGC0002454.2</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>90.9</td>
+              <td>107.0</td>
+              <td>5.31e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AEZ64508.1</td>
+              <td>Hera</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001065.5">BGC0001065.5</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>101.4</td>
+              <td>102.0</td>
+              <td>2.44e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ARP51731.1</td>
+              <td>LacI_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001782.3">BGC0001782.3</a></td>
+              <td>other:other</td>
+              <td>32.0</td>
+              <td>58.3</td>
+              <td>91.0</td>
+              <td>2.11e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QLD23504.1</td>
+              <td>substrate-binding_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002085.3">BGC0002085.3</a></td>
+              <td>saccharide:oligosaccharide</td>
+              <td>31.0</td>
+              <td>68.0</td>
+              <td>87.0</td>
+              <td>2.53e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAX31567.1</td>
+              <td>probable_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000336.5">BGC0000336.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>50.0</td>
+              <td>67.0</td>
+              <td>3.95e-12</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

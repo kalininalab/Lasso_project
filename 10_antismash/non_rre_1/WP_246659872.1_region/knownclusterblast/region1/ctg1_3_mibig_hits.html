@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AFH75323.1</td>
+              <td>macrolide-specific_efflux_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000425.5">BGC0000425.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>50.0</td>
+              <td>97.2</td>
+              <td>328.0</td>
+              <td>2.68e-110</td>
+          </tr>
+    
+          <tr>
+              <td>CCJ67641.1</td>
+              <td>macrolide-specific_efflux_protein_macA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000447.5">BGC0000447.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>48.0</td>
+              <td>96.9</td>
+              <td>327.0</td>
+              <td>1.53e-109</td>
+          </tr>
+    
+          <tr>
+              <td>AHY86402.1</td>
+              <td>membrane_fusion_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000329.5">BGC0000329.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>51.0</td>
+              <td>89.5</td>
+              <td>321.0</td>
+              <td>1.98e-107</td>
+          </tr>
+    
+          <tr>
+              <td>CAY48790.1</td>
+              <td>putative_drug-efflux_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001312.5">BGC0001312.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>51.0</td>
+              <td>89.7</td>
+              <td>320.0</td>
+              <td>3.97e-107</td>
+          </tr>
+    
+          <tr>
+              <td>CAK15813.1</td>
+              <td>macrolide_efflux_protein_MacA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000344.5">BGC0000344.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>52.0</td>
+              <td>89.7</td>
+              <td>319.0</td>
+              <td>1.16e-106</td>
+          </tr>
+    
+          <tr>
+              <td>SDT49920.1</td>
+              <td>membrane_fusion_protein,_macrolide-specific_efflux_system</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002752.2">BGC0002752.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>50.0</td>
+              <td>96.4</td>
+              <td>316.0</td>
+              <td>1.75e-105</td>
+          </tr>
+    
+          <tr>
+              <td>AFH75331.1</td>
+              <td>macrolide-specific_efflux_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000398.5">BGC0000398.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>50.0</td>
+              <td>90.2</td>
+              <td>311.0</td>
+              <td>8.49e-104</td>
+          </tr>
+    
+          <tr>
+              <td>QLY89265.1</td>
+              <td>membrane_fusion_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002522.3">BGC0002522.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>50.0</td>
+              <td>91.3</td>
+              <td>309.0</td>
+              <td>9.08e-103</td>
+          </tr>
+    
+          <tr>
+              <td>ABW17378.1</td>
+              <td>MacA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000411.5">BGC0000411.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>51.0</td>
+              <td>89.7</td>
+              <td>307.0</td>
+              <td>5.66e-102</td>
+          </tr>
+    
+          <tr>
+              <td>AHZ34248.1</td>
+              <td>MacA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001389.5">BGC0001389.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>49.0</td>
+              <td>89.7</td>
+              <td>301.0</td>
+              <td>1.24e-99</td>
+          </tr>
+    
+          <tr>
+              <td>UUQ64559.1</td>
+              <td>macrolide_transporter_subunit_MacA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002768.2">BGC0002768.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>48.0</td>
+              <td>89.7</td>
+              <td>293.0</td>
+              <td>1.4e-96</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ23827.1</td>
+              <td>MacA-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001838.4">BGC0001838.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>49.0</td>
+              <td>89.7</td>
+              <td>292.0</td>
+              <td>4.23e-96</td>
+          </tr>
+    
+          <tr>
+              <td>BCJ07528.1</td>
+              <td>hemolysin_secretion_protein_D</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002379.3">BGC0002379.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>49.0</td>
+              <td>89.7</td>
+              <td>286.0</td>
+              <td>1.05e-93</td>
+          </tr>
+    
+          <tr>
+              <td>AAY37656.1</td>
+              <td>Secretion_protein_HlyD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000437.5">BGC0000437.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>47.0</td>
+              <td>90.2</td>
+              <td>285.0</td>
+              <td>2.16e-93</td>
+          </tr>
+    
+          <tr>
+              <td>AAY91422.1</td>
+              <td>efflux_transporter,_RND_family,_MFP_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000399.5">BGC0000399.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>47.0</td>
+              <td>90.2</td>
+              <td>283.0</td>
+              <td>1.62e-92</td>
+          </tr>
+    
+          <tr>
+              <td>AHZ34235.1</td>
+              <td>MacA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000323.5">BGC0000323.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>48.0</td>
+              <td>88.7</td>
+              <td>281.0</td>
+              <td>6.46e-92</td>
+          </tr>
+    
+          <tr>
+              <td>AAO56330.1</td>
+              <td>syringafactin_efflux_protein_SyfC</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000435.5">BGC0000435.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>48.0</td>
+              <td>89.5</td>
+              <td>281.0</td>
+              <td>1.29e-91</td>
+          </tr>
+    
+          <tr>
+              <td>QMN69935.1</td>
+              <td>PsoD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002521.3">BGC0002521.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>47.0</td>
+              <td>89.7</td>
+              <td>278.0</td>
+              <td>1.16e-90</td>
+          </tr>
+    
+          <tr>
+              <td>ABA73957.1</td>
+              <td>putative_drug-efflux_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001842.4">BGC0001842.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>46.0</td>
+              <td>90.2</td>
+              <td>262.0</td>
+              <td>2.01e-84</td>
+          </tr>
+    
+          <tr>
+              <td>BAC67537.1</td>
+              <td>putative_periplasmic_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000305.5">BGC0000305.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>45.0</td>
+              <td>91.3</td>
+              <td>261.0</td>
+              <td>4.4e-84</td>
+          </tr>
+    
+          <tr>
+              <td>WP_064118558.1</td>
+              <td>macrolide_transporter_subunit_MacA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001509.5">BGC0001509.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>46.0</td>
+              <td>90.7</td>
+              <td>261.0</td>
+              <td>5.67e-84</td>
+          </tr>
+    
+          <tr>
+              <td>QGQ63521.1</td>
+              <td>macrolide-specific_efflux_protein_MacA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002548.2">BGC0002548.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>45.0</td>
+              <td>90.2</td>
+              <td>261.0</td>
+              <td>5.67e-84</td>
+          </tr>
+    
+          <tr>
+              <td>AOA33124.1</td>
+              <td>RND_family_efflux_transporter_MFP_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001346.4">BGC0001346.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>45.0</td>
+              <td>91.0</td>
+              <td>260.0</td>
+              <td>1.13e-83</td>
+          </tr>
+    
+          <tr>
+              <td>QDF82253.1</td>
+              <td>macrolide-specific_efflux_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001980.3">BGC0001980.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>45.0</td>
+              <td>91.3</td>
+              <td>260.0</td>
+              <td>1.13e-83</td>
+          </tr>
+    
+          <tr>
+              <td>QNL34619.1</td>
+              <td>MacA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002092.3">BGC0002092.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>45.0</td>
+              <td>90.2</td>
+              <td>258.0</td>
+              <td>8.97e-83</td>
+          </tr>
+    
+          <tr>
+              <td>QBQ12453.1</td>
+              <td>efflux_RND_transporter_periplasmic_adaptor_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002693.2">BGC0002693.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>90.0</td>
+              <td>199.0</td>
+              <td>9.6e-60</td>
+          </tr>
+    
+          <tr>
+              <td>AAY93342.1</td>
+              <td>efflux_transporter,_RND_family,_MFP_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000413.5">BGC0000413.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>97.7</td>
+              <td>179.0</td>
+              <td>2.19e-52</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

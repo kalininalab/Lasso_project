@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACY13421.1</td>
+              <td>Histone-arginine_N-methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001367.5">BGC0001367.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>37.0</td>
+              <td>66.8</td>
+              <td>160.0</td>
+              <td>1.96e-45</td>
+          </tr>
+    
+          <tr>
+              <td>WP_234331922.1</td>
+              <td>50S_ribosomal_protein_L11_methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002669.2">BGC0002669.2</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>37.0</td>
+              <td>64.4</td>
+              <td>136.0</td>
+              <td>4.16e-36</td>
+          </tr>
+    
+          <tr>
+              <td>BBC15203.1</td>
+              <td>methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001696.5">BGC0001696.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>36.0</td>
+              <td>64.4</td>
+              <td>130.0</td>
+              <td>5.49e-34</td>
+          </tr>
+    
+          <tr>
+              <td>ATJ00797.1</td>
+              <td>putative_methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001802.5">BGC0001802.5</a></td>
+              <td>ribosomal:RiPP:Thioamidide</td>
+              <td>35.0</td>
+              <td>65.7</td>
+              <td>123.0</td>
+              <td>3.5e-31</td>
+          </tr>
+    
+          <tr>
+              <td>KPC82468.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002560.3">BGC0002560.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>35.0</td>
+              <td>64.4</td>
+              <td>119.0</td>
+              <td>3.81e-30</td>
+          </tr>
+    
+          <tr>
+              <td>BAN83922.1</td>
+              <td>putative_methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000625.5">BGC0000625.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>47.0</td>
+              <td>33.2</td>
+              <td>116.0</td>
+              <td>9.9e-29</td>
+          </tr>
+    
+          <tr>
+              <td>WP_014627306.1</td>
+              <td>class_I_SAM-dependent_methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002018.3">BGC0002018.3</a></td>
+              <td>other:other</td>
+              <td>34.0</td>
+              <td>83.4</td>
+              <td>115.0</td>
+              <td>1.15e-28</td>
+          </tr>
+    
+          <tr>
+              <td>ADD82953.1</td>
+              <td>BatL</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001099.5">BGC0001099.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>24.0</td>
+              <td>63.6</td>
+              <td>51.0</td>
+              <td>1.31e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

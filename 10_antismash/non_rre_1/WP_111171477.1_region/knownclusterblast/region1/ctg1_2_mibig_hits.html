@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AMX23317.1</td>
+              <td>putative_Oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001500.3">BGC0001500.3</a></td>
+              <td>PKS</td>
+              <td>40.0</td>
+              <td>80.5</td>
+              <td>100.0</td>
+              <td>9.2e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ARE67858.1</td>
+              <td>AbsH1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001492.5">BGC0001492.5</a></td>
+              <td>PKS</td>
+              <td>40.0</td>
+              <td>85.4</td>
+              <td>100.0</td>
+              <td>2.54e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AVW82923.1</td>
+              <td>flavin_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002039.3">BGC0002039.3</a></td>
+              <td>other:other</td>
+              <td>40.0</td>
+              <td>79.5</td>
+              <td>98.0</td>
+              <td>4.77e-26</td>
+          </tr>
+    
+          <tr>
+              <td>BBA97263.1</td>
+              <td>putative_flavin-dependent_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002383.3">BGC0002383.3</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>81.1</td>
+              <td>91.0</td>
+              <td>2.69e-23</td>
+          </tr>
+    
+          <tr>
+              <td>QFS19055.1</td>
+              <td>ActVB_family_FMN_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002506.3">BGC0002506.3</a></td>
+              <td>PKS</td>
+              <td>42.0</td>
+              <td>70.3</td>
+              <td>91.0</td>
+              <td>7e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AKC91618.1</td>
+              <td>flavin_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001302.5">BGC0001302.5</a></td>
+              <td>other:other</td>
+              <td>40.0</td>
+              <td>74.6</td>
+              <td>87.0</td>
+              <td>1.13e-21</td>
+          </tr>
+    
+          <tr>
+              <td>APR73639.1</td>
+              <td>flavin_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001625.5">BGC0001625.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>82.7</td>
+              <td>81.0</td>
+              <td>4.36e-19</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74976.1</td>
+              <td>omn1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002078.2">BGC0002078.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>79.5</td>
+              <td>79.0</td>
+              <td>1.03e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AWH12942.1</td>
+              <td>monooxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001784.5">BGC0001784.5</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>77.8</td>
+              <td>79.0</td>
+              <td>1.77e-18</td>
+          </tr>
+    
+          <tr>
+              <td>BAU98043.1</td>
+              <td>two_component_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001386.5">BGC0001386.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>82.7</td>
+              <td>78.0</td>
+              <td>3.97e-18</td>
+          </tr>
+    
+          <tr>
+              <td>WP_241538006.1</td>
+              <td>flavin_reductase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001826.3">BGC0001826.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>82.2</td>
+              <td>73.0</td>
+              <td>6.06e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ANW12119.1</td>
+              <td>flavin_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001374.5">BGC0001374.5</a></td>
+              <td>other:other</td>
+              <td>31.0</td>
+              <td>88.1</td>
+              <td>69.0</td>
+              <td>2.41e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AAL06698.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000965.5">BGC0000965.5</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>34.0</td>
+              <td>79.5</td>
+              <td>67.0</td>
+              <td>5.36e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ALU98460.1</td>
+              <td>flavin_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001397.5">BGC0001397.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>34.0</td>
+              <td>79.5</td>
+              <td>67.0</td>
+              <td>5.36e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ANY94469.1</td>
+              <td>flavin_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001584.5">BGC0001584.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>79.5</td>
+              <td>64.0</td>
+              <td>1.06e-12</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAC36754.1</td>
+              <td>putative_DNA-binding_protein,_MmyB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000914.5">BGC0000914.5</a></td>
+              <td>other:other</td>
+              <td>48.0</td>
+              <td>101.5</td>
+              <td>185.0</td>
+              <td>7.3e-58</td>
+          </tr>
+    
+          <tr>
+              <td>ACS50121.1</td>
+              <td>XRE_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000603.5">BGC0000603.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>43.0</td>
+              <td>99.5</td>
+              <td>153.0</td>
+              <td>9.36e-46</td>
+          </tr>
+    
+          <tr>
+              <td>CAM34332.1</td>
+              <td>putative_DNA-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000242.5">BGC0000242.5</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>97.5</td>
+              <td>117.0</td>
+              <td>1.07e-31</td>
+          </tr>
+    
+          <tr>
+              <td>OKI81336.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002478.3">BGC0002478.3</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>101.5</td>
+              <td>115.0</td>
+              <td>2.22e-31</td>
+          </tr>
+    
+          <tr>
+              <td>QIE07142.1</td>
+              <td>Ovm2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001719.4">BGC0001719.4</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>102.0</td>
+              <td>99.0</td>
+              <td>1.68e-24</td>
+          </tr>
+    
+          <tr>
+              <td>CAD91192.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000289.5">BGC0000289.5</a></td>
+              <td>NRPS:Type I+saccharide:hybrid/tailoring</td>
+              <td>37.0</td>
+              <td>100.0</td>
+              <td>91.0</td>
+              <td>4.63e-22</td>
+          </tr>
+    
+          <tr>
+              <td>CAG44631.1</td>
+              <td>SriL03.10c</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000712.5">BGC0000712.5</a></td>
+              <td>saccharide</td>
+              <td>36.0</td>
+              <td>101.0</td>
+              <td>91.0</td>
+              <td>5.94e-22</td>
+          </tr>
+    
+          <tr>
+              <td>WP_033322849.1</td>
+              <td>helix-turn-helix_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001364.3">BGC0001364.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>60.0</td>
+              <td>43.6</td>
+              <td>86.0</td>
+              <td>1.89e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ARO49585.1</td>
+              <td>XRE_family_transcription_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001441.5">BGC0001441.5</a></td>
+              <td>other:other</td>
+              <td>36.0</td>
+              <td>102.0</td>
+              <td>90.0</td>
+              <td>2.19e-21</td>
+          </tr>
+    
+          <tr>
+              <td>CCH32739.1</td>
+              <td>Transcriptional_regulator,_XRE_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002070.3">BGC0002070.3</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>80.2</td>
+              <td>72.0</td>
+              <td>6.26e-15</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

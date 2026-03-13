@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAX19701.1</td>
+              <td>EpsB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000764.3">BGC0000764.3</a></td>
+              <td>saccharide</td>
+              <td>44.0</td>
+              <td>96.4</td>
+              <td>189.0</td>
+              <td>2.82e-60</td>
+          </tr>
+    
+          <tr>
+              <td>AXH03899.1</td>
+              <td>exopolysaccharide_biosynthesis_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001894.2">BGC0001894.2</a></td>
+              <td>saccharide</td>
+              <td>40.0</td>
+              <td>95.9</td>
+              <td>169.0</td>
+              <td>1.94e-52</td>
+          </tr>
+    
+          <tr>
+              <td>AAA64641.1</td>
+              <td>type_1_capsule_synthesis_gene</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000758.4">BGC0000758.4</a></td>
+              <td>saccharide:exopolysaccharide</td>
+              <td>39.0</td>
+              <td>99.1</td>
+              <td>167.0</td>
+              <td>7.28e-52</td>
+          </tr>
+    
+          <tr>
+              <td>ACN94847.1</td>
+              <td>Wze</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000803.3">BGC0000803.3</a></td>
+              <td>saccharide</td>
+              <td>38.0</td>
+              <td>91.4</td>
+              <td>151.0</td>
+              <td>2.96e-45</td>
+          </tr>
+    
+          <tr>
+              <td>ABM21383.1</td>
+              <td>polymerization_and_chain_length_determination_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000765.3">BGC0000765.3</a></td>
+              <td>saccharide</td>
+              <td>36.0</td>
+              <td>94.1</td>
+              <td>147.0</td>
+              <td>1.28e-43</td>
+          </tr>
+    
+          <tr>
+              <td>ABM21399.1</td>
+              <td>polymerization_and_chain_length_determination_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000766.3">BGC0000766.3</a></td>
+              <td>saccharide</td>
+              <td>35.0</td>
+              <td>94.1</td>
+              <td>147.0</td>
+              <td>1.9e-43</td>
+          </tr>
+    
+          <tr>
+              <td>ABM21428.1</td>
+              <td>polymerization_and_chain_length_determination_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000767.3">BGC0000767.3</a></td>
+              <td>saccharide</td>
+              <td>35.0</td>
+              <td>94.1</td>
+              <td>145.0</td>
+              <td>1.12e-42</td>
+          </tr>
+    
+          <tr>
+              <td>AWL83827.1</td>
+              <td>Wzc</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001947.2">BGC0001947.2</a></td>
+              <td>saccharide</td>
+              <td>33.0</td>
+              <td>91.4</td>
+              <td>128.0</td>
+              <td>9.03e-34</td>
+          </tr>
+    
+          <tr>
+              <td>CAB57193.1</td>
+              <td>protein_tyrosine_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000760.5">BGC0000760.5</a></td>
+              <td>saccharide</td>
+              <td>33.0</td>
+              <td>89.5</td>
+              <td>122.0</td>
+              <td>1.29e-31</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

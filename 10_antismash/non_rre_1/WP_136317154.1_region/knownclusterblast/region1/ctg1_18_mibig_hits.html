@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAD38882.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000111.5">BGC0000111.5</a></td>
+              <td>PKS</td>
+              <td>91.0</td>
+              <td>99.6</td>
+              <td>997.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31372.1</td>
+              <td>putative_Oxidoreductase,_alpha_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000268.5">BGC0000268.5</a></td>
+              <td>PKS</td>
+              <td>90.0</td>
+              <td>99.6</td>
+              <td>994.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>BAV17024.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001384.5">BGC0001384.5</a></td>
+              <td>PKS</td>
+              <td>90.0</td>
+              <td>99.6</td>
+              <td>984.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>ARO44646.1</td>
+              <td>2-oxoacid:ferredoxin_oxidoreductase,_alpha_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001769.5">BGC0001769.5</a></td>
+              <td>PKS</td>
+              <td>88.0</td>
+              <td>99.6</td>
+              <td>979.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>MBW8699709.1</td>
+              <td>2-oxoglutarate_oxidoreductase_subunit_KorA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002140.2">BGC0002140.2</a></td>
+              <td>PKS</td>
+              <td>88.0</td>
+              <td>99.6</td>
+              <td>978.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>AGO50632.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000229.5">BGC0000229.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>87.0</td>
+              <td>99.8</td>
+              <td>962.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>CAB60189.1</td>
+              <td>putative_oxidoreductase_alpha-subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000038.5">BGC0000038.5</a></td>
+              <td>PKS:Type I</td>
+              <td>88.0</td>
+              <td>99.8</td>
+              <td>961.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>ABO15840.1</td>
+              <td>2-oxoglutarate_ferredoxin_oxidoreductase_alpha_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000130.5">BGC0000130.5</a></td>
+              <td>PKS</td>
+              <td>81.0</td>
+              <td>100.9</td>
+              <td>894.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>ALA09382.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001303.5">BGC0001303.5</a></td>
+              <td>PKS</td>
+              <td>69.0</td>
+              <td>99.3</td>
+              <td>756.0</td>
+              <td>1.9e-272</td>
+          </tr>
+    
+          <tr>
+              <td>AFP87534.1</td>
+              <td>2-oxoglutarate_ferredoxin_oxidoreductase,_alpha_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001159.5">BGC0001159.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>66.0</td>
+              <td>100.4</td>
+              <td>711.0</td>
+              <td>1.57e-254</td>
+          </tr>
+    
+          <tr>
+              <td>ABX02689.1</td>
+              <td>pyruvate_flavodoxin/ferredoxin_oxidoreductase_domain_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001521.3">BGC0001521.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>28.0</td>
+              <td>98.4</td>
+              <td>135.0</td>
+              <td>1.2e-33</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

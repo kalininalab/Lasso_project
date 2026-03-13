@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAK68922.1</td>
+              <td>putative_undecaprenyl-phosphate_galactose_phosphotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001410.3">BGC0001410.3</a></td>
+              <td>saccharide</td>
+              <td>37.0</td>
+              <td>43.1</td>
+              <td>80.0</td>
+              <td>2.49e-17</td>
+          </tr>
+    
+          <tr>
+              <td>ABM21385.1</td>
+              <td>phospho-glycosyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000765.3">BGC0000765.3</a></td>
+              <td>saccharide</td>
+              <td>35.0</td>
+              <td>35.9</td>
+              <td>67.0</td>
+              <td>1.47e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ABM21400.1</td>
+              <td>phospho-glycosyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000766.3">BGC0000766.3</a></td>
+              <td>saccharide</td>
+              <td>35.0</td>
+              <td>35.9</td>
+              <td>67.0</td>
+              <td>1.47e-12</td>
+          </tr>
+    
+          <tr>
+              <td>CAB57205.1</td>
+              <td>putative_UDP-galactose_phosphate_transferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000760.5">BGC0000760.5</a></td>
+              <td>saccharide</td>
+              <td>35.0</td>
+              <td>30.1</td>
+              <td>66.0</td>
+              <td>3.9e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AWL83836.1</td>
+              <td>ItrA1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001947.2">BGC0001947.2</a></td>
+              <td>saccharide</td>
+              <td>35.0</td>
+              <td>30.1</td>
+              <td>65.0</td>
+              <td>7.09e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AAX19703.1</td>
+              <td>EpsD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000764.3">BGC0000764.3</a></td>
+              <td>saccharide</td>
+              <td>37.0</td>
+              <td>29.3</td>
+              <td>61.0</td>
+              <td>2.17e-10</td>
+          </tr>
+    
+          <tr>
+              <td>BAF47015.1</td>
+              <td>UDP-Gal::undecaprenolphosphate_Gal-1-P_transferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000730.3">BGC0000730.3</a></td>
+              <td>saccharide</td>
+              <td>37.0</td>
+              <td>30.1</td>
+              <td>62.0</td>
+              <td>4.39e-10</td>
+          </tr>
+    
+          <tr>
+              <td>BAF47030.1</td>
+              <td>UDP-Gal::undecaprenolphosphate_Gal-1-P_transferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000731.3">BGC0000731.3</a></td>
+              <td>saccharide</td>
+              <td>37.0</td>
+              <td>30.1</td>
+              <td>62.0</td>
+              <td>4.39e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AAC27321.2</td>
+              <td>CpsA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000763.5">BGC0000763.5</a></td>
+              <td>saccharide</td>
+              <td>31.0</td>
+              <td>32.6</td>
+              <td>61.0</td>
+              <td>1.04e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ACN94856.1</td>
+              <td>WelE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000803.3">BGC0000803.3</a></td>
+              <td>saccharide</td>
+              <td>37.0</td>
+              <td>29.3</td>
+              <td>59.0</td>
+              <td>1.23e-09</td>
+          </tr>
+    
+          <tr>
+              <td>EDN75894.1</td>
+              <td>undecaprenyl-phosphate_glucose_phosphotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002302.2">BGC0002302.2</a></td>
+              <td>saccharide</td>
+              <td>30.0</td>
+              <td>29.3</td>
+              <td>57.0</td>
+              <td>1.34e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AAL26667.1</td>
+              <td>type_8_capsule_synthesis_gene</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000758.4">BGC0000758.4</a></td>
+              <td>saccharide:exopolysaccharide</td>
+              <td>34.0</td>
+              <td>29.6</td>
+              <td>51.0</td>
+              <td>3.18e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AAB94862.1</td>
+              <td>unknown</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000868.5">BGC0000868.5</a></td>
+              <td>other:other</td>
+              <td>32.0</td>
+              <td>26.8</td>
+              <td>50.0</td>
+              <td>7.25e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

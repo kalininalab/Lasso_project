@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAD38880.1</td>
+              <td>putative_dehydrogenase_beta_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000111.5">BGC0000111.5</a></td>
+              <td>PKS</td>
+              <td>68.0</td>
+              <td>99.4</td>
+              <td>441.0</td>
+              <td>1.52e-156</td>
+          </tr>
+    
+          <tr>
+              <td>AVE17171.1</td>
+              <td>BkdB1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001535.3">BGC0001535.3</a></td>
+              <td>other:other</td>
+              <td>65.0</td>
+              <td>99.4</td>
+              <td>433.0</td>
+              <td>3.14e-153</td>
+          </tr>
+    
+          <tr>
+              <td>ADU85985.1</td>
+              <td>putative_transketolase_central_region</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000165.4">BGC0000165.4</a></td>
+              <td>PKS:Type I</td>
+              <td>63.0</td>
+              <td>99.4</td>
+              <td>414.0</td>
+              <td>8.54e-146</td>
+          </tr>
+    
+          <tr>
+              <td>AVE17168.1</td>
+              <td>BkdB2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001534.3">BGC0001534.3</a></td>
+              <td>other:other</td>
+              <td>58.0</td>
+              <td>97.9</td>
+              <td>371.0</td>
+              <td>9.68e-129</td>
+          </tr>
+    
+          <tr>
+              <td>OKJ62370.1</td>
+              <td>2-oxoisovalerate_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002147.2">BGC0002147.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>58.0</td>
+              <td>98.5</td>
+              <td>357.0</td>
+              <td>3.39e-123</td>
+          </tr>
+    
+          <tr>
+              <td>AGN74888.1</td>
+              <td>branched-chain_alpha-keto_acid_dehydrogenase_E1_subunit_beta</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000459.5">BGC0000459.5</a></td>
+              <td>NRPS:Type I+PKS:Trans-AT type I</td>
+              <td>58.0</td>
+              <td>98.2</td>
+              <td>353.0</td>
+              <td>1.43e-121</td>
+          </tr>
+    
+          <tr>
+              <td>ANS62971.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001567.4">BGC0001567.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>53.0</td>
+              <td>99.4</td>
+              <td>340.0</td>
+              <td>3.79e-112</td>
+          </tr>
+    
+          <tr>
+              <td>BAX89995.1</td>
+              <td>pyruvate_dehydrogenase_complex,_E1_beta_and_E2_units</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001628.4">BGC0001628.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>53.0</td>
+              <td>97.9</td>
+              <td>331.0</td>
+              <td>1.74e-108</td>
+          </tr>
+    
+          <tr>
+              <td>AQW44883.1</td>
+              <td>phenylpyruvate_dehydrogenase_complex,_E1_component,_subunit_beta</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001761.3">BGC0001761.3</a></td>
+              <td>PKS</td>
+              <td>45.0</td>
+              <td>100.0</td>
+              <td>296.0</td>
+              <td>1.57e-99</td>
+          </tr>
+    
+          <tr>
+              <td>AGC45626.1</td>
+              <td>pyruvate_dehydrogenase_subunit_beta</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001394.5">BGC0001394.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>47.0</td>
+              <td>98.5</td>
+              <td>288.0</td>
+              <td>2.34e-96</td>
+          </tr>
+    
+          <tr>
+              <td>AQW44897.1</td>
+              <td>phenylpyruvate_dehydrogenase_complex,_E1_component,_subunit_beta</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001737.3">BGC0001737.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>48.0</td>
+              <td>96.6</td>
+              <td>288.0</td>
+              <td>4.7e-96</td>
+          </tr>
+    
+          <tr>
+              <td>WP_232247812.1</td>
+              <td>alpha-ketoacid_dehydrogenase_subunit_beta</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002536.3">BGC0002536.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>47.0</td>
+              <td>98.5</td>
+              <td>261.0</td>
+              <td>1.53e-85</td>
+          </tr>
+    
+          <tr>
+              <td>EPH46589.1</td>
+              <td>putative_Pyruvate_dehydrogenase_E1_component_subunit_beta</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001519.5">BGC0001519.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>46.0</td>
+              <td>96.6</td>
+              <td>257.0</td>
+              <td>5.78e-84</td>
+          </tr>
+    
+          <tr>
+              <td>AGZ15451.1</td>
+              <td>2-oxoisovalerate_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001036.5">BGC0001036.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>45.0</td>
+              <td>96.6</td>
+              <td>249.0</td>
+              <td>5.96e-81</td>
+          </tr>
+    
+          <tr>
+              <td>QES95485.1</td>
+              <td>2-oxoisovalerate</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002453.2">BGC0002453.2</a></td>
+              <td>PKS</td>
+              <td>44.0</td>
+              <td>96.6</td>
+              <td>249.0</td>
+              <td>5.96e-81</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ52687.1</td>
+              <td>pyruvate_dehydrogenase_beta-subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001073.5">BGC0001073.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>40.0</td>
+              <td>97.5</td>
+              <td>184.0</td>
+              <td>2.82e-55</td>
+          </tr>
+    
+          <tr>
+              <td>QLQ36611.1</td>
+              <td>alpha-ketoacid_dehydrogenase_subunit_beta</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002097.3">BGC0002097.3</a></td>
+              <td>NRPS:Type I+PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>39.0</td>
+              <td>97.5</td>
+              <td>180.0</td>
+              <td>8.6e-54</td>
+          </tr>
+    
+          <tr>
+              <td>AYU66268.1</td>
+              <td>TjhB10</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002461.2">BGC0002461.2</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>96.6</td>
+              <td>177.0</td>
+              <td>9.38e-53</td>
+          </tr>
+    
+          <tr>
+              <td>ANC94991.1</td>
+              <td>AlmDII</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001396.5">BGC0001396.5</a></td>
+              <td>PKS</td>
+              <td>40.0</td>
+              <td>97.9</td>
+              <td>174.0</td>
+              <td>2.18e-51</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54232.1</td>
+              <td>PauY12</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001732.5">BGC0001732.5</a></td>
+              <td>other:other</td>
+              <td>40.0</td>
+              <td>98.5</td>
+              <td>173.0</td>
+              <td>2.91e-51</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54179.1</td>
+              <td>Pau12</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001731.5">BGC0001731.5</a></td>
+              <td>other:other</td>
+              <td>40.0</td>
+              <td>98.5</td>
+              <td>172.0</td>
+              <td>5.75e-51</td>
+          </tr>
+    
+          <tr>
+              <td>AAK83191.1</td>
+              <td>putative_pyruvate_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000026.5">BGC0000026.5</a></td>
+              <td>saccharide:oligosaccharide</td>
+              <td>39.0</td>
+              <td>84.4</td>
+              <td>165.0</td>
+              <td>2.78e-48</td>
+          </tr>
+    
+          <tr>
+              <td>AKT74258.1</td>
+              <td>TxnB4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002141.3">BGC0002141.3</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>98.5</td>
+              <td>165.0</td>
+              <td>5.16e-48</td>
+          </tr>
+    
+          <tr>
+              <td>QLD23483.1</td>
+              <td>thiamine_pyrophosphate-dependent_dehydrogenase_E1_component_subunit_beta</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002085.3">BGC0002085.3</a></td>
+              <td>saccharide:oligosaccharide</td>
+              <td>36.0</td>
+              <td>96.9</td>
+              <td>161.0</td>
+              <td>5.94e-47</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAB57197.1</td>
+              <td>putative_NDP-N-acetyl-D-galactosaminuronic_acid_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000760.5">BGC0000760.5</a></td>
+              <td>saccharide</td>
+              <td>54.0</td>
+              <td>95.0</td>
+              <td>121.0</td>
+              <td>9.07e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AAF08248.1</td>
+              <td>UDP-N-acetylglucosamine-2-epimerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000736.3">BGC0000736.3</a></td>
+              <td>saccharide</td>
+              <td>51.0</td>
+              <td>99.2</td>
+              <td>113.0</td>
+              <td>1.44e-30</td>
+          </tr>
+    
+          <tr>
+              <td>AAK17910.1</td>
+              <td>UDP-N-acetyl-D-mannosaminuronic_acid_dehydrogenase_EcbB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000738.3">BGC0000738.3</a></td>
+              <td>saccharide</td>
+              <td>46.0</td>
+              <td>94.2</td>
+              <td>103.0</td>
+              <td>3.84e-27</td>
+          </tr>
+    
+          <tr>
+              <td>AAF67264.1</td>
+              <td>BcbB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000735.3">BGC0000735.3</a></td>
+              <td>saccharide</td>
+              <td>45.0</td>
+              <td>94.2</td>
+              <td>101.0</td>
+              <td>2.67e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AAM70332.1</td>
+              <td>CalS8</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000033.5">BGC0000033.5</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>96.7</td>
+              <td>64.0</td>
+              <td>1.25e-12</td>
+          </tr>
+    
+          <tr>
+              <td>BAP34704.1</td>
+              <td>UDP-glucose/GDP-mannose_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000078.5">BGC0000078.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>95.0</td>
+              <td>49.0</td>
+              <td>1.22e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

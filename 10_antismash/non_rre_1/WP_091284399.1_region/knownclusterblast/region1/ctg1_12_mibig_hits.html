@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACN64817.1</td>
+              <td>PokR3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001061.4">BGC0001061.4</a></td>
+              <td>PKS:Type II aromatic</td>
+              <td>62.0</td>
+              <td>93.5</td>
+              <td>106.0</td>
+              <td>5.56e-29</td>
+          </tr>
+    
+          <tr>
+              <td>QSI97714.1</td>
+              <td>adenosine_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002499.2">BGC0002499.2</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>63.0</td>
+              <td>89.2</td>
+              <td>100.0</td>
+              <td>1.23e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AKD43529.1</td>
+              <td>Carbohydrate_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001409.5">BGC0001409.5</a></td>
+              <td>PKS</td>
+              <td>60.0</td>
+              <td>93.5</td>
+              <td>99.0</td>
+              <td>2.36e-26</td>
+          </tr>
+    
+          <tr>
+              <td>ABX71100.1</td>
+              <td>Lct17</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000238.5">BGC0000238.5</a></td>
+              <td>PKS</td>
+              <td>62.0</td>
+              <td>90.3</td>
+              <td>99.0</td>
+              <td>2.4e-26</td>
+          </tr>
+    
+          <tr>
+              <td>ABI22143.1</td>
+              <td>putative_adenosine_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000422.5">BGC0000422.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>57.0</td>
+              <td>91.4</td>
+              <td>98.0</td>
+              <td>9.15e-26</td>
+          </tr>
+    
+          <tr>
+              <td>QDG00818.1</td>
+              <td>putative_adenosine_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002028.4">BGC0002028.4</a></td>
+              <td>PKS</td>
+              <td>58.0</td>
+              <td>90.3</td>
+              <td>96.0</td>
+              <td>2.77e-25</td>
+          </tr>
+    
+          <tr>
+              <td>BAC76508.1</td>
+              <td>putative_glucose_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000085.5">BGC0000085.5</a></td>
+              <td>PKS</td>
+              <td>62.0</td>
+              <td>91.4</td>
+              <td>96.0</td>
+              <td>5.48e-25</td>
+          </tr>
+    
+          <tr>
+              <td>BAC79034.1</td>
+              <td>putative_carbohydrate_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000245.5">BGC0000245.5</a></td>
+              <td>PKS</td>
+              <td>57.0</td>
+              <td>90.3</td>
+              <td>95.0</td>
+              <td>1.09e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ADE34496.1</td>
+              <td>SsfX2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000269.5">BGC0000269.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>59.0</td>
+              <td>89.2</td>
+              <td>94.0</td>
+              <td>4.13e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ABO15882.1</td>
+              <td>putative_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000132.3">BGC0000132.3</a></td>
+              <td>PKS</td>
+              <td>58.0</td>
+              <td>89.2</td>
+              <td>93.0</td>
+              <td>5.03e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AKC91621.1</td>
+              <td>putative_hexokinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001302.5">BGC0001302.5</a></td>
+              <td>other:other</td>
+              <td>57.0</td>
+              <td>95.7</td>
+              <td>91.0</td>
+              <td>6.25e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ADE22278.1</td>
+              <td>carbohydrate_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000279.5">BGC0000279.5</a></td>
+              <td>PKS</td>
+              <td>53.0</td>
+              <td>93.5</td>
+              <td>87.0</td>
+              <td>1.05e-21</td>
+          </tr>
+    
+          <tr>
+              <td>CAE51179.1</td>
+              <td>RemJ_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000264.5">BGC0000264.5</a></td>
+              <td>PKS:Type II</td>
+              <td>53.0</td>
+              <td>93.5</td>
+              <td>82.0</td>
+              <td>5.72e-20</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ07870.1</td>
+              <td>putative_carbohydrate_kinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000232.5">BGC0000232.5</a></td>
+              <td>PKS</td>
+              <td>55.0</td>
+              <td>92.5</td>
+              <td>82.0</td>
+              <td>8e-20</td>
+          </tr>
+    
+          <tr>
+              <td>CBH32107.1</td>
+              <td>putative_hexokinase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000211.5">BGC0000211.5</a></td>
+              <td>PKS</td>
+              <td>53.0</td>
+              <td>91.4</td>
+              <td>80.0</td>
+              <td>3.21e-19</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

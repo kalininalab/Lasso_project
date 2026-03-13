@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAQ64696.1</td>
+              <td>serine-type_D-Ala-D-Ala_carboxypeptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000087.5">BGC0000087.5</a></td>
+              <td>PKS</td>
+              <td>49.0</td>
+              <td>76.9</td>
+              <td>266.0</td>
+              <td>1.43e-86</td>
+          </tr>
+    
+          <tr>
+              <td>QLQ40535.1</td>
+              <td>beta-lactamase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002097.3">BGC0002097.3</a></td>
+              <td>NRPS:Type I+PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>39.0</td>
+              <td>77.9</td>
+              <td>195.0</td>
+              <td>1.21e-58</td>
+          </tr>
+    
+          <tr>
+              <td>BAG85035.1</td>
+              <td>putative_serine-type_D-Ala-D-Ala_carboxypeptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000086.5">BGC0000086.5</a></td>
+              <td>PKS</td>
+              <td>47.0</td>
+              <td>58.0</td>
+              <td>187.0</td>
+              <td>2.96e-57</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ52696.1</td>
+              <td>Dioxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001073.5">BGC0001073.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>37.0</td>
+              <td>77.9</td>
+              <td>182.0</td>
+              <td>1.01e-53</td>
+          </tr>
+    
+          <tr>
+              <td>SCN11944.1</td>
+              <td>alkaline_D-peptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001580.3">BGC0001580.3</a></td>
+              <td>PKS</td>
+              <td>41.0</td>
+              <td>75.9</td>
+              <td>171.0</td>
+              <td>2.15e-48</td>
+          </tr>
+    
+          <tr>
+              <td>AAU34204.1</td>
+              <td>alpha/beta_hydrolase_MppK</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000388.5">BGC0000388.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>50.7</td>
+              <td>89.0</td>
+              <td>7.95e-19</td>
+          </tr>
+    
+          <tr>
+              <td>EHN79411.1</td>
+              <td>beta-lactamase_ScatT</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000804.5">BGC0000804.5</a></td>
+              <td>saccharide</td>
+              <td>30.0</td>
+              <td>71.9</td>
+              <td>87.0</td>
+              <td>2.92e-18</td>
+          </tr>
+    
+          <tr>
+              <td>KUM69046.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001561.4">BGC0001561.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>71.1</td>
+              <td>75.0</td>
+              <td>2.17e-14</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74907.1</td>
+              <td>beta-lactamase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002588.2">BGC0002588.2</a></td>
+              <td>other:other</td>
+              <td>28.0</td>
+              <td>69.7</td>
+              <td>70.0</td>
+              <td>9.54e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ACM79808.1</td>
+              <td>ZmaM</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001059.5">BGC0001059.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>27.0</td>
+              <td>45.8</td>
+              <td>68.0</td>
+              <td>6.86e-12</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

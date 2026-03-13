@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAQ59166.2</td>
+              <td>probable_outer_membrane_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002679.2">BGC0002679.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>96.4</td>
+              <td>239.0</td>
+              <td>7.22e-72</td>
+          </tr>
+    
+          <tr>
+              <td>ACR11143.1</td>
+              <td>TonB-dependent_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000451.5">BGC0000451.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>30.0</td>
+              <td>95.4</td>
+              <td>144.0</td>
+              <td>2.27e-37</td>
+          </tr>
+    
+          <tr>
+              <td>AAD40727.1</td>
+              <td>putative_TonB-dependent_outer_membrane_receptor_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001412.3">BGC0001412.3</a></td>
+              <td>saccharide</td>
+              <td>24.0</td>
+              <td>101.9</td>
+              <td>91.0</td>
+              <td>3.95e-19</td>
+          </tr>
+    
+          <tr>
+              <td>WP_105828638.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002087.3">BGC0002087.3</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>31.0</td>
+              <td>50.4</td>
+              <td>72.0</td>
+              <td>3.92e-13</td>
+          </tr>
+    
+          <tr>
+              <td>WP_157140642.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001999.3">BGC0001999.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>30.0</td>
+              <td>50.4</td>
+              <td>71.0</td>
+              <td>1.2e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AXF14771.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002563.3">BGC0002563.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>50.4</td>
+              <td>70.0</td>
+              <td>2.14e-12</td>
+          </tr>
+    
+          <tr>
+              <td>KAF7786085.1</td>
+              <td>iron_complex_outermembrane_recepter_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002334.3">BGC0002334.3</a></td>
+              <td>other:other+ribosomal:RiPP</td>
+              <td>27.0</td>
+              <td>36.2</td>
+              <td>66.0</td>
+              <td>2.91e-11</td>
+          </tr>
+    
+          <tr>
+              <td>KJY94238.1</td>
+              <td>ligand-gated_channel_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002691.2">BGC0002691.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>35.7</td>
+              <td>66.0</td>
+              <td>4.87e-11</td>
+          </tr>
+    
+          <tr>
+              <td>CAL17539.1</td>
+              <td>Ferrioxamine_receptor_precursor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002465.2">BGC0002465.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>38.0</td>
+              <td>28.8</td>
+              <td>66.0</td>
+              <td>4.87e-11</td>
+          </tr>
+    
+          <tr>
+              <td>ACS20357.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002420.3">BGC0002420.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>40.0</td>
+              <td>28.8</td>
+              <td>64.0</td>
+              <td>1.12e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AGU50948.1</td>
+              <td>putative_plug_domain-containing_TonB-dependent_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002417.3">BGC0002417.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>38.0</td>
+              <td>31.2</td>
+              <td>63.0</td>
+              <td>2.6e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ACB01046.1</td>
+              <td>TonB_dependent_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002470.2">BGC0002470.2</a></td>
+              <td>other:other</td>
+              <td>37.0</td>
+              <td>41.0</td>
+              <td>62.0</td>
+              <td>4.84e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ABZ74309.1</td>
+              <td>TonB-dependent_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000573.3">BGC0000573.3</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>31.0</td>
+              <td>38.6</td>
+              <td>62.0</td>
+              <td>6.76e-10</td>
+          </tr>
+    
+          <tr>
+              <td>KGA48521.1</td>
+              <td>TonB-dependent_siderophore_receptor_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002413.3">BGC0002413.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>45.6</td>
+              <td>62.0</td>
+              <td>8.09e-10</td>
+          </tr>
+    
+          <tr>
+              <td>QBQ12461.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002693.2">BGC0002693.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>28.0</td>
+              <td>47.7</td>
+              <td>60.0</td>
+              <td>2.59e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AAL65282.1</td>
+              <td>QbsI</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000925.5">BGC0000925.5</a></td>
+              <td>other:other</td>
+              <td>32.0</td>
+              <td>32.6</td>
+              <td>60.0</td>
+              <td>3.15e-09</td>
+          </tr>
+    
+          <tr>
+              <td>BAI99044.1</td>
+              <td>TonB-dependent_receptor-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000577.3">BGC0000577.3</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>41.0</td>
+              <td>20.6</td>
+              <td>60.0</td>
+              <td>3.48e-09</td>
+          </tr>
+    
+          <tr>
+              <td>MBX9445644.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002414.3">BGC0002414.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>23.0</td>
+              <td>91.6</td>
+              <td>57.0</td>
+              <td>1.77e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ABM34275.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002419.3">BGC0002419.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>37.0</td>
+              <td>28.3</td>
+              <td>57.0</td>
+              <td>3.09e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ71830.1</td>
+              <td>TonB-dependent_siderophore_receptor,_HYDROXAMATE-TYPE_FERRISIDEROPHORE_RECEPTOR_precursor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001189.5">BGC0001189.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>28.5</td>
+              <td>55.0</td>
+              <td>1.25e-07</td>
+          </tr>
+    
+          <tr>
+              <td>CAM86878.1</td>
+              <td>putative_ferric_siderophore_receptor_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002471.3">BGC0002471.3</a></td>
+              <td>other:other</td>
+              <td>31.0</td>
+              <td>34.1</td>
+              <td>54.0</td>
+              <td>2.22e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ABX37381.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000984.4">BGC0000984.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>28.0</td>
+              <td>50.4</td>
+              <td>54.0</td>
+              <td>2.25e-07</td>
+          </tr>
+    
+          <tr>
+              <td>NAO96307.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002117.3">BGC0002117.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>23.0</td>
+              <td>88.0</td>
+              <td>51.0</td>
+              <td>2.03e-06</td>
+          </tr>
+    
+          <tr>
+              <td>BAM09332.1</td>
+              <td>putative_ferric_acinetoferrin_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000295.5">BGC0000295.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>23.7</td>
+              <td>50.0</td>
+              <td>2.71e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ46296.1</td>
+              <td>putative_TonB-dependent_outer_membrane_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002689.2">BGC0002689.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>28.0</td>
+              <td>36.7</td>
+              <td>50.0</td>
+              <td>3.58e-06</td>
+          </tr>
+    
+          <tr>
+              <td>WP_005765172.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002571.2">BGC0002571.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>42.0</td>
+              <td>50.0</td>
+              <td>4.63e-06</td>
+          </tr>
+    
+          <tr>
+              <td>TRX20193.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002329.2">BGC0002329.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>25.0</td>
+              <td>96.6</td>
+              <td>50.0</td>
+              <td>4.65e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

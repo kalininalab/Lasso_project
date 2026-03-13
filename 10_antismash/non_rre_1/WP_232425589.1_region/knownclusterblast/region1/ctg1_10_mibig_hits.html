@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QBK46629.1</td>
+              <td>HrsH</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001960.2">BGC0001960.2</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>95.6</td>
+              <td>151.0</td>
+              <td>3.31e-44</td>
+          </tr>
+    
+          <tr>
+              <td>ADG86334.1</td>
+              <td>regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000190.5">BGC0000190.5</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>96.0</td>
+              <td>157.0</td>
+              <td>8.29e-44</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ08934.1</td>
+              <td>regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000224.4">BGC0000224.4</a></td>
+              <td>PKS:Type II</td>
+              <td>37.0</td>
+              <td>96.3</td>
+              <td>150.0</td>
+              <td>2.84e-41</td>
+          </tr>
+    
+          <tr>
+              <td>QDJ74290.1</td>
+              <td>putative_AfsR-like_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002109.3">BGC0002109.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>38.0</td>
+              <td>93.8</td>
+              <td>141.0</td>
+              <td>5.63e-38</td>
+          </tr>
+    
+          <tr>
+              <td>CAC44198.1</td>
+              <td>actinorhodin_cluster_activator_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000194.5">BGC0000194.5</a></td>
+              <td>PKS:Type II aromatic</td>
+              <td>33.0</td>
+              <td>95.6</td>
+              <td>134.0</td>
+              <td>5.86e-38</td>
+          </tr>
+    
+          <tr>
+              <td>ACK77758.1</td>
+              <td>SARP-family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000727.3">BGC0000727.3</a></td>
+              <td>saccharide</td>
+              <td>35.0</td>
+              <td>95.2</td>
+              <td>133.0</td>
+              <td>4.03e-37</td>
+          </tr>
+    
+          <tr>
+              <td>AHN91929.1</td>
+              <td>SARP_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000340.5">BGC0000340.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>97.1</td>
+              <td>132.0</td>
+              <td>4.78e-37</td>
+          </tr>
+    
+          <tr>
+              <td>AGD80615.1</td>
+              <td>regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000394.5">BGC0000394.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>94.9</td>
+              <td>139.0</td>
+              <td>5.75e-37</td>
+          </tr>
+    
+          <tr>
+              <td>CAI94728.1</td>
+              <td>putative_transcription_activator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000141.5">BGC0000141.5</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>93.0</td>
+              <td>132.0</td>
+              <td>7.5e-37</td>
+          </tr>
+    
+          <tr>
+              <td>QED55413.1</td>
+              <td>SARP_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001984.3">BGC0001984.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>94.9</td>
+              <td>137.0</td>
+              <td>1e-36</td>
+          </tr>
+    
+          <tr>
+              <td>OWA01684.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001439.5">BGC0001439.5</a></td>
+              <td>PKS+saccharide:hybrid/tailoring</td>
+              <td>37.0</td>
+              <td>86.1</td>
+              <td>130.0</td>
+              <td>3.57e-36</td>
+          </tr>
+    
+          <tr>
+              <td>BAU98031.1</td>
+              <td>transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001386.5">BGC0001386.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>91.2</td>
+              <td>123.0</td>
+              <td>9.91e-34</td>
+          </tr>
+    
+          <tr>
+              <td>CAC37890.1</td>
+              <td>putative_regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000038.5">BGC0000038.5</a></td>
+              <td>PKS:Type I</td>
+              <td>34.0</td>
+              <td>92.7</td>
+              <td>122.0</td>
+              <td>5.02e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ADE34517.1</td>
+              <td>SsfT1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000269.5">BGC0000269.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>34.0</td>
+              <td>96.0</td>
+              <td>121.0</td>
+              <td>8.6e-33</td>
+          </tr>
+    
+          <tr>
+              <td>QIC03947.1</td>
+              <td>EncF</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002366.2">BGC0002366.2</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>86.8</td>
+              <td>120.0</td>
+              <td>2.25e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AFU65883.1</td>
+              <td>DacT1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000216.5">BGC0000216.5</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>96.0</td>
+              <td>120.0</td>
+              <td>2.52e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AAF81721.1</td>
+              <td>putative_transcriptional_regulator_EncF</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000220.4">BGC0000220.4</a></td>
+              <td>PKS:Type II</td>
+              <td>33.0</td>
+              <td>86.4</td>
+              <td>120.0</td>
+              <td>4.42e-32</td>
+          </tr>
+    
+          <tr>
+              <td>BAC79037.1</td>
+              <td>pathway-specific_transcriptional_activator_(SARP)</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000245.5">BGC0000245.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>96.0</td>
+              <td>118.0</td>
+              <td>9.72e-32</td>
+          </tr>
+    
+          <tr>
+              <td>APR73628.1</td>
+              <td>SARP_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001625.5">BGC0001625.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>94.9</td>
+              <td>119.0</td>
+              <td>9.95e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AHL46726.1</td>
+              <td>SARP_regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001179.5">BGC0001179.5</a></td>
+              <td>PKS:Type II</td>
+              <td>33.0</td>
+              <td>97.1</td>
+              <td>123.0</td>
+              <td>2.05e-31</td>
+          </tr>
+    
+          <tr>
+              <td>CAI94699.1</td>
+              <td>putative_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000141.5">BGC0000141.5</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>96.3</td>
+              <td>116.0</td>
+              <td>6.28e-31</td>
+          </tr>
+    
+          <tr>
+              <td>ACB37727.1</td>
+              <td>putative_pathway_specific_activator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000162.5">BGC0000162.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>94.1</td>
+              <td>111.0</td>
+              <td>5.05e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AAC18102.1</td>
+              <td>pathway_specific_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000225.5">BGC0000225.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>93.8</td>
+              <td>111.0</td>
+              <td>6.9e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AQW35038.1</td>
+              <td>regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001675.5">BGC0001675.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>95.6</td>
+              <td>107.0</td>
+              <td>1.21e-27</td>
+          </tr>
+    
+          <tr>
+              <td>QFU91027.1</td>
+              <td>Regulatory_protein_AfsR</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002064.2">BGC0002064.2</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>35.0</td>
+              <td>94.5</td>
+              <td>104.0</td>
+              <td>3.02e-25</td>
+          </tr>
+    
+          <tr>
+              <td>BAG84243.1</td>
+              <td>putative_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000257.5">BGC0000257.5</a></td>
+              <td>PKS:Type I</td>
+              <td>34.0</td>
+              <td>79.1</td>
+              <td>99.0</td>
+              <td>1.63e-24</td>
+          </tr>
+    
+          <tr>
+              <td>QBF29337.1</td>
+              <td>regulatory_protein_AfsR</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002294.3">BGC0002294.3</a></td>
+              <td>other:other</td>
+              <td>34.0</td>
+              <td>98.5</td>
+              <td>94.0</td>
+              <td>1.93e-21</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

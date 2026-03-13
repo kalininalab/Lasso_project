@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AGS67376.1</td>
+              <td>iron-sulfur_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001227.3">BGC0001227.3</a></td>
+              <td>terpene</td>
+              <td>82.0</td>
+              <td>100.9</td>
+              <td>565.0</td>
+              <td>4.64e-205</td>
+          </tr>
+    
+          <tr>
+              <td>crtaV</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001456.3">BGC0001456.3</a></td>
+              <td>terpene</td>
+              <td>76.0</td>
+              <td>100.6</td>
+              <td>513.0</td>
+              <td>1.13e-184</td>
+          </tr>
+    
+          <tr>
+              <td>BAG23656.1</td>
+              <td>putative_methylesterase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000664.5">BGC0000664.5</a></td>
+              <td>terpene</td>
+              <td>75.0</td>
+              <td>98.2</td>
+              <td>502.0</td>
+              <td>4.18e-180</td>
+          </tr>
+    
+          <tr>
+              <td>BAB69146.1</td>
+              <td>methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000633.3">BGC0000633.3</a></td>
+              <td>terpene</td>
+              <td>70.0</td>
+              <td>105.7</td>
+              <td>493.0</td>
+              <td>1.98e-176</td>
+          </tr>
+    
+          <tr>
+              <td>AAG28702.1</td>
+              <td>CrtV</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000649.3">BGC0000649.3</a></td>
+              <td>terpene</td>
+              <td>71.0</td>
+              <td>99.7</td>
+              <td>477.0</td>
+              <td>2.29e-170</td>
+          </tr>
+    
+          <tr>
+              <td>ARS01487.1</td>
+              <td>2Fe-2S_ferredoxin</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001702.3">BGC0001702.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>66.0</td>
+              <td>93.5</td>
+              <td>416.0</td>
+              <td>1.95e-146</td>
+          </tr>
+    
+          <tr>
+              <td>BAG84251.1</td>
+              <td>putative_oxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000257.5">BGC0000257.5</a></td>
+              <td>PKS:Type I</td>
+              <td>41.0</td>
+              <td>21.1</td>
+              <td>65.0</td>
+              <td>2.48e-11</td>
+          </tr>
+    
+          <tr>
+              <td>CCA65704.1</td>
+              <td>predicted_Rieske-[2Fe-2s]-domain_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001343.3">BGC0001343.3</a></td>
+              <td>PKS</td>
+              <td>41.0</td>
+              <td>20.5</td>
+              <td>54.0</td>
+              <td>1.12e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

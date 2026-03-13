@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QZN83606.1</td>
+              <td>MFS_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002621.2">BGC0002621.2</a></td>
+              <td>other:other</td>
+              <td>47.0</td>
+              <td>97.2</td>
+              <td>279.0</td>
+              <td>1.22e-90</td>
+          </tr>
+    
+          <tr>
+              <td>AEA29629.1</td>
+              <td>putative_transmembrane_efflux_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000409.5">BGC0000409.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>89.5</td>
+              <td>202.0</td>
+              <td>4.25e-61</td>
+          </tr>
+    
+          <tr>
+              <td>ABW71841.1</td>
+              <td>transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000303.5">BGC0000303.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>88.7</td>
+              <td>182.0</td>
+              <td>2.5e-53</td>
+          </tr>
+    
+          <tr>
+              <td>PVC99889.1</td>
+              <td>MFS_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002100.2">BGC0002100.2</a></td>
+              <td>NRPS:Type I+other:other</td>
+              <td>37.0</td>
+              <td>91.8</td>
+              <td>172.0</td>
+              <td>3.24e-49</td>
+          </tr>
+    
+          <tr>
+              <td>CCA54203.1</td>
+              <td>major_facilitator_family_transporter,_putative</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000893.5">BGC0000893.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>90.5</td>
+              <td>164.0</td>
+              <td>2.87e-46</td>
+          </tr>
+    
+          <tr>
+              <td>MCB8905715.1</td>
+              <td>MFS_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002340.3">BGC0002340.3</a></td>
+              <td>NRPS:Type I+other:other</td>
+              <td>35.0</td>
+              <td>87.9</td>
+              <td>153.0</td>
+              <td>3.51e-42</td>
+          </tr>
+    
+          <tr>
+              <td>AAG06724.1</td>
+              <td>probable_major_facilitator_superfamily_(MFS)_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002037.3">BGC0002037.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>82.8</td>
+              <td>149.0</td>
+              <td>4.66e-41</td>
+          </tr>
+    
+          <tr>
+              <td>QBF51783.1</td>
+              <td>efflux_permease,_MFS_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001856.4">BGC0001856.4</a></td>
+              <td>PKS:Type I</td>
+              <td>34.0</td>
+              <td>90.8</td>
+              <td>146.0</td>
+              <td>9.91e-40</td>
+          </tr>
+    
+          <tr>
+              <td>CAG14958.1</td>
+              <td>putative_transmembrane_efflux_protein_from_the_major_facilitator_superfamily</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000253.4">BGC0000253.4</a></td>
+              <td>PKS:Type II</td>
+              <td>35.0</td>
+              <td>99.5</td>
+              <td>141.0</td>
+              <td>7.43e-38</td>
+          </tr>
+    
+          <tr>
+              <td>CAD18978.1</td>
+              <td>putative_transport_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000847.4">BGC0000847.4</a></td>
+              <td>other:non-nrp beta-lactam</td>
+              <td>32.0</td>
+              <td>48.5</td>
+              <td>61.0</td>
+              <td>9.48e-10</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>KHS42577.1</td>
+              <td>TonB-dependent_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001786.3">BGC0001786.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>47.0</td>
+              <td>100.5</td>
+              <td>699.0</td>
+              <td>4.99e-241</td>
+          </tr>
+    
+          <tr>
+              <td>ABZ74309.1</td>
+              <td>TonB-dependent_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000573.3">BGC0000573.3</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>45.0</td>
+              <td>100.3</td>
+              <td>677.0</td>
+              <td>2.88e-232</td>
+          </tr>
+    
+          <tr>
+              <td>BAL94040.1</td>
+              <td>putative_TonB-dependent_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000576.3">BGC0000576.3</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>27.0</td>
+              <td>103.9</td>
+              <td>182.0</td>
+              <td>2.4e-47</td>
+          </tr>
+    
+          <tr>
+              <td>QWM97325.1</td>
+              <td>TonB-dependent_receptor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002384.3">BGC0002384.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>105.8</td>
+              <td>177.0</td>
+              <td>7.07e-46</td>
+          </tr>
+    
+          <tr>
+              <td>BAI99044.1</td>
+              <td>TonB-dependent_receptor-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000577.3">BGC0000577.3</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>33.0</td>
+              <td>25.9</td>
+              <td>96.0</td>
+              <td>8.95e-20</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

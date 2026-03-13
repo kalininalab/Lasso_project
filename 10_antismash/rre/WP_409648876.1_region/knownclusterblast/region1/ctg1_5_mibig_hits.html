@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAA64648.1</td>
+              <td>type_1_capsule_synthesis_gene</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000758.4">BGC0000758.4</a></td>
+              <td>saccharide:exopolysaccharide</td>
+              <td>48.0</td>
+              <td>98.8</td>
+              <td>316.0</td>
+              <td>5.98e-107</td>
+          </tr>
+    
+          <tr>
+              <td>AAG26471.1</td>
+              <td>putative_UDP-glucuronic_acid_epimerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001411.3">BGC0001411.3</a></td>
+              <td>saccharide</td>
+              <td>43.0</td>
+              <td>103.3</td>
+              <td>270.0</td>
+              <td>9.42e-89</td>
+          </tr>
+    
+          <tr>
+              <td>CAD89771.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001010.5">BGC0001010.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>38.0</td>
+              <td>98.2</td>
+              <td>240.0</td>
+              <td>2.07e-77</td>
+          </tr>
+    
+          <tr>
+              <td>BAA25656.1</td>
+              <td>deduced_dNDP-hexose_4,6-dehydratase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000707.5">BGC0000707.5</a></td>
+              <td>saccharide</td>
+              <td>28.0</td>
+              <td>99.1</td>
+              <td>107.0</td>
+              <td>1.76e-26</td>
+          </tr>
+    
+          <tr>
+              <td>BAC55147.1</td>
+              <td>UDP-glucose_4-epimerase_EpsS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000761.5">BGC0000761.5</a></td>
+              <td>saccharide</td>
+              <td>28.0</td>
+              <td>96.7</td>
+              <td>94.0</td>
+              <td>1.75e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QEG98944.1</td>
+              <td>Ant9</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002042.3">BGC0002042.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>106.5</td>
+              <td>81.0</td>
+              <td>5.39e-17</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ88619.1</td>
+              <td>putative_epimerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000327.5">BGC0000327.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>78.0</td>
+              <td>79.0</td>
+              <td>3.3e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QTT72095.1</td>
+              <td>NAD-dependent_epimerase/dehydratase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002350.2">BGC0002350.2</a></td>
+              <td>NRPS:Type I+PKS+saccharide</td>
+              <td>24.0</td>
+              <td>101.5</td>
+              <td>77.0</td>
+              <td>2.02e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AAG02361.1</td>
+              <td>sugar_epimerase_BlmG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000963.5">BGC0000963.5</a></td>
+              <td>NRPS:Type I+PKS:Type I+saccharide:hybrid/tailoring</td>
+              <td>24.0</td>
+              <td>100.9</td>
+              <td>76.0</td>
+              <td>5.03e-15</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

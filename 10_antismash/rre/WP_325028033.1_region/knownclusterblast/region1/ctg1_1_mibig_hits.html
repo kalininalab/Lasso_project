@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QBF29338.1</td>
+              <td>putative_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002294.3">BGC0002294.3</a></td>
+              <td>other:other</td>
+              <td>53.0</td>
+              <td>97.5</td>
+              <td>277.0</td>
+              <td>2.09e-91</td>
+          </tr>
+    
+          <tr>
+              <td>AIZ66882.1</td>
+              <td>putative_hippurate_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002666.2">BGC0002666.2</a></td>
+              <td>NRPS:Type I+other:other</td>
+              <td>53.0</td>
+              <td>99.3</td>
+              <td>263.0</td>
+              <td>3.87e-86</td>
+          </tr>
+    
+          <tr>
+              <td>QVQ62843.1</td>
+              <td>amidohydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002373.3">BGC0002373.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>50.0</td>
+              <td>95.4</td>
+              <td>246.0</td>
+              <td>1.73e-79</td>
+          </tr>
+    
+          <tr>
+              <td>WP_036055457.1</td>
+              <td>M20_aminoacylase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002087.3">BGC0002087.3</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>42.0</td>
+              <td>89.0</td>
+              <td>185.0</td>
+              <td>9.2e-56</td>
+          </tr>
+    
+          <tr>
+              <td>ADG87283.1</td>
+              <td>amidohydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001860.4">BGC0001860.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>38.0</td>
+              <td>100.7</td>
+              <td>158.0</td>
+              <td>4.86e-45</td>
+          </tr>
+    
+          <tr>
+              <td>NSC23517.1</td>
+              <td>amidohydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002359.3">BGC0002359.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>97.5</td>
+              <td>131.0</td>
+              <td>5.05e-35</td>
+          </tr>
+    
+          <tr>
+              <td>ACS83788.1</td>
+              <td>peptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000613.5">BGC0000613.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>37.0</td>
+              <td>103.6</td>
+              <td>129.0</td>
+              <td>4.41e-34</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

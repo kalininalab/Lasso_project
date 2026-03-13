@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ADJ63837.1</td>
+              <td>ferric_regulator_sigma-24_subunit_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000424.5">BGC0000424.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>92.2</td>
+              <td>63.0</td>
+              <td>1.67e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ABX37379.1</td>
+              <td>RNA_polymerase,_sigma-24_subunit,_ECF_subfamily</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000984.4">BGC0000984.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>34.0</td>
+              <td>91.6</td>
+              <td>58.0</td>
+              <td>2.26e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ABC94352.1</td>
+              <td>RNA_polymerase_sigma_factor_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000457.5">BGC0000457.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>91.6</td>
+              <td>57.0</td>
+              <td>5.39e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ABM34284.1</td>
+              <td>RNA_polymerase,_sigma-24_subunit,_ECF_subfamily</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002419.3">BGC0002419.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>35.0</td>
+              <td>85.5</td>
+              <td>55.0</td>
+              <td>2.25e-09</td>
+          </tr>
+    
+          <tr>
+              <td>WP_024881679.1</td>
+              <td>sigma-70_family_RNA_polymerase_sigma_factor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002133.3">BGC0002133.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>35.0</td>
+              <td>72.6</td>
+              <td>54.0</td>
+              <td>5.09e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ABI87087.1</td>
+              <td>RNA_polymerase,_sigma-24_subunit,_RpoE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002531.3">BGC0002531.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>74.3</td>
+              <td>54.0</td>
+              <td>5.23e-09</td>
+          </tr>
+    
+          <tr>
+              <td>CAR51986.1</td>
+              <td>putative_RNA_polymerase_sigma_factor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002569.3">BGC0002569.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>74.3</td>
+              <td>54.0</td>
+              <td>5.23e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AUD12002.1</td>
+              <td>OrbS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001721.3">BGC0001721.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>101.1</td>
+              <td>54.0</td>
+              <td>7.12e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ABE35430.1</td>
+              <td>Sigma-24_(FecI)</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002421.2">BGC0002421.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>70.4</td>
+              <td>53.0</td>
+              <td>1.36e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ABC38442.1</td>
+              <td>RNA_polymerase_sigma-70_factor,_ECF_subfamily</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000386.5">BGC0000386.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>96.1</td>
+              <td>51.0</td>
+              <td>9.96e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50187.1</td>
+              <td>putative_RNA_polymerase_sigma-70_factor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000410.5">BGC0000410.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>87.2</td>
+              <td>49.0</td>
+              <td>3.04e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

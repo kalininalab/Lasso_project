@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ANH11408.1</td>
+              <td>SceM</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001770.4">BGC0001770.4</a></td>
+              <td>PKS</td>
+              <td>63.0</td>
+              <td>96.1</td>
+              <td>202.0</td>
+              <td>1.7e-63</td>
+          </tr>
+    
+          <tr>
+              <td>AEA30284.1</td>
+              <td>glutamate_mutase_subunit_B</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000429.4">BGC0000429.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>62.0</td>
+              <td>98.9</td>
+              <td>196.0</td>
+              <td>2.4e-61</td>
+          </tr>
+    
+          <tr>
+              <td>QYA95671.1</td>
+              <td>methylaspartate_mutase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002676.2">BGC0002676.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>61.0</td>
+              <td>98.9</td>
+              <td>193.0</td>
+              <td>3.74e-60</td>
+          </tr>
+    
+          <tr>
+              <td>UHH90018.1</td>
+              <td>VicI</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002634.2">BGC0002634.2</a></td>
+              <td>PKS+NRPS:Type I+other:other</td>
+              <td>56.0</td>
+              <td>101.1</td>
+              <td>179.0</td>
+              <td>9.09e-55</td>
+          </tr>
+    
+          <tr>
+              <td>QBL56192.1</td>
+              <td>methylaspartate_mutase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002376.2">BGC0002376.2</a></td>
+              <td>PKS</td>
+              <td>57.0</td>
+              <td>95.5</td>
+              <td>176.0</td>
+              <td>2.46e-53</td>
+          </tr>
+    
+          <tr>
+              <td>QGA70080.1</td>
+              <td>glutamate_mutase_E-chain</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002517.3">BGC0002517.3</a></td>
+              <td>PKS</td>
+              <td>57.0</td>
+              <td>95.5</td>
+              <td>174.0</td>
+              <td>5.81e-53</td>
+          </tr>
+    
+          <tr>
+              <td>CBA11573.1</td>
+              <td>glutamate_mutase-E_chain</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001046.5">BGC0001046.5</a></td>
+              <td>NRPS:Type I+PKS:Type I+saccharide:hybrid/tailoring</td>
+              <td>56.0</td>
+              <td>95.5</td>
+              <td>174.0</td>
+              <td>1.74e-52</td>
+          </tr>
+    
+          <tr>
+              <td>OAP25809.1</td>
+              <td>Methylaspartate_mutase_E_chain_(MutE)</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001658.3">BGC0001658.3</a></td>
+              <td>PKS</td>
+              <td>52.0</td>
+              <td>101.1</td>
+              <td>166.0</td>
+              <td>2.29e-52</td>
+          </tr>
+    
+          <tr>
+              <td>BAD08366.1</td>
+              <td>glutamate_mutase_E-chain</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000167.5">BGC0000167.5</a></td>
+              <td>PKS</td>
+              <td>48.0</td>
+              <td>116.2</td>
+              <td>169.0</td>
+              <td>2.12e-50</td>
+          </tr>
+    
+          <tr>
+              <td>CAD32908.1</td>
+              <td>glutamate_mutase_subunit_B</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000354.5">BGC0000354.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>53.0</td>
+              <td>95.5</td>
+              <td>156.0</td>
+              <td>5.41e-46</td>
+          </tr>
+    
+          <tr>
+              <td>QRG35031.1</td>
+              <td>methylaspartate_mutase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002378.3">BGC0002378.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>53.0</td>
+              <td>101.1</td>
+              <td>151.0</td>
+              <td>5.26e-44</td>
+          </tr>
+    
+          <tr>
+              <td>ARU08067.1</td>
+              <td>MlcE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001448.5">BGC0001448.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>52.0</td>
+              <td>95.5</td>
+              <td>147.0</td>
+              <td>7.71e-43</td>
+          </tr>
+    
+          <tr>
+              <td>QEO75087.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002079.2">BGC0002079.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>50.0</td>
+              <td>96.1</td>
+              <td>143.0</td>
+              <td>4.3e-41</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74993.1</td>
+              <td>omn18</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002078.2">BGC0002078.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>45.0</td>
+              <td>96.1</td>
+              <td>124.0</td>
+              <td>5.89e-34</td>
+          </tr>
+    
+          <tr>
+              <td>CAC11144.1</td>
+              <td>NikV_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000876.5">BGC0000876.5</a></td>
+              <td>other:other</td>
+              <td>46.0</td>
+              <td>102.2</td>
+              <td>122.0</td>
+              <td>4.17e-33</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

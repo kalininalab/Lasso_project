@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QKO28677.1</td>
+              <td>3-hydroxyisobutyrate_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002315.2">BGC0002315.2</a></td>
+              <td>PKS</td>
+              <td>76.0</td>
+              <td>100.0</td>
+              <td>201.0</td>
+              <td>1.82e-65</td>
+          </tr>
+    
+          <tr>
+              <td>AKG47111.1</td>
+              <td>RedE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001224.5">BGC0001224.5</a></td>
+              <td>other:other</td>
+              <td>59.0</td>
+              <td>90.0</td>
+              <td>122.0</td>
+              <td>1.65e-34</td>
+          </tr>
+    
+          <tr>
+              <td>BAT51060.1</td>
+              <td>dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001296.3">BGC0001296.3</a></td>
+              <td>PKS</td>
+              <td>53.0</td>
+              <td>95.0</td>
+              <td>120.0</td>
+              <td>6.2e-34</td>
+          </tr>
+    
+          <tr>
+              <td>SCO70303.1</td>
+              <td>Imine_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001433.5">BGC0001433.5</a></td>
+              <td>PKS:Type I</td>
+              <td>50.0</td>
+              <td>95.0</td>
+              <td>115.0</td>
+              <td>7.36e-32</td>
+          </tr>
+    
+          <tr>
+              <td>BBA84064.1</td>
+              <td>NAD-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001649.3">BGC0001649.3</a></td>
+              <td>PKS</td>
+              <td>49.0</td>
+              <td>97.1</td>
+              <td>109.0</td>
+              <td>9.28e-30</td>
+          </tr>
+    
+          <tr>
+              <td>ABY83183.1</td>
+              <td>Azi45</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000960.5">BGC0000960.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>44.0</td>
+              <td>92.9</td>
+              <td>96.0</td>
+              <td>1.47e-24</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

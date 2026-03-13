@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AKC91862.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001414.5">BGC0001414.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>72.4</td>
+              <td>100.0</td>
+              <td>2.83e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ABX00622.1</td>
+              <td>LmbY</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000907.5">BGC0000907.5</a></td>
+              <td>other:other</td>
+              <td>35.0</td>
+              <td>73.8</td>
+              <td>97.0</td>
+              <td>2.6e-23</td>
+          </tr>
+    
+          <tr>
+              <td>ADE34500.1</td>
+              <td>SsfP</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000269.5">BGC0000269.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>35.0</td>
+              <td>72.1</td>
+              <td>87.0</td>
+              <td>9.94e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AEH41801.1</td>
+              <td>HrmD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000374.5">BGC0000374.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>53.4</td>
+              <td>79.0</td>
+              <td>1.79e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ACZ87045.1</td>
+              <td>Coenzyme_F420-dependent_N5_N10-methylene_tetrahydromethanopterin_reductase-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002732.3">BGC0002732.3</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>67.6</td>
+              <td>76.0</td>
+              <td>1.89e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AMK51289.1</td>
+              <td>Hex32</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001376.5">BGC0001376.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>67.6</td>
+              <td>74.0</td>
+              <td>9.03e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ADC45574.1</td>
+              <td>flavin-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000093.5">BGC0000093.5</a></td>
+              <td>PKS:Type I</td>
+              <td>34.0</td>
+              <td>57.2</td>
+              <td>70.0</td>
+              <td>1.42e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ADE22295.1</td>
+              <td>putative_F420-dependent_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000279.5">BGC0000279.5</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>67.6</td>
+              <td>68.0</td>
+              <td>9.33e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ARU08084.1</td>
+              <td>MlcP</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001448.5">BGC0001448.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>48.6</td>
+              <td>62.0</td>
+              <td>1.24e-10</td>
+          </tr>
+    
+          <tr>
+              <td>SKB24646.1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002455.3">BGC0002455.3</a></td>
+              <td>PKS</td>
+              <td>27.0</td>
+              <td>53.4</td>
+              <td>59.0</td>
+              <td>1.12e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AVW82952.1</td>
+              <td>putative_monooxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002040.3">BGC0002040.3</a></td>
+              <td>other:other</td>
+              <td>29.0</td>
+              <td>87.2</td>
+              <td>52.0</td>
+              <td>4.1e-07</td>
+          </tr>
+    
+          <tr>
+              <td>MQS11301.1</td>
+              <td>NtaA/DmoA_family_FMN-dependent_monooxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002282.2">BGC0002282.2</a></td>
+              <td>other:other</td>
+              <td>29.0</td>
+              <td>87.2</td>
+              <td>52.0</td>
+              <td>4.15e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

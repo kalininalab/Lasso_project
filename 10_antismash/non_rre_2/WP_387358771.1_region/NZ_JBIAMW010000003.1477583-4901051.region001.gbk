@@ -1,0 +1,520 @@
+LOCUS       NZ_JBIAMW010000003.1477583-4901051 12522 bp    DNA              UNK 01-JAN-1980
+DEFINITION  NZ_JBIAMW010000003.1:477583-490105(1) around WP_387358771.1.
+ACCESSION   NZ_JBIAMW010000003.1477583-4901051
+VERSION     NZ_JBIAMW010000003.1477583-4901051
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+COMMENT     ##antiSMASH-Data-START##
+            Version     :: 8.0.4
+            Run date    :: 2025-10-22 09:23:37
+            Original ID :: NZ_JBIAMW010000003.1:477583-490105(1)
+            NOTE :: This is a single region extracted from a larger record!
+            Orig. start :: 0
+            Orig. end   :: 12522
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     region          1..12522
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="lassopeptide"
+                     /region_number="1"
+                     /rules="(PF13471 and Asn_synthase or micJ25 or mcjC)"
+                     /tool="antismash"
+     cand_cluster    1..12522
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="(PF13471 and Asn_synthase or micJ25 or
+                     mcjC)"
+                     /kind="single"
+                     /product="lassopeptide"
+                     /protoclusters="1"
+                     /tool="antismash"
+     protocluster    1..12522
+                     /aStool="rule-based-clusters"
+                     /category="RiPP"
+                     /contig_edge="True"
+                     /core_location="[4016:6522](+)"
+                     /cutoff="10000"
+                     /detection_rule="(PF13471 and Asn_synthase or micJ25 or
+                     mcjC)"
+                     /neighbourhood="10000"
+                     /product="lassopeptide"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      4017..6522
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="10000"
+                     /detection_rule="(PF13471 and Asn_synthase or micJ25 or
+                     mcjC)"
+                     /neighbourhood="10000"
+                     /product="lassopeptide"
+                     /protocluster_number="1"
+     CDS             3..467
+                     /gene_functions="biosynthetic-additional
+                     (rule-based-clusters) Aminotran_5"
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1139: aminotransferase class V"
+                     /gene_kind="biosynthetic-additional"
+                     /locus_tag="ctg1_1"
+                     /sec_met_domain="Aminotran_5 (E-value: 1.1e-11, bitscore:
+                     34.4, seeds: 34, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MAKGAERLEVGGHQYALLAGLTTSIDYLAGLDEQAGGTRRERLEV
+                     SITSLQDYHDHLFEHLMEVLDRIPDLTVIGRASTRIPTVSFTIAGMQAEKVSARLADHR
+                     IGTLSGVHGGSRLLDALGVNDEGGAVTIGLAPYTTRFEIDQLGRALAALD"
+     misc_feature    150..152
+                     /note="tta leucine codon, possible target for bldA
+                     regulation"
+                     /tool="antismash"
+     CDS             complement(470..1456)
+                     /NRPS_PKS="Domain: PKS_ER (14-324). E-value: 8.9e-57.
+                     Score: 184.5. Matches aSDomain:
+                     nrpspksdomains_ctg1_2_PKS_ER.1"
+                     /gene_functions="biosynthetic-additional
+                     (rule-based-clusters) ADH_N"
+                     /gene_functions="biosynthetic-additional
+                     (rule-based-clusters) ADH_zinc_N"
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1028: crotonyl-CoA reductase / alcohol dehydrogenase"
+                     /gene_kind="biosynthetic-additional"
+                     /locus_tag="ctg1_2"
+                     /sec_met_domain="ADH_N (E-value: 1.6e-12, bitscore: 37.5,
+                     seeds: 66, tool: rule-based-clusters)"
+                     /sec_met_domain="ADH_zinc_N (E-value: 2.5e-25, bitscore:
+                     79.2, seeds: 86, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MRAVTLDEFGGPEVMRWAEVPDLPPPGPGEVAIDVTAAGVNRADL
+                     LQRQGNYPPPPGASEIIGLEVSGVIAEVGAGVADWSPGDQVCALLSGGGYAERVVVPAT
+                     QVLPIPAGLDLAAAAALPEVAATVWSNLVMRAGLRAGQLLLIHGGGSGIGTHAIQVAVS
+                     RGARVAVTAGSPGKLDRCKELGASVLINYHTDDFAAILRELGGADVILDNMGAAYLERN
+                     VAALAEDGQLCVIGMQGGVRAELNLAALLGKRGTVHATNLRRRPATGPSSKAEIIAELR
+                     RHLWPSIADGTVAPVVHAEVPVAEVARAHRLLDSDETVGKVVLRIRD"
+     aSDomain        complement(485..1414)
+                     /ASF="ER configuration inconclusive"
+                     /aSDomain="PKS_ER"
+                     /aSTool="nrps_pks_domains"
+                     /database="nrpspksdomains.hmm"
+                     /detection="hmmscan"
+                     /domain_id="nrpspksdomains_ctg1_2_PKS_ER.1"
+                     /evalue="8.90E-57"
+                     /label="ctg1_2_PKS_ER.1"
+                     /locus_tag="ctg1_2"
+                     /protein_end="324"
+                     /protein_start="14"
+                     /score="184.5"
+                     /tool="antismash"
+                     /translation="MRWAEVPDLPPPGPGEVAIDVTAAGVNRADLLQRQGNYPPPPGAS
+                     EIIGLEVSGVIAEVGAGVADWSPGDQVCALLSGGGYAERVVVPATQVLPIPAGLDLAAA
+                     AALPEVAATVWSNLVMRAGLRAGQLLLIHGGGSGIGTHAIQVAVSRGARVAVTAGSPGK
+                     LDRCKELGASVLINYHTDDFAAILRELGGADVILDNMGAAYLERNVAALAEDGQLCVIG
+                     MQGGVRAELNLAALLGKRGTVHATNLRRRPATGPSSKAEIIAELRRHLWPSIADGTVAP
+                     VVHAEVPVAEVARAHRLLDSDETVGKVVL"
+     CDS_motif       complement(974..1036)
+                     /aSTool="nrps_pks_domains"
+                     /database="abmotifs"
+                     /detection="hmmscan"
+                     /domain_id="nrpspksmotif_ctg1_2_0002"
+                     /evalue="9.60E-04"
+                     /label="PKSI-ER_m5"
+                     /locus_tag="ctg1_2"
+                     /protein_end="161"
+                     /protein_start="140"
+                     /score="11.9"
+                     /tool="antismash"
+                     /translation="GQLLLIHGGGSGIGTHAIQVA"
+     CDS_motif       complement(1235..1273)
+                     /aSTool="nrps_pks_domains"
+                     /database="abmotifs"
+                     /detection="hmmscan"
+                     /domain_id="nrpspksmotif_ctg1_2_0001"
+                     /evalue="1.00E-02"
+                     /label="PKSI-ER_m2"
+                     /locus_tag="ctg1_2"
+                     /protein_end="74"
+                     /protein_start="61"
+                     /score="9.0"
+                     /tool="antismash"
+                     /translation="IGLEVSGVIAEVG"
+     CDS             complement(1494..1664)
+                     /locus_tag="ctg1_3"
+                     /transl_table=11
+                     /translation="MVEMSDAERLADLRRRAEAAGIPGYEALNADELREALGKMAKGID
+                     AETAKREAVES"
+     CDS             1760..2980
+                     /locus_tag="ctg1_4"
+                     /transl_table=11
+                     /translation="MFSTGVAVPGTSVSRVSSFADFQNEIYLAGLSGAVPGLPMTAAGL
+                     ERRAREVLDPAAYAYVAGSASAERTAAENVSAFDRHRLLPRMWRGASNPGARDLSVEVL
+                     GTRLAAPVLTAPIGVLGLLHERGETVVAEVTRELGIGMVLSTAASSTIEEAGAAAGAWW
+                     YQLYWPGDHELARSFVDRAVKAGARALVVTADTPGIGWRPRDLELGHLPFLRGEGLANY
+                     LSDPVFRAKLATAPEESEEALRMAVLTWIGLFGNHTLRPADIAKLREWTDLPIAVKGVL
+                     HPDDARAVVDAGADAVVVSNHGGRQVDGAIAALDALPAIVATVGDRADVLFDSGIRTGS
+                     DVMVALALGAKAVLYGRPWAYALGVAGRDGVRHALRLLLADFDATMGLSGCATVAALDR
+                     TLLSSKR"
+     misc_feature    1871..1873
+                     /note="tta leucine codon, possible target for bldA
+                     regulation"
+                     /tool="antismash"
+     CDS             3013..3501
+                     /gene_functions="regulatory (smcogs) SMCOG1135: MarR family
+                     transcriptional regulator"
+                     /gene_kind="regulatory"
+                     /locus_tag="ctg1_5"
+                     /transl_table=11
+                     /translation="MPDEPSGRQAPATRWLTAAQQRAWRAYMDGHQRLMSELNRQLQRD
+                     SDLTLPEYRILVLLSESPDRSLRMSDLADGVLSSRSRLTHQIRRMEEQDLVRRTSAEED
+                     GRGVRAHLTEEGMRRLRAAAPGHVTAVRRDFIDLLTPEELTVIGEVFERVDKEINNRS"
+     CDS             3810..3926
+                     /locus_tag="ctg1_6"
+                     /transl_table=11
+                     /translation="MPKMSYIEPEVIRLGSIEEHTAALTHGPHDLLGKGNIL"
+     CDS             4017..5723
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     lassopeptide: Asn_synthase"
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1177: asparagine synthase (glutamine-hydrolyzing)"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg1_7"
+                     /sec_met_domain="Asn_synthase (E-value: 1.5e-11, bitscore:
+                     34.6, seeds: 78, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MRELFSADRVGCAGRVTLPHRGAPIDFAHIPYIAFPERAIPASPA
+                     YLRQWLRPGCAVPEPPPRHTYFALGGILRRSSDDDLIDRISFALRTGAHARLAEVPGDL
+                     VGCLVAADRVYLFRSLFTRDTLFYRQSGNTLEWSSDPADLVPDALDALDRDTLRRICRG
+                     DSVFAYRGLGWLRPGHLLIFDGHTARTVRYDRIEPAPLPRGSTMRDYADRAWELLLGAC
+                     RPYADSGRVGLLLSGGLDSAAVAAALVSAGADVTAYHLDTPDPLADESGYARAVAGHLS
+                     IPFTPIPTDIGPGYLDPRWRFAHPYNHTGFRWLEQAVRRVAEDGVGLLTWGRDGDLLFG
+                     PLLRYGVRDVLTGRVSRSEKLLMLRGLLSSRWRTSSLIASVRGSYSLVTENAPIGENAH
+                     HTDFLVPAPDPPFEFPDPEFVPEEQTTDLALSWPHGVSFCSPMADRELYELLTGMPVAY
+                     RCVAHGGRTIGKPVLRLLLQDRLPPVIWRRHGRMWPDSPHESFCMNHPAVLADLLGPDA
+                     LLARLNIVDPRRLAAVLADPMLLRRNAETLVYTAMTELFLRGLEHRTPVRS"
+     CDS             5729..6004
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     lassopeptide: Stand_Alone_Lasso_RRE"
+                     /gene_functions="biosynthetic-additional
+                     (rule-based-clusters) PF05402"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg1_8"
+                     /sec_met_domain="Stand_Alone_Lasso_RRE (E-value: 3.2e-15,
+                     bitscore: 46.2, seeds: 25, tool: rule-based-clusters)"
+                     /sec_met_domain="PF05402 (E-value: 5e-11, bitscore: 33.0,
+                     seeds: 461, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MPLLRLGDDAVLDTTDGVGIVMDTRAGEYFRLNPTATLMLGVAQR
+                     CDTLDEAVRELAELIDAEPGVLRAGLAQLTDQLAAHHLLAPTDAPR"
+     CDS             6001..6522
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     lassopeptide: PF13471"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg1_9"
+                     /sec_met_domain="PF13471 (E-value: 9.1e-12, bitscore: 35.3,
+                     seeds: 84, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MTTLADRLEAMLTDIDGVPAPPRPPIRLRAYAVHHTWTALRLLRT
+                     RGWGPAHHHLRDLSPGPRPLTHLAPAVAIRLARREVLYSQLTLRVTHPDALCLPRSLSL
+                     ATYLSALGLPAEVIVARERTCTNPRYSFHSWTELYGEVLNDNPDVTLGFAVLQRVRARA
+                     LTDRAPGVPA"
+     CDS             6519..6941
+                     /locus_tag="ctg1_10"
+                     /transl_table=11
+                     /translation="MSVMPIAVSSIAHLRLTVTDIDRSRAFYERVFGWPVAVEVPADAD
+                     ERTREFLSFLYGGVIYRMPQGLLGLRPAATDRFDENRVGLDHLAFAVGSVDELRSAAAH
+                     LDACGVVHEDIKDIGVSYILEFRDPDNIALELVAPK"
+     CDS             complement(6946..7470)
+                     /locus_tag="ctg1_11"
+                     /transl_table=11
+                     /translation="MWREQSRNRSTGLRAPASPPADSDALDISLHYLGFYRDEYERSRV
+                     VVKARAKRVVVWTATANGLIAVLGTAVAVFDAPWIGLLSTALAASIGVITAWDGLYRHR
+                     EMWVQRSVILGQLQALLRNVELRRAQHEDRDALARETMLHLNTILAEDLEAWTTLRRTQ
+                     PAAHEREDTSD"
+     CDS             7587..7967
+                     /locus_tag="ctg1_12"
+                     /transl_table=11
+                     /translation="MTVPHGVISSHLETSRLPPAELARQLVQQLGPTLVALIAGVRDRK
+                     LPHKWAQIGGPRPRDAALARLQVAHRCWILLADNESPDVARSWFIGANPRLGEESPAVA
+                     IREDRFADVIAAAVTFVEGSTA"
+     CDS             8045..8788
+                     /locus_tag="ctg1_13"
+                     /transl_table=11
+                     /translation="MSIREIRRSEAPRTCSKTGFALIPAAGRTVYRLSKPVYGPLNPLL
+                     RPLSETATHALWNRFDVAGQRTVYAATTPEGAYGELLAPLKPKLPRSAATYFDDVTPHD
+                     ELETLIREEWQAAGHRAPREIDLTWLTDYLLYRLTLPTKGWFIDIEAATSLTALTTYAP
+                     TNLPPSITEITVSELRSPNRDLTTAIATRLWHLTLDDQSLAHGIIYGSRHGSDWDCWAI
+                     WLRRTTRAPRALVTRADKGTEILPP"
+     CDS             complement(8862..9509)
+                     /locus_tag="ctg1_14"
+                     /transl_table=11
+                     /translation="MPFSIGQILRVWGEPTVSVPASVDQIEKFSPDVPGFLVDVWQEVG
+                     FSGFMDGLLWLCDPEAWQPAVDAWVSKLELPFGDDRWIAVTRSAFGEMSLWGRRTGMSL
+                     TVVPYSGWILPFDGSGEMSSAFDRDNQVYSALAAANRETLDLLGDDGKPLFGRVLAALG
+                     PVGPETMYGFVPAPALGGALLPENVEIVDAEVHMQILSQVTPRTIMADNPYL"
+     CDS             9810..10838
+                     /locus_tag="ctg1_15"
+                     /transl_table=11
+                     /translation="MVVVVVGLHVLGWGTLLLLVVPGHHLVNGAVYGVGLGVTAYTLGM
+                     RHAFDADHIVAIDNVTRKLVAEKGSRRIQSVGFWFSLGHSSVVFALVALLALGVRALAS
+                     NLQDDNSALQKWTGTWGTSVSGTFLILIGLLNLVSLLGIWSVFRRMRKGEVNETELEKA
+                     LEPRGVLARVLAPAMRTVRRPWHMFPVGLLFGLGFDTVTEVGLLVIAGGAAATGLPWYA
+                     ILVLPVLFSAGMSLFDSLDGSFMSYAYGWAFTRPIRKIYYNLVITGLSVAVALLVGGQE
+                     LISLLVERTGAETGVVAWIANLDLGALGFIIVGLFGLTWATAVAVWRFGDVERRWGAPL
+                     SD"
+     CDS             10933..11985
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1104: putative esterase"
+                     /gene_kind="biosynthetic-additional"
+                     /locus_tag="ctg1_16"
+                     /transl_table=11
+                     /translation="MVRRRFRRRLSGALASAALLGAAVHSVPAVAAPDSPPVNSGSADS
+                     PAPRTDTPPPAVATIDHIESLTDRELRVFVKSPAMERTVEVRVLLPADQSHPRPTLYML
+                     DGRSAPADSNNWIERGGALNFFADKPINVVFAVGGPAGYYTDWQRPDPVLGNNKWETFL
+                     TRELPPLIDRAFDGDGRDAVEGVSMGAEAAMMLAMRSPGTYRAVAAHSGCYAMGSDIGQ
+                     AQARAVVRTYGGDPDNMFGDQEDPDWLAHDVMMHADGLRGTAIYLSSGSGLPGPFDGPG
+                     NPDSQTSVVFGGPLEAAANACTMALADRLDRMRIPATVDFRPVGTHSWPYWAGDLPKAW
+                     PTLAAALGVG"
+     CDS             complement(11987..12520)
+                     /NRPS_PKS="Domain: Aminotran_1_2 (1-159). E-value: 1.7e-23.
+                     Score: 75.2. Matches aSDomain:
+                     nrpspksdomains_ctg1_17_Aminotran_1_2.1"
+                     /gene_functions="biosynthetic-additional
+                     (rule-based-clusters) Aminotran_1_2"
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1019: aminotransferase"
+                     /gene_kind="biosynthetic-additional"
+                     /locus_tag="ctg1_17"
+                     /sec_met_domain="Aminotran_1_2 (E-value: 4.8e-24, bitscore:
+                     75.3, seeds: 48, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MVLDEAYYEYLRVDDHPDGVEIGRTRPNVLVLRTFSKAYGLAGLR
+                     VGYAVGDPEVITALLKVHIPFSVNRLAQAAAIASLEARHELLDRTDHVVAERDRMRTAL
+                     IAAGYTVPPSEANFLWLPLGERSADFGEASASAGVLVRPYGIDGVRVTAGDPHENDLFL
+                     AFATDPDVLARFLG"
+     aSDomain        complement(12044..12517)
+                     /aSDomain="Aminotran_1_2"
+                     /aSTool="nrps_pks_domains"
+                     /database="nrpspksdomains.hmm"
+                     /detection="hmmscan"
+                     /domain_id="nrpspksdomains_ctg1_17_Aminotran_1_2.1"
+                     /evalue="1.70E-23"
+                     /label="ctg1_17_Aminotran_1_2.1"
+                     /locus_tag="ctg1_17"
+                     /protein_end="159"
+                     /protein_start="1"
+                     /score="75.2"
+                     /tool="antismash"
+                     /translation="VLDEAYYEYLRVDDHPDGVEIGRTRPNVLVLRTFSKAYGLAGLRV
+                     GYAVGDPEVITALLKVHIPFSVNRLAQAAAIASLEARHELLDRTDHVVAERDRMRTALI
+                     AAGYTVPPSEANFLWLPLGERSADFGEASASAGVLVRPYGIDGVRVTAGDPHEN"
+ORIGIN
+        1 cgtacgccaa gggcgcggag cggctcgagg tcggcggcca ccagtacgcg ctgctggccg
+       61 ggctgaccac ctcgatcgac tatctggccg ggctggacga acaggcgggc ggcactcgcc
+      121 gtgagcgcct ggaggtttcg atcacgtcct tacaggacta ccacgatcac ctgttcgagc
+      181 atctgatgga ggtgctcgac cgcatccccg atctcaccgt gatcggccgc gcctcgaccc
+      241 gcatccccac ggtcagtttc accatcgcgg gcatgcaggc cgagaaggtc tccgcccgcc
+      301 tcgccgacca tcgcatcggc accctgagcg gggtgcacgg cggcagtcgc ctgctcgacg
+      361 cgctcggcgt caacgacgag ggcggcgcgg tgaccatcgg attggccccc tacacaacgc
+      421 gattcgagat cgatcagctc ggtcgcgcgc tcgccgccct cgactgagtt cagtcgcgga
+      481 tccgcagcac caccttgccg acggtctcgt cggagtcgag cagccgatgc gcccgcgcga
+      541 cctcggcgac gggtacctcc gcgtgcacga cgggtgcgac ggtgccgtcg gcgatcgacg
+      601 gccacaggtg ccgccgcagt tcggcgatga tctcggcctt gctcgacggt ccggtggcgg
+      661 ggcggcggcg cagattggtg gcgtgcacgg tgccccgctt gcccagcagc gcggccagat
+      721 tcagttcggc gcgcaccccg ccctgcatcc cgatcacgca gagctgcccg tcctcggcga
+      781 gcgcggcgac attgcgctcc aggtaggccg cgcccatatt gtcgagaatg acgtccgcgc
+      841 cgcccaattc gcgcaggatc gcggcgaagt cgtcggtgtg gtagttgatc agcacgctcg
+      901 cgccgagttc cttgcagcgg tccagtttgc ccggcgaacc cgcggtcacc gcgacccgcg
+      961 cgccccggct caccgcgacc tggatggcgt gggtgccgat accgctgccg ccgccgtgga
+     1021 tcagcagcag ctggcccgcc cgcagcccgg cccgcatcac cagattcgac cagaccgtgg
+     1081 ccgccacctc gggcagcgcc gccgcggcgg cgagatcgag gcccgccgga atcggcagca
+     1141 cctgggtcgc gggcacgacc acccgttcgg cgtacccgcc gccggacagc aacgcgcaca
+     1201 cctggtcacc gggggaccaa tcggcaacgc ccgcaccgac ttccgcgatc acccccgaaa
+     1261 cctcgaggcc gatgatctcg ctcgcgccgg gcggcggggg atagttgccc tgccgctgca
+     1321 acagatcggc ccggttcacc ccggccgcgg tcacatcgat ggcgacctcg ccgggcccgg
+     1381 gcggcggtag atcgggcacc tccgcccacc gcatcacctc gggcccaccg aattcgtcga
+     1441 gtgtcactgc gcgcataccg cgaccttacg acgccgcgaa cgcgcggccc gcgttacgac
+     1501 tcgaccgctt cgcgcttggc ggtctccgcg tcgatcccct tggccatctt gccgagcgcc
+     1561 tcccgcagct cgtccgcgtt cagcgcctcg tacccgggaa tcccggcggc ctccgcgcgc
+     1621 cggcgcagat ccgccaatcg ctcggcatcc gacatctcga ccatgacaac tcctttcgtc
+     1681 gccgggcgat taccccggac gcgccgcgcg acacccgcac gccgcccagt tcacggcatg
+     1741 tttcccggtc cgctccccgg tgttttccac cggcgtggcc gtcccgggga ctagcgtgtc
+     1801 gcgggtgagc agcttcgccg atttccagaa cgagatctat ctggccggac tctccggcgc
+     1861 ggtgcccgga ttacccatga ccgcggccgg tttggagcgc cgcgcgcggg aggttctcga
+     1921 tccggccgcg tacgcctatg tggcgggcag cgcctcggcg gaacgcacgg cggcggagaa
+     1981 tgtctcggcc ttcgaccggc atcggctgct gccccggatg tggcgcggcg cgagtaaccc
+     2041 tggggcgcgc gatctttcgg tggaggtgct cggcacgagg ctggccgctc cggtgctgac
+     2101 cgcgccgatc ggcgtgctcg gcctgttgca cgagcgcggc gagaccgtgg tcgcggaggt
+     2161 gacccgggaa ctgggcatcg gcatggtcct gtcgaccgcc gcgtcgtcga cgatcgagga
+     2221 ggcgggcgcg gcggccgggg cctggtggta tcagctgtac tggccgggcg atcacgagtt
+     2281 ggcccgctcg ttcgtcgacc gcgcggtgaa ggcgggcgcc cgggccctcg tcgtcaccgc
+     2341 cgacacgccc ggcattggct ggcggccacg cgatctcgaa ctcggacatc tgccgttcct
+     2401 gcggggcgag ggattggcga actacctgtc cgatccggtc ttccgcgcca aactcgcgac
+     2461 cgcgcccgag gagagcgagg aggccctgcg gatggccgtc ctcacctgga tcggcctgtt
+     2521 cggcaaccac accctgcgcc cggccgatat cgcgaaactg cgggagtgga ccgatcttcc
+     2581 gatcgcggtg aagggtgtgc tgcaccccga cgacgcccgc gcggtcgtcg acgcgggcgc
+     2641 cgacgcggtg gtggtgagca atcacggcgg ccgtcaggtc gacggcgcga tcgccgcgct
+     2701 cgacgccctg cccgccatcg tggccaccgt cggcgatcgc gccgacgtcc tgttcgattc
+     2761 gggcatccgc accggctccg acgtcatggt cgcgctcgcc ctcggcgcga aagccgttct
+     2821 ctacggccgt ccctgggctt acgccctggg ggtggcgggt cgcgacgggg tccggcacgc
+     2881 cctgcgtctg ctgctcgccg atttcgacgc gaccatgggc ctgtccggtt gcgccacggt
+     2941 cgcggccctc gatcgcacgc tgctgtccag caagcggtga tcttcccttt tatccacttc
+     3001 tagaatgtcg ctatgccaga cgaaccgagc ggtcgccagg ccccggccac cagatggctg
+     3061 accgcggccc agcaacgcgc ctggcgcgcc tacatggacg gccaccagcg cctgatgtcc
+     3121 gaactgaacc ggcaactcca gcgcgacagc gacctgaccc tgccggagta ccgcatcctc
+     3181 gtcctcctgt ccgaatcccc cgaccgctcg ctgcgcatga gcgacctcgc cgacggcgtg
+     3241 ctgtcctccc gcagccgcct gacccaccag atccgccgca tggaggaaca ggacctggtc
+     3301 cgccggacca gcgccgagga ggacggccgc ggcgtgcgcg cgcacctgac cgaggagggc
+     3361 atgcgccgcc tgcgcgccgc cgcgcccgga cacgtcaccg cggttcgccg cgatttcatc
+     3421 gatctgctga caccggagga actgacggtg atcggcgagg tcttcgagcg ggtggacaag
+     3481 gagatcaaca accgctcgta attacgcgat ggaatttgtc caagcggaaa caatgacttc
+     3541 agtgaacgat tcaagcggac gctaggtcga ttattcgacc gcgaacacaa tattcgggac
+     3601 agaaaattgc ccgaaaccgt cgacggtgtg cccttcgcgg agctaccgta gagatctgtc
+     3661 ggatttcatg ccggaccgac actcacactt ctcgacgcac gcgatcgagt ccccgaatta
+     3721 tgggaaacaa atactcatcg gtcggattat cgcggcgttc gaacacgtct cgtcgacgag
+     3781 agacgaaaat acgaaggagg tgaaatgaaa tgccgaagat gtcctacatc gagcccgagg
+     3841 tgatccgcct cggcagcatc gaggagcaca ccgcggccct gacccacggt ccgcacgacc
+     3901 tgctgggtaa gggcaacatc ctgtaatccg ggaacccctc cctccggtgt gtgtccggca
+     3961 actccccgga gggagggtcc gccgaatatt cggtgaacga gaggtggccg cgcattatgc
+     4021 gtgaattgtt ttcggcggat cgggtcggct gcgcgggccg ggtgacgctt ccgcatcggg
+     4081 gagcgcccat tgatttcgcg cacattccct atatcgcatt tcccgagcgg gcaattcccg
+     4141 cgagtcccgc gtacctgcga caatggctgc ggccgggctg cgcggtaccc gagcccccgc
+     4201 cgcggcacac ctatttcgca ctgggcggta ttctccgccg atcatcggac gacgatctga
+     4261 tcgatcgaat ctccttcgcg ctgcgcaccg gcgcgcacgc ccgactggcc gaggtgcccg
+     4321 gcgatctcgt cggctgtctg gtcgccgccg accgggtcta tctgttccgc agcctgttca
+     4381 cccgggacac cctgttctat cggcagtccg ggaacaccct cgaatggtcc agcgaccccg
+     4441 ccgatctcgt gcccgacgcc ctcgacgcgc tcgaccgcga cactctgcgc cgaatctgcc
+     4501 ggggcgacag cgtcttcgcc tatcgcgggc tgggctggct ccggcccggg cacctgctga
+     4561 tcttcgacgg ccacacggcc cgaaccgtgc gctacgaccg gatcgaaccg gcgccgctgc
+     4621 cgcgcggcag caccatgcgc gactacgccg accgcgcctg ggaactgctg ctgggcgcgt
+     4681 gccgccccta cgccgacagc ggccgcgtcg gcctgctgct gagcggcgga ctggattcgg
+     4741 ccgccgtggc cgccgccctg gtgagcgcgg gcgccgacgt caccgcgtat cacctcgaca
+     4801 cccccgaccc gctcgccgac gaatccggtt acgcgcgtgc ggtcgccggg cacctgtcca
+     4861 ttccgttcac acccatcccc accgatatcg gtcccggcta tctggatccg cgctggcgct
+     4921 tcgcccaccc ctacaaccac accggtttcc gctggctgga gcaggccgtg cggcgggtcg
+     4981 ccgaggacgg cgtcgggctg ctgacctggg gccgcgacgg cgatctgctg ttcggcccgc
+     5041 tgctgcgcta cggcgtgcgc gacgtgctga ccgggcgggt gagccggtcg gagaagctgc
+     5101 tcatgctgcg cggactgctg tcctcccgct ggcgcacgtc gagcctgatc gcgagcgtgc
+     5161 gcggctcgta ttcgctggtc accgagaacg cgccgatcgg cgaaaacgcc catcacacag
+     5221 actttctcgt gcccgcgccg gatccgccgt tcgaattccc cgatcccgaa ttcgtccccg
+     5281 aggaacagac caccgacctc gccctgtcct ggccgcacgg cgtctcgttc tgttcgccca
+     5341 tggccgaccg ggaactctac gaactcctga ccggaatgcc ggtggcgtac cgctgcgtcg
+     5401 cccacggcgg ccggaccatc ggcaaacccg tgctgcggct gctgctccag gaccggttgc
+     5461 ccccggtgat ctggcgacgg cacggccgga tgtggccgga ttccccgcac gagtccttct
+     5521 gcatgaacca ccccgccgta ctcgccgacc tcctcggccc cgacgcgctg ctggcccggc
+     5581 tgaacatcgt ggacccgcgg cggctggcgg cggtcctggc cgatccgatg ctgttgcgcc
+     5641 gcaacgccga aaccctcgtc tacacggcca tgacggaact gttcctgcgt ggcctcgaac
+     5701 accgcacccc cgtgaggagc tgatccccgt gcctctgctg cgactcggcg acgacgccgt
+     5761 cctggacacc accgacggcg tcggcatcgt catggacacc cgggcgggcg agtacttccg
+     5821 cctcaatccc accgcgaccc tcatgctcgg cgtcgcccag cgctgcgaca ccctcgacga
+     5881 ggccgtgcgc gaactcgccg aactcatcga cgccgaaccc ggcgtcctgc gcgcgggcct
+     5941 ggcgcaactg accgatcaac tcgccgcgca tcacctgctc gcccccacgg acgccccgcg
+     6001 atgaccaccc tcgccgaccg cctcgaggcc atgctcaccg atatcgacgg cgtccccgcc
+     6061 ccgccccggc cgccgatccg cctgcgcgcc tacgccgttc accacacctg gaccgcgctg
+     6121 cgcctgctcc gcactcgcgg ctggggcccc gcccaccacc acctgcgcga cctgagtccg
+     6181 ggcccgcgtc ccctgaccca cctcgccccg gcggtggcga tccgcctggc ccgccgcgag
+     6241 gtcctctaca gccaactgac cctgcgcgtg acccaccccg acgccctctg cctgccccgc
+     6301 tccctgtccc tcgccaccta cctgtccgcc ctcggccttc ccgccgaggt catcgtcgcc
+     6361 cgcgaacgca cctgcaccaa cccccgctac tccttccact cctggaccga gctgtacggg
+     6421 gaggtgctca acgacaatcc ggacgtaaca ctgggtttcg cggtgctgca acgcgtccgg
+     6481 gcccgcgccc tgaccgaccg cgcgcccggt gtgccagcat gagcgtcatg ccgatcgccg
+     6541 tctcgtccat cgcccacctc cgcctgaccg tcaccgatat cgaccgctcc cgcgccttct
+     6601 acgagcgggt cttcggctgg ccggtcgccg tggaggtccc cgccgacgcc gacgagcgga
+     6661 cccgcgagtt cctgtccttc ctgtacggcg gcgtcatcta ccgcatgccc cagggcctgc
+     6721 tcggcctgcg ccccgccgcc accgaccgtt tcgacgagaa ccgcgtcggc ctcgaccacc
+     6781 tcgccttcgc cgtcggctcg gtcgacgaat tgcgttccgc cgcagcacat ctggacgcct
+     6841 gcggggtggt gcacgaggac atcaaggaca tcggcgtcag ctacatcctg gagttccgcg
+     6901 atccggacaa catcgccctg gaactggtcg ccccgaagta ggcggtcagt cgctcgtatc
+     6961 ctcgcgctcg tgcgccgcgg gctgggtgcg gcgcagggtc gtccaggcct ccagatcctc
+     7021 cgccaggatc gtgttcaggt gcagcatcgt ctcgcgagcg agggcgtcgc ggtcctcgtg
+     7081 ctgggcccgc cgcaattcga cattgcgcaa cagcgcctgc aactgaccga ggatcacgct
+     7141 gcgctgcacc cacatctccc gatgccgata caacccgtcc cacgcggtga tgaccccgat
+     7201 cgacgccgcc agcgcggtgc tgagcagccc gatccagggc gcgtcgaaga ccgcgaccgc
+     7261 ggtgccgagc acggcgatga gcccgttggc ggtggccgtc cacaccacga cccgcttggc
+     7321 gcgggccttc accaccaccc gcgagcgttc gtattcgtcg cggtagaagc ccaggtagtg
+     7381 caggctgatg tcgagcgcgt ccgagtcggc gggcggggag gcgggggcgc gcaggccggt
+     7441 cgaacgattc ctgctctgct cacgccacat cggtattccc cctcgccgct tccgggttgt
+     7501 tacggtagca ccagggttgc atttcggtgg cattgccgtc taagctggac gagaacgccc
+     7561 cctcgtttcg aaggatgtgg gatcgaatga ccgtgcccca cggagtgatc tccagtcatc
+     7621 tcgagacgtc ccggctgccg cccgccgagc tggcccggca gttggtgcag cagttgggtc
+     7681 cgacgctggt agcgctcata gccggggtac gcgatcgcaa gctcccgcac aaatgggcac
+     7741 agatcggcgg cccccgcccg cgcgacgccg ccttggcccg cctccaggtc gcgcatcgct
+     7801 gttggattct gctggcggac aacgaaagtc ccgatgtggc ccgctcgtgg ttcatcggcg
+     7861 ccaacccgcg tctgggtgag gagtccccgg cggtcgccat ccgcgaggac cggttcgccg
+     7921 acgtgatcgc cgcggccgtg accttcgtcg agggttcgac cgcctgaccg acgaaaacgg
+     7981 tttcccccca tccactacgc tggactcttc cataggttcg gtccgtggtg agggggagtc
+     8041 gttcgtgtcg atccgcgaaa tccgccgatc agaagcgccg cgcacctgct cgaaaaccgg
+     8101 tttcgccctc atccccgccg cgggccgcac cgtctaccgc ctctcgaaac cggtctacgg
+     8161 gcccctcaac cccctactcc gcccgctgtc cgagacggcg acccacgccc tctggaaccg
+     8221 attcgacgta gcgggccaac gcaccgtcta cgccgccacc acccccgaag gcgcctacgg
+     8281 cgaactcctc gcccccctca aacccaagct cccccgttcc gccgcaacct atttcgacga
+     8341 cgtcaccccc cacgacgaac tcgaaaccct catccgcgag gaatggcaag ccgccggcca
+     8401 ccgcgccccc cgagaaatag acctcacctg gctgaccgac tatctcctct accgcctcac
+     8461 cctccccacc aagggctggt tcatagacat agaagccgcc accagcctca ccgccctcac
+     8521 cacctacgcc cccaccaacc tccccccatc catcaccgaa ataaccgtct ccgaactccg
+     8581 cagccccaac cgagacctca ccacagccat agccacccgc ctctggcacc tgaccctgga
+     8641 cgaccaatcc ctggcccacg gcataatcta cggctcccgg catggcagcg attgggactg
+     8701 ctgggcgatt tggttgcggc gcacgacccg cgcgcctcgg gcattggtca ccagggccga
+     8761 caaggggacg gaaatccttc cgccttagtt gaatccggcg ttgcagagca ttttgactac
+     8821 gtatggactg acggggagtt ggtagcggtc ctcgccgcgt atcagagata cggattgtcc
+     8881 gccatgatcg ttcgcggcgt gacttggctc aatatctgca tgtgcacctc ggcgtcgacg
+     8941 atctcgacgt tctcgggcag caacgccccg cccagagccg gcgccggaac aaacccgtac
+     9001 atcgtctccg gaccaaccgg tcccaacgcg gccagcaccc gcccgaacaa cggcttcccg
+     9061 tcatcgccca ggagatccag agtctcccga ttggccgcgg ccaacgccga gtacacctga
+     9121 ttgtcccgat cgaaggcact ggacatctca ccggacccat cgaacggaag aatccacccc
+     9181 gaatacggca ccaccgtaag actcatcccg gtccgcctcc cccacaacga catctccccg
+     9241 aacgcactcc gcgtaaccgc gatccaccga tcgtccccga acggcaactc caacttcgaa
+     9301 acccaagcat ccaccgcagg ctgccaagcc tccggatcac acaaccacaa caacccatcc
+     9361 atgaatccgg aaaaccccac ctcctgccag acatcgacga gaaaccccgg cacgtccggc
+     9421 gagaatttct cgatttggtc gacggaggcc ggaaccgaaa cggtcggttc gccccacacc
+     9481 cggagaattt gaccgatgga aaatggcacg cttacctcaa aatccctgcg acatccatga
+     9541 gtacccaggg ggcgccgtcg caccagcggt gggtgtggga tttgaaccca cggtggcgtg
+     9601 aaccacgacg gttttcaaga ccgttccctt aggccgctcg ggcaacccac ctcaccccgc
+     9661 cacaccggcg aagcgaccta aagcctactg gcgacaggca cccggtgcgc aaggggcagg
+     9721 gtggacgggg cgggacagaa ctcgctcaac ctgtacgatt gaccggctgg acctgcggaa
+     9781 atggggtgcg tgtgcgcggc gttgtcggga tggttgttgt cgtggtgggg ctgcatgtgc
+     9841 tcgggtgggg gacgttgctg ctgctcgtcg tgccggggca tcatctggtg aacggggccg
+     9901 tgtacggggt ggggttgggg gttaccgcct ataccttggg gatgcggcat gcgttcgatg
+     9961 cggaccatat tgtcgcgatc gacaatgtga cgcgaaaact ggtggcggag aaggggtctc
+    10021 gacgaatcca gtcggtgggg ttctggttct cgctgggcca ttcgtcggtc gtgttcgcgc
+    10081 tcgtcgcgct gctggcgctg ggagtccggg cgctggcgtc caacctccag gacgacaact
+    10141 ccgcgttgca gaagtggacc ggtacctggg gtaccagcgt ctcgggcacg ttcctgattc
+    10201 tcatcggcct gctgaatctg gtgtccctgc tgggcatttg gagcgtcttc cggcgcatgc
+    10261 gcaagggcga ggtgaacgag accgagctgg agaaggccct ggagcccagg ggagtgctgg
+    10321 cgcgcgtcct cgcaccggcc atgcgcaccg tccgccgtcc ctggcacatg ttccccgtcg
+    10381 gcctgctgtt cggcctcggc ttcgacaccg tcaccgaggt cggcctcctc gtgatcgcgg
+    10441 gcggggcggc ggccaccggc ctcccctggt acgcgattct cgttctgccc gtgctgtttt
+    10501 cggcgggcat gtcgctgttc gactcgctgg acgggtcgtt catgagctac gcctacggct
+    10561 gggcgttcac ccggcccatt cgcaagatct actacaacct ggtgatcacg gggctgtcgg
+    10621 tggcggtggc gctgctggtg gggggacagg agctgatctc gttgctggtc gagcggaccg
+    10681 gcgcggagac cggtgtggtc gcctggatcg cgaatctgga tctgggcgcg ctcgggttca
+    10741 tcatcgtcgg actgttcggg ctcacctggg ccacggccgt ggcggtgtgg cgcttcggtg
+    10801 acgtcgaacg gcgctggggc gcgccgctgt ccgactgacc cctatcgaaa ccgggtggcg
+    10861 ccgctcactt tccccgcgac tcgatcatga cctgcgtcga cgcgtccgcg ggcctctggc
+    10921 aggatgggac atatggttcg tcgccggttc cggcgtcggc tgtcgggcgc cctcgccagt
+    10981 gccgcacttc tgggtgctgc cgttcattcg gtaccggccg tcgccgcccc tgattcgccg
+    11041 cccgtcaact ccggctccgc ggacagcccg gcgccgcgca ccgacacccc gcccccggcc
+    11101 gtcgcgacca tcgaccacat cgaatccctc accgatcgcg agctgcgcgt cttcgtgaag
+    11161 tccccggcga tggaacgcac cgtcgaggtg cgggtgctgc tgcccgccga ccagagccac
+    11221 ccccgcccca ccctctacat gctcgacggc cgcagcgccc cggccgacag taacaactgg
+    11281 atcgaacgcg gcggcgcgct gaacttcttc gccgacaagc cgatcaacgt cgtcttcgcc
+    11341 gtcggcggcc cggccgggta ctacaccgac tggcagcgcc cggatccggt gctgggcaac
+    11401 aacaaatggg agacctttct cacccgcgaa ctgcccccgc tgatcgaccg cgccttcgac
+    11461 ggcgacggcc gcgacgccgt cgagggcgtc tccatgggcg ccgaggcggc catgatgctc
+    11521 gccatgcgca gcccgggcac ctatcgcgcg gtcgcggccc acagtggttg ctacgccatg
+    11581 ggttccgata tcggccaggc ccaggcccgc gcggtggtcc gcacctacgg cggcgatccc
+    11641 gacaacatgt tcggcgacca ggaggacccg gactggctcg cgcacgacgt catgatgcac
+    11701 gccgacggcc tgcgcggcac cgcgatctac ctgtcctcgg gcagcggcct cccgggcccg
+    11761 ttcgacggtc cgggcaatcc ggattcgcag acctcggtcg tcttcggcgg gccgctcgag
+    11821 gccgcggcca acgcgtgcac gatggccctg gccgatcggc tcgaccggat gcggatcccg
+    11881 gcgaccgtcg acttccggcc cgtgggcacg cactcctggc cctactgggc gggcgacctg
+    11941 cccaaggcgt ggcccaccct cgccgccgcg ctcggcgtgg gctgactcag cccaggaacc
+    12001 gggcgaggac gtccggatcg gtggcgaagg cgaggaacag atcgttctcg tgcggatcgc
+    12061 ccgcggtcac ccgcaccccg tcgatgccgt agggccgcac cagaactccc gcgctcgcgc
+    12121 tcgcctcacc gaagtcggcg ctgcgctcgc ccagcggtag ccagaggaaa ttcgcctcgc
+    12181 tcggcggcac ggtgtacccg gccgcgatca gcgccgttcg catccgatcc cgctcggcga
+    12241 ccacgtgatc ggtgcggtcg agcagttcgt gccgggcctc gagcgaggcg atggccgcgg
+    12301 cctgcgcgag ccggttcacg ctgaacggga tgtgcacctt caacagcgcc gtgatcacct
+    12361 cgggatcgcc cacggcatat cccacgcgca gcccggccag cccgtacgcc ttcgagaacg
+    12421 tccgcagcac aagcacattc ggccgcgtcc ggccgatctc cacgccgtcg gggtgatcgt
+    12481 ccacgcgcag gtactcgtag tacgcctcgt ccagcaccac ca
+//

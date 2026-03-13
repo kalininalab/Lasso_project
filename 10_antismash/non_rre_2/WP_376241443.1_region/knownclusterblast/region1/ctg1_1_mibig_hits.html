@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAJ52698.1</td>
+              <td>putative_amidohydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000222.5">BGC0000222.5</a></td>
+              <td>PKS</td>
+              <td>42.0</td>
+              <td>103.7</td>
+              <td>243.0</td>
+              <td>3.41e-76</td>
+          </tr>
+    
+          <tr>
+              <td>TXD00011.1</td>
+              <td>amidohydrolase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001877.4">BGC0001877.4</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>105.7</td>
+              <td>231.0</td>
+              <td>1.52e-71</td>
+          </tr>
+    
+          <tr>
+              <td>AKC91866.1</td>
+              <td>amidohydrolase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001414.5">BGC0001414.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>108.4</td>
+              <td>74.0</td>
+              <td>6.26e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AHL46734.1</td>
+              <td>putative_amidohydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001179.5">BGC0001179.5</a></td>
+              <td>PKS:Type II</td>
+              <td>28.0</td>
+              <td>99.0</td>
+              <td>70.0</td>
+              <td>1.28e-12</td>
+          </tr>
+    
+          <tr>
+              <td>TXL86005.1</td>
+              <td>amidohydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002034.3">BGC0002034.3</a></td>
+              <td>other:other</td>
+              <td>27.0</td>
+              <td>107.9</td>
+              <td>69.0</td>
+              <td>3.99e-12</td>
+          </tr>
+    
+          <tr>
+              <td>BBA66509.1</td>
+              <td>imidazolonepropionase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001495.3">BGC0001495.3</a></td>
+              <td>PKS</td>
+              <td>28.0</td>
+              <td>102.0</td>
+              <td>66.0</td>
+              <td>2.8e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AFD30949.1</td>
+              <td>CrmL</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000966.5">BGC0000966.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>28.0</td>
+              <td>87.6</td>
+              <td>60.0</td>
+              <td>1.6e-09</td>
+          </tr>
+    
+          <tr>
+              <td>CCC55916.1</td>
+              <td>amidohydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000973.5">BGC0000973.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>26.0</td>
+              <td>104.2</td>
+              <td>56.0</td>
+              <td>3.6e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

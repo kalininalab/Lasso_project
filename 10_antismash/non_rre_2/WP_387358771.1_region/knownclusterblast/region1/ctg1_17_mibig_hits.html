@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AFV52119.1</td>
+              <td>phenylalanine_aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000081.5">BGC0000081.5</a></td>
+              <td>NRPS:Type I+PKS:Iterative type I</td>
+              <td>61.0</td>
+              <td>93.8</td>
+              <td>180.0</td>
+              <td>8.1e-56</td>
+          </tr>
+    
+          <tr>
+              <td>CAC11142.1</td>
+              <td>NikT_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000876.5">BGC0000876.5</a></td>
+              <td>other:other</td>
+              <td>58.0</td>
+              <td>93.8</td>
+              <td>179.0</td>
+              <td>8.08e-55</td>
+          </tr>
+    
+          <tr>
+              <td>AEF33083.1</td>
+              <td>putative_aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001039.5">BGC0001039.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>55.0</td>
+              <td>92.1</td>
+              <td>169.0</td>
+              <td>1.29e-51</td>
+          </tr>
+    
+          <tr>
+              <td>PYC67522.1</td>
+              <td>aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001473.4">BGC0001473.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>53.0</td>
+              <td>97.2</td>
+              <td>162.0</td>
+              <td>6.29e-49</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ84155.1</td>
+              <td>PlmT1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000123.5">BGC0000123.5</a></td>
+              <td>PKS</td>
+              <td>52.0</td>
+              <td>94.9</td>
+              <td>160.0</td>
+              <td>3.65e-48</td>
+          </tr>
+    
+          <tr>
+              <td>BBE36451.1</td>
+              <td>aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001922.4">BGC0001922.4</a></td>
+              <td>PKS</td>
+              <td>50.0</td>
+              <td>94.4</td>
+              <td>160.0</td>
+              <td>5.03e-48</td>
+          </tr>
+    
+          <tr>
+              <td>ACN52311.1</td>
+              <td>TsrV</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000614.5">BGC0000614.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>53.0</td>
+              <td>92.1</td>
+              <td>155.0</td>
+              <td>3.27e-46</td>
+          </tr>
+    
+          <tr>
+              <td>ACN80638.1</td>
+              <td>SioA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000611.5">BGC0000611.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>50.0</td>
+              <td>93.2</td>
+              <td>151.0</td>
+              <td>8.19e-45</td>
+          </tr>
+    
+          <tr>
+              <td>AZQ75154.1</td>
+              <td>aminotransferase_class_I/II-fold_pyridoxal_phosphate-dependent_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001896.4">BGC0001896.4</a></td>
+              <td>other:other</td>
+              <td>49.0</td>
+              <td>93.8</td>
+              <td>149.0</td>
+              <td>2.82e-44</td>
+          </tr>
+    
+          <tr>
+              <td>BBA20956.1</td>
+              <td>aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001763.5">BGC0001763.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>48.0</td>
+              <td>97.2</td>
+              <td>142.0</td>
+              <td>5.2e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ASX95230.1</td>
+              <td>IlaH</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001620.5">BGC0001620.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>48.0</td>
+              <td>97.2</td>
+              <td>142.0</td>
+              <td>7.16e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ALL53317.1</td>
+              <td>aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001903.3">BGC0001903.3</a></td>
+              <td>other:other</td>
+              <td>44.0</td>
+              <td>94.4</td>
+              <td>132.0</td>
+              <td>8.19e-38</td>
+          </tr>
+    
+          <tr>
+              <td>WP_091316340.1</td>
+              <td>aminotransferase_class_I/II-fold_pyridoxal_phosphate-dependent_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002007.2">BGC0002007.2</a></td>
+              <td>terpene</td>
+              <td>48.0</td>
+              <td>90.4</td>
+              <td>132.0</td>
+              <td>1.2e-37</td>
+          </tr>
+    
+          <tr>
+              <td>BBF24929.1</td>
+              <td>aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002554.2">BGC0002554.2</a></td>
+              <td>other:other</td>
+              <td>44.0</td>
+              <td>92.1</td>
+              <td>129.0</td>
+              <td>2.46e-36</td>
+          </tr>
+    
+          <tr>
+              <td>ANW12120.1</td>
+              <td>aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001374.5">BGC0001374.5</a></td>
+              <td>other:other</td>
+              <td>46.0</td>
+              <td>94.4</td>
+              <td>127.0</td>
+              <td>2.8e-35</td>
+          </tr>
+    
+          <tr>
+              <td>KZM74100.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000632.5">BGC0000632.5</a></td>
+              <td>terpene+saccharide</td>
+              <td>41.0</td>
+              <td>98.3</td>
+              <td>124.0</td>
+              <td>8.61e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AJT38689.1</td>
+              <td>Ind8</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001206.5">BGC0001206.5</a></td>
+              <td>other:other</td>
+              <td>46.0</td>
+              <td>87.0</td>
+              <td>124.0</td>
+              <td>2.02e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AVL27082.1</td>
+              <td>PLP-dependent_aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001485.4">BGC0001485.4</a></td>
+              <td>other:other</td>
+              <td>44.0</td>
+              <td>92.1</td>
+              <td>122.0</td>
+              <td>1.55e-33</td>
+          </tr>
+    
+          <tr>
+              <td>PYC80207.1</td>
+              <td>aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001474.4">BGC0001474.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>42.0</td>
+              <td>94.9</td>
+              <td>106.0</td>
+              <td>1.26e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ALV86873.1</td>
+              <td>Tlo27</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001406.5">BGC0001406.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>41.0</td>
+              <td>97.2</td>
+              <td>102.0</td>
+              <td>1.68e-25</td>
+          </tr>
+    
+          <tr>
+              <td>WP_091614342.1</td>
+              <td>aminotransferase_class_I/II-fold_pyridoxal_phosphate-dependent_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001471.5">BGC0001471.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>40.0</td>
+              <td>87.0</td>
+              <td>97.0</td>
+              <td>3.75e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AFW04575.1</td>
+              <td>histidinol-phosphate_aminotransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001783.5">BGC0001783.5</a></td>
+              <td>other:other</td>
+              <td>37.0</td>
+              <td>95.5</td>
+              <td>84.0</td>
+              <td>5.58e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAL65284.1</td>
+              <td>QbsB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000925.5">BGC0000925.5</a></td>
+              <td>other:other</td>
+              <td>30.0</td>
+              <td>93.2</td>
+              <td>71.0</td>
+              <td>1.12e-14</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

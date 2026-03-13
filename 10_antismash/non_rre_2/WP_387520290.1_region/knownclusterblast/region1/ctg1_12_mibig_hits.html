@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QWT72286.1</td>
+              <td>ABC_transporter_ATP-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002430.3">BGC0002430.3</a></td>
+              <td>NRPS:Type I+saccharide</td>
+              <td>85.0</td>
+              <td>64.5</td>
+              <td>73.0</td>
+              <td>5.2e-17</td>
+          </tr>
+    
+          <tr>
+              <td>ALV86877.1</td>
+              <td>Tlo31</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001406.5">BGC0001406.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>59.0</td>
+              <td>112.9</td>
+              <td>71.0</td>
+              <td>1.85e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QKG20142.1</td>
+              <td>ABC_transporter_ATP-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002124.3">BGC0002124.3</a></td>
+              <td>PKS:Type I</td>
+              <td>63.0</td>
+              <td>64.5</td>
+              <td>54.0</td>
+              <td>2.48e-10</td>
+          </tr>
+    
+          <tr>
+              <td>QQZ01563.1</td>
+              <td>ABC_transporter_ATP-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002498.3">BGC0002498.3</a></td>
+              <td>other:other</td>
+              <td>63.0</td>
+              <td>64.5</td>
+              <td>53.0</td>
+              <td>8.49e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AAP85350.1</td>
+              <td>ATP-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000233.5">BGC0000233.5</a></td>
+              <td>PKS</td>
+              <td>59.0</td>
+              <td>62.9</td>
+              <td>50.0</td>
+              <td>5.94e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AAM70341.1</td>
+              <td>CalT5</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000033.5">BGC0000033.5</a></td>
+              <td>PKS</td>
+              <td>64.0</td>
+              <td>62.9</td>
+              <td>50.0</td>
+              <td>1.11e-08</td>
+          </tr>
+    
+          <tr>
+              <td>NKI69290.1</td>
+              <td>ATP-binding_cassette_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002408.3">BGC0002408.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>51.0</td>
+              <td>62.9</td>
+              <td>48.0</td>
+              <td>3.79e-08</td>
+          </tr>
+    
+          <tr>
+              <td>BAB72059.1</td>
+              <td>AcrV</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000191.5">BGC0000191.5</a></td>
+              <td>PKS</td>
+              <td>59.0</td>
+              <td>62.9</td>
+              <td>48.0</td>
+              <td>3.93e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AHA81996.1</td>
+              <td>Arm27</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000199.5">BGC0000199.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>62.0</td>
+              <td>62.9</td>
+              <td>48.0</td>
+              <td>3.94e-08</td>
+          </tr>
+    
+          <tr>
+              <td>QDJ74277.1</td>
+              <td>ATP-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002109.3">BGC0002109.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>62.0</td>
+              <td>62.9</td>
+              <td>48.0</td>
+              <td>5.37e-08</td>
+          </tr>
+    
+          <tr>
+              <td>QYB25771.1</td>
+              <td>ABC_transporter_ATP-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002425.3">BGC0002425.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>46.0</td>
+              <td>62.9</td>
+              <td>46.0</td>
+              <td>2.59e-07</td>
+          </tr>
+    
+          <tr>
+              <td>CBJ61632.1</td>
+              <td>PtnG_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000569.5">BGC0000569.5</a></td>
+              <td>ribosomal:RiPP:LAP</td>
+              <td>45.0</td>
+              <td>64.5</td>
+              <td>42.0</td>
+              <td>8.1e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

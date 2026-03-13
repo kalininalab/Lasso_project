@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QIC03950.1</td>
+              <td>Orf1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002347.3">BGC0002347.3</a></td>
+              <td>other:other</td>
+              <td>65.0</td>
+              <td>95.9</td>
+              <td>362.0</td>
+              <td>2.33e-124</td>
+          </tr>
+    
+          <tr>
+              <td>ABA41524.1</td>
+              <td>integrase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000722.5">BGC0000722.5</a></td>
+              <td>other:cyclitol+saccharide</td>
+              <td>51.0</td>
+              <td>95.0</td>
+              <td>271.0</td>
+              <td>1.52e-88</td>
+          </tr>
+    
+          <tr>
+              <td>AAF00216.1</td>
+              <td>integrase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000277.5">BGC0000277.5</a></td>
+              <td>PKS</td>
+              <td>52.0</td>
+              <td>95.0</td>
+              <td>269.0</td>
+              <td>8.58e-88</td>
+          </tr>
+    
+          <tr>
+              <td>QGA70154.1</td>
+              <td>transposase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002293.2">BGC0002293.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>50.0</td>
+              <td>94.0</td>
+              <td>253.0</td>
+              <td>1.25e-81</td>
+          </tr>
+    
+          <tr>
+              <td>BAI23340.1</td>
+              <td>putative_transposase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000949.5">BGC0000949.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>59.0</td>
+              <td>62.1</td>
+              <td>217.0</td>
+              <td>1.93e-69</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

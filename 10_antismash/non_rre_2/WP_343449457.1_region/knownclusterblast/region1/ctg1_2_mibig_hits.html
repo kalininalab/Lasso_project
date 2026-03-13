@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAP42850.1</td>
+              <td>NanT3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000105.5">BGC0000105.5</a></td>
+              <td>PKS</td>
+              <td>59.0</td>
+              <td>98.6</td>
+              <td>236.0</td>
+              <td>6.8e-79</td>
+          </tr>
+    
+          <tr>
+              <td>QEA08882.1</td>
+              <td>JenT3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002559.2">BGC0002559.2</a></td>
+              <td>PKS</td>
+              <td>59.0</td>
+              <td>97.3</td>
+              <td>228.0</td>
+              <td>7.97e-76</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74885.1</td>
+              <td>LuxR_family_DNA-binding_response_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002588.2">BGC0002588.2</a></td>
+              <td>other:other</td>
+              <td>51.0</td>
+              <td>97.3</td>
+              <td>201.0</td>
+              <td>3.26e-65</td>
+          </tr>
+    
+          <tr>
+              <td>AXI91558.1</td>
+              <td>FunR5</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001944.2">BGC0001944.2</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>92.2</td>
+              <td>69.0</td>
+              <td>4.55e-14</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

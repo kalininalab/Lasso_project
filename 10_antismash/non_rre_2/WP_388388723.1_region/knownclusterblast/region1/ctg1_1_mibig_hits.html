@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>WP_015031703.1</td>
+              <td>aldehyde_dehydrogenase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001819.3">BGC0001819.3</a></td>
+              <td>PKS</td>
+              <td>55.0</td>
+              <td>97.2</td>
+              <td>457.0</td>
+              <td>6.95e-158</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ52616.1</td>
+              <td>benzaldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001066.5">BGC0001066.5</a></td>
+              <td>PKS:Type I</td>
+              <td>55.0</td>
+              <td>98.3</td>
+              <td>454.0</td>
+              <td>8.8e-157</td>
+          </tr>
+    
+          <tr>
+              <td>UHY14141.1</td>
+              <td>benzaldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002671.2">BGC0002671.2</a></td>
+              <td>PKS</td>
+              <td>52.0</td>
+              <td>98.3</td>
+              <td>437.0</td>
+              <td>5.08e-150</td>
+          </tr>
+    
+          <tr>
+              <td>AJQ95720.1</td>
+              <td>NAD-dependent_aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001644.4">BGC0001644.4</a></td>
+              <td>PKS</td>
+              <td>47.0</td>
+              <td>97.9</td>
+              <td>392.0</td>
+              <td>2.34e-132</td>
+          </tr>
+    
+          <tr>
+              <td>BAV57467.1</td>
+              <td>aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001818.4">BGC0001818.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>44.0</td>
+              <td>100.0</td>
+              <td>341.0</td>
+              <td>1.64e-112</td>
+          </tr>
+    
+          <tr>
+              <td>QCF28930.1</td>
+              <td>aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002308.2">BGC0002308.2</a></td>
+              <td>other:other+PKS</td>
+              <td>38.0</td>
+              <td>99.2</td>
+              <td>243.0</td>
+              <td>2.18e-74</td>
+          </tr>
+    
+          <tr>
+              <td>BAK64640.1</td>
+              <td>putative_aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000135.5">BGC0000135.5</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>95.3</td>
+              <td>233.0</td>
+              <td>7.56e-71</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001798914.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001865.4">BGC0001865.4</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>36.0</td>
+              <td>92.6</td>
+              <td>226.0</td>
+              <td>4.05e-68</td>
+          </tr>
+    
+          <tr>
+              <td>WP_063744463.1</td>
+              <td>aldehyde_dehydrogenase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001739.3">BGC0001739.3</a></td>
+              <td>other:other</td>
+              <td>36.0</td>
+              <td>96.0</td>
+              <td>219.0</td>
+              <td>1.67e-65</td>
+          </tr>
+    
+          <tr>
+              <td>WP_033283297.1</td>
+              <td>aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001739.3">BGC0001739.3</a></td>
+              <td>other:other</td>
+              <td>36.0</td>
+              <td>93.9</td>
+              <td>216.0</td>
+              <td>1.6e-64</td>
+          </tr>
+    
+          <tr>
+              <td>EDY47105.1</td>
+              <td>aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000319.5">BGC0000319.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>97.5</td>
+              <td>216.0</td>
+              <td>2.98e-64</td>
+          </tr>
+    
+          <tr>
+              <td>AEF33093.1</td>
+              <td>putative_aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001039.5">BGC0001039.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>35.0</td>
+              <td>93.2</td>
+              <td>205.0</td>
+              <td>4.94e-60</td>
+          </tr>
+    
+          <tr>
+              <td>KAF1058469.1</td>
+              <td>putative_aldehyde_dehydrogenase_AldA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002083.3">BGC0002083.3</a></td>
+              <td>PKS:Trans-AT type I</td>
+              <td>36.0</td>
+              <td>93.9</td>
+              <td>201.0</td>
+              <td>1.65e-58</td>
+          </tr>
+    
+          <tr>
+              <td>OJJ98489.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002169.3">BGC0002169.3</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>35.0</td>
+              <td>92.8</td>
+              <td>199.0</td>
+              <td>2.57e-58</td>
+          </tr>
+    
+          <tr>
+              <td>WP_105851111.1</td>
+              <td>aldehyde_dehydrogenase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002087.3">BGC0002087.3</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>35.0</td>
+              <td>93.9</td>
+              <td>197.0</td>
+              <td>3.31e-57</td>
+          </tr>
+    
+          <tr>
+              <td>BBQ09590.1</td>
+              <td>dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002261.2">BGC0002261.2</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>93.4</td>
+              <td>176.0</td>
+              <td>1.11e-49</td>
+          </tr>
+    
+          <tr>
+              <td>ALI92651.1</td>
+              <td>CitD_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001338.4">BGC0001338.4</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>32.0</td>
+              <td>93.9</td>
+              <td>175.0</td>
+              <td>8.96e-49</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

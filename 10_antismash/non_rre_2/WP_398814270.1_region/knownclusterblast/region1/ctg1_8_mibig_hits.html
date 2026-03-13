@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>WP_031079704.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001645.3">BGC0001645.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>65.0</td>
+              <td>79.8</td>
+              <td>174.0</td>
+              <td>2.24e-56</td>
+          </tr>
+    
+          <tr>
+              <td>WP_043505824.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001551.4">BGC0001551.4</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>57.0</td>
+              <td>73.4</td>
+              <td>134.0</td>
+              <td>1.14e-40</td>
+          </tr>
+    
+          <tr>
+              <td>OAL15485.1</td>
+              <td>polyketide_beta-ketoacyl_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001548.4">BGC0001548.4</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>57.0</td>
+              <td>73.4</td>
+              <td>133.0</td>
+              <td>3.65e-40</td>
+          </tr>
+    
+          <tr>
+              <td>ALT06555.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001307.3">BGC0001307.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>56.0</td>
+              <td>72.8</td>
+              <td>132.0</td>
+              <td>1.09e-39</td>
+          </tr>
+    
+          <tr>
+              <td>QOE83934.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein/peptidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002053.3">BGC0002053.3</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>54.0</td>
+              <td>78.0</td>
+              <td>132.0</td>
+              <td>1.27e-39</td>
+          </tr>
+    
+          <tr>
+              <td>WP_031104469.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001506.5">BGC0001506.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>56.0</td>
+              <td>78.0</td>
+              <td>131.0</td>
+              <td>1.79e-39</td>
+          </tr>
+    
+          <tr>
+              <td>WP_030301138.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001550.3">BGC0001550.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>56.0</td>
+              <td>73.4</td>
+              <td>131.0</td>
+              <td>1.85e-39</td>
+          </tr>
+    
+          <tr>
+              <td>BAC73399.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001552.3">BGC0001552.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>54.0</td>
+              <td>73.4</td>
+              <td>129.0</td>
+              <td>1.49e-38</td>
+          </tr>
+    
+          <tr>
+              <td>KUN61408.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002318.2">BGC0002318.2</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>56.0</td>
+              <td>79.2</td>
+              <td>129.0</td>
+              <td>1.72e-38</td>
+          </tr>
+    
+          <tr>
+              <td>KDN73298.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001507.3">BGC0001507.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>54.0</td>
+              <td>78.0</td>
+              <td>127.0</td>
+              <td>5.84e-38</td>
+          </tr>
+    
+          <tr>
+              <td>GAT69131.1</td>
+              <td>putative_lasso_peptide_modification_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001781.4">BGC0001781.4</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>50.0</td>
+              <td>74.6</td>
+              <td>127.0</td>
+              <td>8.52e-38</td>
+          </tr>
+    
+          <tr>
+              <td>WP_030601899.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001493.5">BGC0001493.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>57.0</td>
+              <td>74.6</td>
+              <td>125.0</td>
+              <td>4.58e-37</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ55181.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001889.2">BGC0001889.2</a></td>
+              <td>ribosomal:RiPP:Lasso peptide</td>
+              <td>59.0</td>
+              <td>67.1</td>
+              <td>122.0</td>
+              <td>9.32e-36</td>
+          </tr>
+    
+          <tr>
+              <td>QCY49169.1</td>
+              <td>transglutaminase-like_protein_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002074.2">BGC0002074.2</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>59.0</td>
+              <td>65.9</td>
+              <td>121.0</td>
+              <td>1.17e-35</td>
+          </tr>
+    
+          <tr>
+              <td>NopB</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002825.2">BGC0002825.2</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>55.0</td>
+              <td>74.0</td>
+              <td>119.0</td>
+              <td>2.6e-34</td>
+          </tr>
+    
+          <tr>
+              <td>CCB72815.1</td>
+              <td>conserved_protein_of_unknown_function</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001539.4">BGC0001539.4</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>56.0</td>
+              <td>71.1</td>
+              <td>115.0</td>
+              <td>5.62e-33</td>
+          </tr>
+    
+          <tr>
+              <td>WP_007385815.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000579.4">BGC0000579.4</a></td>
+              <td>ribosomal:RiPP:Lanthipeptide</td>
+              <td>53.0</td>
+              <td>73.4</td>
+              <td>114.0</td>
+              <td>2.09e-32</td>
+          </tr>
+    
+          <tr>
+              <td>WP_030113303.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001634.3">BGC0001634.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>50.0</td>
+              <td>75.7</td>
+              <td>110.0</td>
+              <td>3.89e-31</td>
+          </tr>
+    
+          <tr>
+              <td>ACZ21386.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002298.2">BGC0002298.2</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>47.0</td>
+              <td>77.5</td>
+              <td>107.0</td>
+              <td>6.12e-30</td>
+          </tr>
+    
+          <tr>
+              <td>WP_010071618.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000578.3">BGC0000578.3</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>46.0</td>
+              <td>75.1</td>
+              <td>107.0</td>
+              <td>1.5e-29</td>
+          </tr>
+    
+          <tr>
+              <td>BBD82043.1</td>
+              <td>cysteine_protease</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001920.4">BGC0001920.4</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>49.0</td>
+              <td>79.2</td>
+              <td>106.0</td>
+              <td>2.34e-29</td>
+          </tr>
+    
+          <tr>
+              <td>SFF02531.1</td>
+              <td>Transglutaminase-like_superfamily_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001674.5">BGC0001674.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>47.0</td>
+              <td>79.2</td>
+              <td>102.0</td>
+              <td>1.26e-27</td>
+          </tr>
+    
+          <tr>
+              <td>EWC60869.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001496.3">BGC0001496.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>51.0</td>
+              <td>60.7</td>
+              <td>96.0</td>
+              <td>1.2e-25</td>
+          </tr>
+    
+          <tr>
+              <td>WP_026124932.1</td>
+              <td>lasso_peptide_biosynthesis_B2_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001655.3">BGC0001655.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>49.0</td>
+              <td>71.1</td>
+              <td>93.0</td>
+              <td>3.01e-24</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AWH12930.1</td>
+              <td>StmO4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001784.5">BGC0001784.5</a></td>
+              <td>PKS</td>
+              <td>49.0</td>
+              <td>95.6</td>
+              <td>277.0</td>
+              <td>7.57e-92</td>
+          </tr>
+    
+          <tr>
+              <td>KZM73522.1</td>
+              <td>taurine_dioxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000632.5">BGC0000632.5</a></td>
+              <td>terpene+saccharide</td>
+              <td>40.0</td>
+              <td>90.9</td>
+              <td>187.0</td>
+              <td>2.84e-57</td>
+          </tr>
+    
+          <tr>
+              <td>ABB69741.1</td>
+              <td>PlaO1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000654.4">BGC0000654.4</a></td>
+              <td>terpene:Diterpene+saccharide:hybrid/tailoring</td>
+              <td>38.0</td>
+              <td>91.2</td>
+              <td>162.0</td>
+              <td>1.52e-47</td>
+          </tr>
+    
+          <tr>
+              <td>DAC74131.1</td>
+              <td>alpha-ketoglutarate-dependent_dioxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002019.3">BGC0002019.3</a></td>
+              <td>terpene</td>
+              <td>37.0</td>
+              <td>93.7</td>
+              <td>162.0</td>
+              <td>1.52e-47</td>
+          </tr>
+    
+          <tr>
+              <td>AOZ21322.1</td>
+              <td>SulO</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001790.4">BGC0001790.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>92.8</td>
+              <td>161.0</td>
+              <td>3.89e-47</td>
+          </tr>
+    
+          <tr>
+              <td>AQX14443.1</td>
+              <td>monobactam_CAS_homolog</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001671.3">BGC0001671.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>91.2</td>
+              <td>159.0</td>
+              <td>1.38e-46</td>
+          </tr>
+    
+          <tr>
+              <td>ATL73039.1</td>
+              <td>taurine_dioxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001807.4">BGC0001807.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>37.0</td>
+              <td>91.2</td>
+              <td>157.0</td>
+              <td>9.55e-46</td>
+          </tr>
+    
+          <tr>
+              <td>AGC09525.1</td>
+              <td>dioxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001183.5">BGC0001183.5</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>90.6</td>
+              <td>157.0</td>
+              <td>1.28e-45</td>
+          </tr>
+    
+          <tr>
+              <td>DAC80539.1</td>
+              <td>TauD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001840.2">BGC0001840.2</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>36.0</td>
+              <td>92.8</td>
+              <td>149.0</td>
+              <td>1.01e-42</td>
+          </tr>
+    
+          <tr>
+              <td>DAC80532.1</td>
+              <td>alpha-ketoglutarate-dependent_taurine_dioxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001878.2">BGC0001878.2</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>34.0</td>
+              <td>89.3</td>
+              <td>141.0</td>
+              <td>1.07e-39</td>
+          </tr>
+    
+          <tr>
+              <td>WP_004571774.1</td>
+              <td>TauD/TfdA_family_dioxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001760.5">BGC0001760.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>90.9</td>
+              <td>139.0</td>
+              <td>8.12e-39</td>
+          </tr>
+    
+          <tr>
+              <td>ABW87795.1</td>
+              <td>unknown</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000715.5">BGC0000715.5</a></td>
+              <td>saccharide</td>
+              <td>32.0</td>
+              <td>85.3</td>
+              <td>124.0</td>
+              <td>1.05e-33</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

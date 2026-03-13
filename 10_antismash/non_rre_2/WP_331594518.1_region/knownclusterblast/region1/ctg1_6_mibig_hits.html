@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AGO50604.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000229.5">BGC0000229.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>54.0</td>
+              <td>96.6</td>
+              <td>362.0</td>
+              <td>1.74e-123</td>
+          </tr>
+    
+          <tr>
+              <td>AFO59868.1</td>
+              <td>ChxG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000175.5">BGC0000175.5</a></td>
+              <td>PKS:Trans-AT type I</td>
+              <td>57.0</td>
+              <td>90.4</td>
+              <td>354.0</td>
+              <td>1e-120</td>
+          </tr>
+    
+          <tr>
+              <td>MBW8699676.1</td>
+              <td>NADH_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002140.2">BGC0002140.2</a></td>
+              <td>PKS</td>
+              <td>55.0</td>
+              <td>91.5</td>
+              <td>352.0</td>
+              <td>7.46e-120</td>
+          </tr>
+    
+          <tr>
+              <td>TRO56971.1</td>
+              <td>NADH:flavin_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002361.3">BGC0002361.3</a></td>
+              <td>PKS+saccharide</td>
+              <td>54.0</td>
+              <td>96.9</td>
+              <td>351.0</td>
+              <td>2.12e-119</td>
+          </tr>
+    
+          <tr>
+              <td>CAH10124.1</td>
+              <td>putative_oxidoreducatse</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000268.5">BGC0000268.5</a></td>
+              <td>PKS</td>
+              <td>53.0</td>
+              <td>96.9</td>
+              <td>350.0</td>
+              <td>6.03e-119</td>
+          </tr>
+    
+          <tr>
+              <td>BAV16992.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001384.5">BGC0001384.5</a></td>
+              <td>PKS</td>
+              <td>53.0</td>
+              <td>93.5</td>
+              <td>348.0</td>
+              <td>4.87e-118</td>
+          </tr>
+    
+          <tr>
+              <td>CAC36756.1</td>
+              <td>putative_enoyl_reductase,_MmyE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000914.5">BGC0000914.5</a></td>
+              <td>other:other</td>
+              <td>54.0</td>
+              <td>92.0</td>
+              <td>337.0</td>
+              <td>1.36e-113</td>
+          </tr>
+    
+          <tr>
+              <td>ABK32277.1</td>
+              <td>Amb9</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000014.5">BGC0000014.5</a></td>
+              <td>PKS</td>
+              <td>40.0</td>
+              <td>58.4</td>
+              <td>141.0</td>
+              <td>3.29e-38</td>
+          </tr>
+    
+          <tr>
+              <td>AHH25582.1</td>
+              <td>2,4-dienoyl-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000957.5">BGC0000957.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>35.0</td>
+              <td>86.3</td>
+              <td>138.0</td>
+              <td>2.16e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AHL46723.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001179.5">BGC0001179.5</a></td>
+              <td>PKS:Type II</td>
+              <td>40.0</td>
+              <td>58.1</td>
+              <td>131.0</td>
+              <td>1.43e-34</td>
+          </tr>
+    
+          <tr>
+              <td>ADE22327.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000065.5">BGC0000065.5</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>36.0</td>
+              <td>76.5</td>
+              <td>130.0</td>
+              <td>3.15e-34</td>
+          </tr>
+    
+          <tr>
+              <td>ACK77755.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000727.3">BGC0000727.3</a></td>
+              <td>saccharide</td>
+              <td>38.0</td>
+              <td>54.3</td>
+              <td>124.0</td>
+              <td>9.19e-32</td>
+          </tr>
+    
+          <tr>
+              <td>ARB50205.1</td>
+              <td>chanoclavine_cyclase_oxidoreducatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001573.3">BGC0001573.3</a></td>
+              <td>other:other</td>
+              <td>33.0</td>
+              <td>75.5</td>
+              <td>121.0</td>
+              <td>1.32e-30</td>
+          </tr>
+    
+          <tr>
+              <td>ABI91463.1</td>
+              <td>NADH:flavin_oxidoreductase/NADH_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001094.5">BGC0001094.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>30.0</td>
+              <td>91.5</td>
+              <td>119.0</td>
+              <td>2.83e-30</td>
+          </tr>
+    
+          <tr>
+              <td>WP_020993839.1</td>
+              <td>acetoacetate_decarboxylase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001575.4">BGC0001575.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>88.4</td>
+              <td>118.0</td>
+              <td>1.9e-28</td>
+          </tr>
+    
+          <tr>
+              <td>EAU36098.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002273.2">BGC0002273.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>71.6</td>
+              <td>108.0</td>
+              <td>2.94e-26</td>
+          </tr>
+    
+          <tr>
+              <td>iliE</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002035.3">BGC0002035.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>30.0</td>
+              <td>71.6</td>
+              <td>94.0</td>
+              <td>8.46e-21</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

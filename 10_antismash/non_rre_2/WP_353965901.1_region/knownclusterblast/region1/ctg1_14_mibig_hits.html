@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AOT85886.1</td>
+              <td>response_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001787.3">BGC0001787.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>38.0</td>
+              <td>101.5</td>
+              <td>117.0</td>
+              <td>7.17e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ACA51941.1</td>
+              <td>BovR</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000498.5">BGC0000498.5</a></td>
+              <td>ribosomal:RiPP:Lanthipeptide</td>
+              <td>41.0</td>
+              <td>101.0</td>
+              <td>115.0</td>
+              <td>3.91e-32</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ10692.1</td>
+              <td>hypothetical_bacteriocin_immunity_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000561.5">BGC0000561.5</a></td>
+              <td>ribosomal:RiPP:Lanthipeptide</td>
+              <td>44.0</td>
+              <td>58.9</td>
+              <td>81.0</td>
+              <td>8.6e-20</td>
+          </tr>
+    
+          <tr>
+              <td>EDY04301.1</td>
+              <td>two_component_transcriptional_regulator,_LuxR_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000516.4">BGC0000516.4</a></td>
+              <td>ribosomal:RiPP:Lanthipeptide</td>
+              <td>32.0</td>
+              <td>106.6</td>
+              <td>83.0</td>
+              <td>1.76e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AHX24716.1</td>
+              <td>LuxR_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000200.5">BGC0000200.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>26.0</td>
+              <td>109.1</td>
+              <td>64.0</td>
+              <td>2.65e-12</td>
+          </tr>
+    
+          <tr>
+              <td>WP_141576293.1</td>
+              <td>response_regulator_transcription_factor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002686.2">BGC0002686.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>25.0</td>
+              <td>100.0</td>
+              <td>60.0</td>
+              <td>6.35e-11</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AFV52131.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000081.5">BGC0000081.5</a></td>
+              <td>NRPS:Type I+PKS:Iterative type I</td>
+              <td>52.0</td>
+              <td>94.4</td>
+              <td>224.0</td>
+              <td>7.5e-73</td>
+          </tr>
+    
+          <tr>
+              <td>ABP55150.1</td>
+              <td>Wyosine_base_formation</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000150.4">BGC0000150.4</a></td>
+              <td>NRPS:Type I+PKS:Enediyne type I</td>
+              <td>48.0</td>
+              <td>92.1</td>
+              <td>211.0</td>
+              <td>2.4e-67</td>
+          </tr>
+    
+          <tr>
+              <td>AAM78004.1</td>
+              <td>unknown</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000112.5">BGC0000112.5</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>47.0</td>
+              <td>94.4</td>
+              <td>209.0</td>
+              <td>8.43e-67</td>
+          </tr>
+    
+          <tr>
+              <td>AAL06691.1</td>
+              <td>unknown</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000965.5">BGC0000965.5</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>47.0</td>
+              <td>94.7</td>
+              <td>208.0</td>
+              <td>1.69e-66</td>
+          </tr>
+    
+          <tr>
+              <td>ALU98453.1</td>
+              <td>wyosine_base_formation_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001397.5">BGC0001397.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>47.0</td>
+              <td>94.7</td>
+              <td>208.0</td>
+              <td>1.69e-66</td>
+          </tr>
+    
+          <tr>
+              <td>ANY94462.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001584.5">BGC0001584.5</a></td>
+              <td>PKS</td>
+              <td>47.0</td>
+              <td>94.7</td>
+              <td>208.0</td>
+              <td>1.69e-66</td>
+          </tr>
+    
+          <tr>
+              <td>ABY66001.1</td>
+              <td>unknown</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001008.5">BGC0001008.5</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>45.0</td>
+              <td>97.0</td>
+              <td>200.0</td>
+              <td>2.47e-63</td>
+          </tr>
+    
+          <tr>
+              <td>ATV95640.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001503.4">BGC0001503.4</a></td>
+              <td>PKS</td>
+              <td>45.0</td>
+              <td>97.0</td>
+              <td>199.0</td>
+              <td>4.51e-63</td>
+          </tr>
+    
+          <tr>
+              <td>ATV95655.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001503.4">BGC0001503.4</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>88.7</td>
+              <td>112.0</td>
+              <td>1.01e-29</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

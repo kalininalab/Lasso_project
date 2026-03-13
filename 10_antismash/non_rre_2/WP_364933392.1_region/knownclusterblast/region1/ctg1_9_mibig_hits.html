@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>TRX17531.1</td>
+              <td>formaldehyde_dehydrogenase,_glutathione-independent</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002329.2">BGC0002329.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>58.0</td>
+              <td>100.3</td>
+              <td>447.0</td>
+              <td>1e-156</td>
+          </tr>
+    
+          <tr>
+              <td>QCF28943.1</td>
+              <td>aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002308.2">BGC0002308.2</a></td>
+              <td>other:other+PKS</td>
+              <td>39.0</td>
+              <td>95.2</td>
+              <td>229.0</td>
+              <td>1.96e-71</td>
+          </tr>
+    
+          <tr>
+              <td>CAE02620.1</td>
+              <td>Yx01_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000433.5">BGC0000433.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>100.3</td>
+              <td>185.0</td>
+              <td>1.27e-54</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ88611.1</td>
+              <td>putative_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000327.5">BGC0000327.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>99.0</td>
+              <td>128.0</td>
+              <td>1.78e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ABW71834.1</td>
+              <td>putative_alcohol_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000303.5">BGC0000303.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>58.9</td>
+              <td>114.0</td>
+              <td>3.13e-28</td>
+          </tr>
+    
+          <tr>
+              <td>CRI73790.1</td>
+              <td>L-threonine_3-dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001215.5">BGC0001215.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>58.9</td>
+              <td>107.0</td>
+              <td>5.85e-26</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

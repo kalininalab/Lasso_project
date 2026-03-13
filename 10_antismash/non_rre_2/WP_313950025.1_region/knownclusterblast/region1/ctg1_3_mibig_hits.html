@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ADG86334.1</td>
+              <td>regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000190.5">BGC0000190.5</a></td>
+              <td>PKS</td>
+              <td>41.0</td>
+              <td>92.4</td>
+              <td>158.0</td>
+              <td>5.04e-44</td>
+          </tr>
+    
+          <tr>
+              <td>BAM73630.1</td>
+              <td>putative_SARP-family_transcriptional_activator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000889.5">BGC0000889.5</a></td>
+              <td>other:other</td>
+              <td>39.0</td>
+              <td>91.4</td>
+              <td>150.0</td>
+              <td>5.37e-43</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ08934.1</td>
+              <td>regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000224.4">BGC0000224.4</a></td>
+              <td>PKS:Type II</td>
+              <td>39.0</td>
+              <td>92.8</td>
+              <td>154.0</td>
+              <td>1.3e-42</td>
+          </tr>
+    
+          <tr>
+              <td>QFU19845.1</td>
+              <td>transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002431.3">BGC0002431.3</a></td>
+              <td>PKS+saccharide</td>
+              <td>37.0</td>
+              <td>92.4</td>
+              <td>138.0</td>
+              <td>2.23e-39</td>
+          </tr>
+    
+          <tr>
+              <td>BAB72052.1</td>
+              <td>AclI</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000191.5">BGC0000191.5</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>92.1</td>
+              <td>138.0</td>
+              <td>4.18e-39</td>
+          </tr>
+    
+          <tr>
+              <td>AAF70113.1</td>
+              <td>AknI</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000192.3">BGC0000192.3</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>92.1</td>
+              <td>138.0</td>
+              <td>5.87e-39</td>
+          </tr>
+    
+          <tr>
+              <td>QBK46629.1</td>
+              <td>HrsH</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001960.2">BGC0001960.2</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>93.9</td>
+              <td>137.0</td>
+              <td>8.4e-39</td>
+          </tr>
+    
+          <tr>
+              <td>EDY42525.1</td>
+              <td>transcriptional_regulatory_protein,_C</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000212.5">BGC0000212.5</a></td>
+              <td>PKS:Type II</td>
+              <td>37.0</td>
+              <td>91.4</td>
+              <td>136.0</td>
+              <td>2.34e-38</td>
+          </tr>
+    
+          <tr>
+              <td>AAM54096.1</td>
+              <td>transcriptional_activator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000020.3">BGC0000020.3</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>91.4</td>
+              <td>126.0</td>
+              <td>1.94e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AQZ37105.1</td>
+              <td>transcriptional_activator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001511.5">BGC0001511.5</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>91.0</td>
+              <td>126.0</td>
+              <td>1.94e-32</td>
+          </tr>
+    
+          <tr>
+              <td>ALA99205.1</td>
+              <td>CreF</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001295.5">BGC0001295.5</a></td>
+              <td>other:other</td>
+              <td>34.0</td>
+              <td>101.8</td>
+              <td>121.0</td>
+              <td>2e-32</td>
+          </tr>
+    
+          <tr>
+              <td>WP_167336196.1</td>
+              <td>BTAD_domain-containing_putative_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002011.3">BGC0002011.3</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>97.5</td>
+              <td>126.0</td>
+              <td>2.62e-32</td>
+          </tr>
+    
+          <tr>
+              <td>QGJ79655.1</td>
+              <td>Transcriptional_activator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002552.2">BGC0002552.2</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>97.5</td>
+              <td>126.0</td>
+              <td>2.62e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AAT09796.1</td>
+              <td>NocR</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000395.5">BGC0000395.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>87.1</td>
+              <td>117.0</td>
+              <td>1.42e-29</td>
+          </tr>
+    
+          <tr>
+              <td>BAG84243.1</td>
+              <td>putative_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000257.5">BGC0000257.5</a></td>
+              <td>PKS:Type I</td>
+              <td>40.0</td>
+              <td>75.2</td>
+              <td>112.0</td>
+              <td>3e-29</td>
+          </tr>
+    
+          <tr>
+              <td>BAG23198.1</td>
+              <td>putative_SARP-family_pathway_specific_regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002673.2">BGC0002673.2</a></td>
+              <td>PKS+other:other</td>
+              <td>32.0</td>
+              <td>90.6</td>
+              <td>110.0</td>
+              <td>8.88e-28</td>
+          </tr>
+    
+          <tr>
+              <td>AEK75492.1</td>
+              <td>pathway-specific_SARP_activator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000001.5">BGC0000001.5</a></td>
+              <td>PKS:Type I</td>
+              <td>31.0</td>
+              <td>84.5</td>
+              <td>88.0</td>
+              <td>2.31e-20</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

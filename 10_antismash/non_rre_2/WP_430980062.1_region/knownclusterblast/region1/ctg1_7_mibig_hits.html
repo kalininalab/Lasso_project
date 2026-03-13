@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>WP_007385814.1</td>
+              <td>lasso_peptide_biosynthesis_PqqD_family_chaperone</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000579.4">BGC0000579.4</a></td>
+              <td>ribosomal:RiPP:Lanthipeptide</td>
+              <td>49.0</td>
+              <td>95.3</td>
+              <td>75.0</td>
+              <td>4.31e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ55182.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001889.2">BGC0001889.2</a></td>
+              <td>ribosomal:RiPP:Lasso peptide</td>
+              <td>48.0</td>
+              <td>94.2</td>
+              <td>74.0</td>
+              <td>1.33e-18</td>
+          </tr>
+    
+          <tr>
+              <td>KDN73297.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001507.3">BGC0001507.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>49.0</td>
+              <td>94.2</td>
+              <td>71.0</td>
+              <td>1.28e-17</td>
+          </tr>
+    
+          <tr>
+              <td>WP_030301136.1</td>
+              <td>lasso_peptide_biosynthesis_PqqD_family_chaperone</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001550.3">BGC0001550.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>46.0</td>
+              <td>94.2</td>
+              <td>70.0</td>
+              <td>2.65e-17</td>
+          </tr>
+    
+          <tr>
+              <td>WP_037654159.1</td>
+              <td>lasso_peptide_biosynthesis_PqqD_family_chaperone</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001493.5">BGC0001493.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>41.0</td>
+              <td>98.8</td>
+              <td>70.0</td>
+              <td>3.52e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QOE83933.1</td>
+              <td>leader_peptide_binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002053.3">BGC0002053.3</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>46.0</td>
+              <td>94.2</td>
+              <td>69.0</td>
+              <td>5.47e-17</td>
+          </tr>
+    
+          <tr>
+              <td>KUN61409.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002318.2">BGC0002318.2</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>48.0</td>
+              <td>91.9</td>
+              <td>67.0</td>
+              <td>3.14e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QFU91023.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002064.2">BGC0002064.2</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>46.0</td>
+              <td>91.9</td>
+              <td>65.0</td>
+              <td>2.55e-15</td>
+          </tr>
+    
+          <tr>
+              <td>CCB72814.1</td>
+              <td>conserved_protein_of_unknown_function</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001539.4">BGC0001539.4</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>56.0</td>
+              <td>76.7</td>
+              <td>63.0</td>
+              <td>9.33e-15</td>
+          </tr>
+    
+          <tr>
+              <td>OAL15486.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001548.4">BGC0001548.4</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>39.0</td>
+              <td>91.9</td>
+              <td>58.0</td>
+              <td>1.33e-12</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

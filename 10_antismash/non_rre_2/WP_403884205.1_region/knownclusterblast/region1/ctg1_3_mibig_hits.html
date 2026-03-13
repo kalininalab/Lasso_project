@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CBW54669.1</td>
+              <td>ferredoxin-2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000971.5">BGC0000971.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>59.0</td>
+              <td>92.8</td>
+              <td>72.0</td>
+              <td>1.03e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AJI44173.1</td>
+              <td>ferredoxin</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001193.5">BGC0001193.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>52.0</td>
+              <td>91.3</td>
+              <td>66.0</td>
+              <td>3.04e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AAK81833.1</td>
+              <td>ferredoxin</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000326.5">BGC0000326.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>46.0</td>
+              <td>94.2</td>
+              <td>61.0</td>
+              <td>3.2e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ABG02270.1</td>
+              <td>SalE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000143.5">BGC0000143.5</a></td>
+              <td>PKS</td>
+              <td>50.0</td>
+              <td>81.2</td>
+              <td>60.0</td>
+              <td>6.84e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ATL73030.1</td>
+              <td>ferredoxin</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001807.4">BGC0001807.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>47.0</td>
+              <td>95.7</td>
+              <td>58.0</td>
+              <td>4.55e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ALG65321.1</td>
+              <td>Cal15</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001297.4">BGC0001297.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>46.0</td>
+              <td>91.3</td>
+              <td>58.0</td>
+              <td>6.31e-13</td>
+          </tr>
+    
+          <tr>
+              <td>QBF51761.1</td>
+              <td>ferredoxin</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001856.4">BGC0001856.4</a></td>
+              <td>PKS:Type I</td>
+              <td>48.0</td>
+              <td>89.9</td>
+              <td>58.0</td>
+              <td>6.62e-13</td>
+          </tr>
+    
+          <tr>
+              <td>WP_026247673.1</td>
+              <td>(4Fe-4S)-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001332.5">BGC0001332.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>48.0</td>
+              <td>92.8</td>
+              <td>56.0</td>
+              <td>3.64e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AVI57421.1</td>
+              <td>AbmG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001694.4">BGC0001694.4</a></td>
+              <td>PKS</td>
+              <td>48.0</td>
+              <td>88.4</td>
+              <td>55.0</td>
+              <td>1.38e-11</td>
+          </tr>
+    
+          <tr>
+              <td>QBA57765.1</td>
+              <td>ferredoxin</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002377.2">BGC0002377.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>45.0</td>
+              <td>92.8</td>
+              <td>54.0</td>
+              <td>2.09e-11</td>
+          </tr>
+    
+          <tr>
+              <td>TXD00023.1</td>
+              <td>ferredoxin</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001877.4">BGC0001877.4</a></td>
+              <td>PKS</td>
+              <td>45.0</td>
+              <td>89.9</td>
+              <td>54.0</td>
+              <td>2.19e-11</td>
+          </tr>
+    
+          <tr>
+              <td>CQR60481.1</td>
+              <td>Ferredoxin_4Fe-4S_single_cluster_domain;_no_Rif_homologue</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001287.5">BGC0001287.5</a></td>
+              <td>PKS</td>
+              <td>42.0</td>
+              <td>89.9</td>
+              <td>54.0</td>
+              <td>2.83e-11</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABL09949.1</td>
+              <td>SCC75A.25c</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000197.5">BGC0000197.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>35.0</td>
+              <td>93.3</td>
+              <td>161.0</td>
+              <td>5.75e-48</td>
+          </tr>
+    
+          <tr>
+              <td>AMX23316.1</td>
+              <td>putative_DNA-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001500.3">BGC0001500.3</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>67.7</td>
+              <td>120.0</td>
+              <td>4.88e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AMX23315.1</td>
+              <td>putative_DNA-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001500.3">BGC0001500.3</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>88.1</td>
+              <td>118.0</td>
+              <td>4.67e-31</td>
+          </tr>
+    
+          <tr>
+              <td>QQZ01596.1</td>
+              <td>transcriptional_regulator,_XRE_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002498.3">BGC0002498.3</a></td>
+              <td>other:other</td>
+              <td>31.0</td>
+              <td>96.1</td>
+              <td>117.0</td>
+              <td>6.41e-31</td>
+          </tr>
+    
+          <tr>
+              <td>AJD77038.1</td>
+              <td>helix-turn-helix_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001435.4">BGC0001435.4</a></td>
+              <td>NRPS:Type I+PKS:Iterative type I</td>
+              <td>40.0</td>
+              <td>57.5</td>
+              <td>102.0</td>
+              <td>4.38e-25</td>
+          </tr>
+    
+          <tr>
+              <td>AXI91529.1</td>
+              <td>FunR1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001944.2">BGC0001944.2</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>50.5</td>
+              <td>75.0</td>
+              <td>4.19e-16</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

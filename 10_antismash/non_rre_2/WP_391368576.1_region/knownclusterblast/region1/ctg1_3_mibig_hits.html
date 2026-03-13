@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CBF83141.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001722.3">BGC0001722.3</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>100.8</td>
+              <td>153.0</td>
+              <td>4.06e-39</td>
+          </tr>
+    
+          <tr>
+              <td>AIG62134.1</td>
+              <td>patulin_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000120.5">BGC0000120.5</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>27.0</td>
+              <td>101.9</td>
+              <td>140.0</td>
+              <td>6.93e-35</td>
+          </tr>
+    
+          <tr>
+              <td>EAU32818.1</td>
+              <td>predicted_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000160.3">BGC0000160.3</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>48.6</td>
+              <td>140.0</td>
+              <td>7.24e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90106.1</td>
+              <td>VBS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000006.3">BGC0000006.3</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>102.0</td>
+              <td>136.0</td>
+              <td>1.97e-33</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90042.1</td>
+              <td>VBS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000008.3">BGC0000008.3</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>101.9</td>
+              <td>136.0</td>
+              <td>1.97e-33</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90066.1</td>
+              <td>VBS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000009.3">BGC0000009.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>100.8</td>
+              <td>136.0</td>
+              <td>2.61e-33</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90088.1</td>
+              <td>VBS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000010.3">BGC0000010.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>101.9</td>
+              <td>135.0</td>
+              <td>3.54e-33</td>
+          </tr>
+    
+          <tr>
+              <td>BAE71331.1</td>
+              <td>versicolorin_B_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000004.3">BGC0000004.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>101.9</td>
+              <td>134.0</td>
+              <td>8.53e-33</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90019.1</td>
+              <td>VBS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000007.3">BGC0000007.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>101.9</td>
+              <td>134.0</td>
+              <td>1.53e-32</td>
+          </tr>
+    
+          <tr>
+              <td>BAQ25461.1</td>
+              <td>putative_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001264.3">BGC0001264.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>105.6</td>
+              <td>130.0</td>
+              <td>1.77e-31</td>
+          </tr>
+    
+          <tr>
+              <td>ACH72898.1</td>
+              <td>AflK</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000011.3">BGC0000011.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>100.3</td>
+              <td>117.0</td>
+              <td>2.82e-27</td>
+          </tr>
+    
+          <tr>
+              <td>KNA98285.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002670.2">BGC0002670.2</a></td>
+              <td>other:other</td>
+              <td>25.0</td>
+              <td>101.1</td>
+              <td>117.0</td>
+              <td>4.39e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ACA34720.1</td>
+              <td>CtnD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000894.4">BGC0000894.4</a></td>
+              <td>other:other</td>
+              <td>26.0</td>
+              <td>107.1</td>
+              <td>115.0</td>
+              <td>1.48e-26</td>
+          </tr>
+    
+          <tr>
+              <td>ALI92648.1</td>
+              <td>CitC_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001338.4">BGC0001338.4</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>26.0</td>
+              <td>107.1</td>
+              <td>115.0</td>
+              <td>1.48e-26</td>
+          </tr>
+    
+          <tr>
+              <td>EIN09539.1</td>
+              <td>pyranose_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002213.3">BGC0002213.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>100.3</td>
+              <td>107.0</td>
+              <td>4.04e-24</td>
+          </tr>
+    
+          <tr>
+              <td>KAF7526514.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002244.3">BGC0002244.3</a></td>
+              <td>PKS</td>
+              <td>28.0</td>
+              <td>57.4</td>
+              <td>102.0</td>
+              <td>1.48e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AJI44177.1</td>
+              <td>glucose-methanol-choline_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001193.5">BGC0001193.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>60.7</td>
+              <td>95.0</td>
+              <td>4.55e-20</td>
+          </tr>
+    
+          <tr>
+              <td>ATV82114.1</td>
+              <td>GMC_oxidoreductase/oxidase/dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001909.3">BGC0001909.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>104.1</td>
+              <td>95.0</td>
+              <td>4.88e-20</td>
+          </tr>
+    
+          <tr>
+              <td>BAE62226.1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002237.3">BGC0002237.3</a></td>
+              <td>PKS</td>
+              <td>27.0</td>
+              <td>48.0</td>
+              <td>89.0</td>
+              <td>4.26e-18</td>
+          </tr>
+    
+          <tr>
+              <td>OJJ97584.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002229.2">BGC0002229.2</a></td>
+              <td>PKS</td>
+              <td>27.0</td>
+              <td>58.8</td>
+              <td>84.0</td>
+              <td>9.82e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BBD84647.1</td>
+              <td>putative_GMC_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001775.3">BGC0001775.3</a></td>
+              <td>terpene</td>
+              <td>24.0</td>
+              <td>104.7</td>
+              <td>74.0</td>
+              <td>1.71e-13</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

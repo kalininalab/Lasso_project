@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAN85480.1</td>
+              <td>putative_FAD-dependent_oxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001101.5">BGC0001101.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>79.0</td>
+              <td>100.0</td>
+              <td>794.0</td>
+              <td>3.85e-290</td>
+          </tr>
+    
+          <tr>
+              <td>ANW12117.1</td>
+              <td>putative_FAD-dependent_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001374.5">BGC0001374.5</a></td>
+              <td>other:other</td>
+              <td>31.0</td>
+              <td>89.1</td>
+              <td>214.0</td>
+              <td>1.85e-63</td>
+          </tr>
+    
+          <tr>
+              <td>ACB37752.1</td>
+              <td>dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000162.5">BGC0000162.5</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>93.9</td>
+              <td>164.0</td>
+              <td>2.33e-44</td>
+          </tr>
+    
+          <tr>
+              <td>BBA97267.1</td>
+              <td>putative_FAD-dependent_oxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002383.3">BGC0002383.3</a></td>
+              <td>PKS</td>
+              <td>27.0</td>
+              <td>93.1</td>
+              <td>152.0</td>
+              <td>1.77e-40</td>
+          </tr>
+    
+          <tr>
+              <td>ARG41908.1</td>
+              <td>IstE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001622.5">BGC0001622.5</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>102.6</td>
+              <td>112.0</td>
+              <td>3.64e-26</td>
+          </tr>
+    
+          <tr>
+              <td>EYE95340.1</td>
+              <td>FAD-binding_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002234.3">BGC0002234.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>93.7</td>
+              <td>108.0</td>
+              <td>7.86e-25</td>
+          </tr>
+    
+          <tr>
+              <td>BAZ95824.1</td>
+              <td>oxidereductase,_FAD_binding_domain_cpaB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001563.3">BGC0001563.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>24.0</td>
+              <td>90.1</td>
+              <td>102.0</td>
+              <td>8.78e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AVY05517.1</td>
+              <td>6-hydroxy-D-nicotine_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001571.3">BGC0001571.3</a></td>
+              <td>terpene</td>
+              <td>26.0</td>
+              <td>88.9</td>
+              <td>96.0</td>
+              <td>9.75e-21</td>
+          </tr>
+    
+          <tr>
+              <td>EAA65603.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000022.3">BGC0000022.3</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>32.5</td>
+              <td>87.0</td>
+              <td>6.7e-18</td>
+          </tr>
+    
+          <tr>
+              <td>EAT86857.2</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001858.2">BGC0001858.2</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>96.0</td>
+              <td>87.0</td>
+              <td>8.63e-18</td>
+          </tr>
+    
+          <tr>
+              <td>EHA55867.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002235.2">BGC0002235.2</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>24.0</td>
+              <td>85.9</td>
+              <td>86.0</td>
+              <td>1.62e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QOG08949.1</td>
+              <td>FfsJ</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002204.3">BGC0002204.3</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>25.0</td>
+              <td>103.0</td>
+              <td>86.0</td>
+              <td>2.27e-17</td>
+          </tr>
+    
+          <tr>
+              <td>ABR12607.1</td>
+              <td>isoamyl_alcohol_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000405.5">BGC0000405.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>30.0</td>
+              <td>35.8</td>
+              <td>79.0</td>
+              <td>4.16e-15</td>
+          </tr>
+    
+          <tr>
+              <td>BAU61564.1</td>
+              <td>putative_FAD_binding_domain_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001375.4">BGC0001375.4</a></td>
+              <td>terpene</td>
+              <td>31.0</td>
+              <td>34.3</td>
+              <td>78.0</td>
+              <td>4.31e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AVY05502.1</td>
+              <td>FAD-binding_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001571.3">BGC0001571.3</a></td>
+              <td>terpene</td>
+              <td>24.0</td>
+              <td>87.3</td>
+              <td>78.0</td>
+              <td>9.47e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ADM34137.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001084.5">BGC0001084.5</a></td>
+              <td>NRPS:Type I+terpene:Hemiterpene+other:other</td>
+              <td>23.0</td>
+              <td>95.2</td>
+              <td>76.0</td>
+              <td>2.67e-14</td>
+          </tr>
+    
+          <tr>
+              <td>XP_011325834.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001545.3">BGC0001545.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>22.0</td>
+              <td>95.4</td>
+              <td>75.0</td>
+              <td>6.68e-14</td>
+          </tr>
+    
+          <tr>
+              <td>BAD83683.1</td>
+              <td>FAD/FMN-dependent_oxygenase/oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000012.3">BGC0000012.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>92.1</td>
+              <td>74.0</td>
+              <td>1.1e-13</td>
+          </tr>
+    
+          <tr>
+              <td>QKG86301.1</td>
+              <td>FAD/FMN_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002254.3">BGC0002254.3</a></td>
+              <td>PKS</td>
+              <td>23.0</td>
+              <td>91.5</td>
+              <td>71.0</td>
+              <td>1.02e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AGC83575.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000818.5">BGC0000818.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>22.0</td>
+              <td>90.1</td>
+              <td>69.0</td>
+              <td>5.47e-12</td>
+          </tr>
+    
+          <tr>
+              <td>EDU47092.1</td>
+              <td>FAD_binding_domain_containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002250.2">BGC0002250.2</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>26.0</td>
+              <td>48.5</td>
+              <td>62.0</td>
+              <td>5.79e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ACH85579.1</td>
+              <td>CetF2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000283.4">BGC0000283.4</a></td>
+              <td>other:cyclitol</td>
+              <td>22.0</td>
+              <td>71.3</td>
+              <td>59.0</td>
+              <td>9.59e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AHL24453.1</td>
+              <td>4-hydroxybenzoate_polyprenyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000806.5">BGC0000806.5</a></td>
+              <td>saccharide</td>
+              <td>59.0</td>
+              <td>96.7</td>
+              <td>332.0</td>
+              <td>1.69e-114</td>
+          </tr>
+    
+          <tr>
+              <td>EAU29527.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000682.3">BGC0000682.3</a></td>
+              <td>terpene</td>
+              <td>29.0</td>
+              <td>51.7</td>
+              <td>59.0</td>
+              <td>1.08e-09</td>
+          </tr>
+    
+          <tr>
+              <td>PKX88486.1</td>
+              <td>UbiA_prenyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001708.3">BGC0001708.3</a></td>
+              <td>PKS+terpene</td>
+              <td>29.0</td>
+              <td>60.3</td>
+              <td>54.0</td>
+              <td>4.43e-08</td>
+          </tr>
+    
+          <tr>
+              <td>BAW27606.1</td>
+              <td>putative_prenyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001547.3">BGC0001547.3</a></td>
+              <td>terpene</td>
+              <td>24.0</td>
+              <td>73.7</td>
+              <td>54.0</td>
+              <td>7.78e-08</td>
+          </tr>
+    
+          <tr>
+              <td>BCD52382.1</td>
+              <td>prenyltransferase_SptD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002537.2">BGC0002537.2</a></td>
+              <td>PKS+terpene</td>
+              <td>29.0</td>
+              <td>65.7</td>
+              <td>54.0</td>
+              <td>8.28e-08</td>
+          </tr>
+    
+          <tr>
+              <td>BAP81858.1</td>
+              <td>AndD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002612.3">BGC0002612.3</a></td>
+              <td>terpene</td>
+              <td>29.0</td>
+              <td>65.7</td>
+              <td>54.0</td>
+              <td>8.28e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ART41212.1</td>
+              <td>AdrG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001508.3">BGC0001508.3</a></td>
+              <td>PKS</td>
+              <td>28.0</td>
+              <td>55.3</td>
+              <td>52.0</td>
+              <td>1.91e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

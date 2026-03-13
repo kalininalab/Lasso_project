@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AXL93232.1</td>
+              <td>NAD(P)-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001895.4">BGC0001895.4</a></td>
+              <td>PKS</td>
+              <td>54.0</td>
+              <td>100.0</td>
+              <td>264.0</td>
+              <td>5.08e-88</td>
+          </tr>
+    
+          <tr>
+              <td>CAG44629.1</td>
+              <td>SriL03.12c</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000712.5">BGC0000712.5</a></td>
+              <td>saccharide</td>
+              <td>53.0</td>
+              <td>97.9</td>
+              <td>256.0</td>
+              <td>1.08e-84</td>
+          </tr>
+    
+          <tr>
+              <td>ARO44669.1</td>
+              <td>NAD(P)-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001769.5">BGC0001769.5</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>99.0</td>
+              <td>135.0</td>
+              <td>6.19e-38</td>
+          </tr>
+    
+          <tr>
+              <td>QNL10604.1</td>
+              <td>NmrA_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002514.3">BGC0002514.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>101.4</td>
+              <td>102.0</td>
+              <td>1.9e-25</td>
+          </tr>
+    
+          <tr>
+              <td>CAG14959.1</td>
+              <td>putative_nucleotide-diphosphate-sugar_epimerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000253.4">BGC0000253.4</a></td>
+              <td>PKS:Type II</td>
+              <td>31.0</td>
+              <td>101.4</td>
+              <td>89.0</td>
+              <td>2.29e-20</td>
+          </tr>
+    
+          <tr>
+              <td>WP_091316348.1</td>
+              <td>NAD(P)H-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002007.2">BGC0002007.2</a></td>
+              <td>terpene</td>
+              <td>31.0</td>
+              <td>101.7</td>
+              <td>82.0</td>
+              <td>6.17e-18</td>
+          </tr>
+    
+          <tr>
+              <td>WP_020275086.1</td>
+              <td>NAD(P)H-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002012.4">BGC0002012.4</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>98.6</td>
+              <td>82.0</td>
+              <td>8.19e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AHL46687.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001177.4">BGC0001177.4</a></td>
+              <td>PKS:Type II</td>
+              <td>30.0</td>
+              <td>100.7</td>
+              <td>79.0</td>
+              <td>7.28e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ52694.1</td>
+              <td>Hydroxylase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001073.5">BGC0001073.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>30.0</td>
+              <td>96.9</td>
+              <td>79.0</td>
+              <td>9.62e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BBA97262.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002383.3">BGC0002383.3</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>100.3</td>
+              <td>75.0</td>
+              <td>2.95e-15</td>
+          </tr>
+    
+          <tr>
+              <td>QLQ36605.1</td>
+              <td>NAD(P)H-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002097.3">BGC0002097.3</a></td>
+              <td>NRPS:Type I+PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>30.0</td>
+              <td>97.2</td>
+              <td>69.0</td>
+              <td>2.42e-13</td>
+          </tr>
+    
+          <tr>
+              <td>BBA97261.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002383.3">BGC0002383.3</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>94.4</td>
+              <td>61.0</td>
+              <td>1.47e-10</td>
+          </tr>
+    
+          <tr>
+              <td>QLQ36623.1</td>
+              <td>NAD(P)H-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002097.3">BGC0002097.3</a></td>
+              <td>NRPS:Type I+PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>28.0</td>
+              <td>107.3</td>
+              <td>60.0</td>
+              <td>5.07e-10</td>
+          </tr>
+    
+          <tr>
+              <td>WP_019631324.1</td>
+              <td>NAD(P)H-binding_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001364.3">BGC0001364.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>26.0</td>
+              <td>96.9</td>
+              <td>58.0</td>
+              <td>1.65e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

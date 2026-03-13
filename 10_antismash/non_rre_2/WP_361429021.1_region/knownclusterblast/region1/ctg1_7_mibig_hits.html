@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AYU66253.1</td>
+              <td>TjhR4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002461.2">BGC0002461.2</a></td>
+              <td>PKS</td>
+              <td>49.0</td>
+              <td>95.9</td>
+              <td>154.0</td>
+              <td>1.51e-46</td>
+          </tr>
+    
+          <tr>
+              <td>ADE34502.1</td>
+              <td>SsfT2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000269.5">BGC0000269.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>44.0</td>
+              <td>94.5</td>
+              <td>118.0</td>
+              <td>9.2e-33</td>
+          </tr>
+    
+          <tr>
+              <td>AAO06913.1</td>
+              <td>putative_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000066.5">BGC0000066.5</a></td>
+              <td>PKS</td>
+              <td>40.0</td>
+              <td>93.2</td>
+              <td>103.0</td>
+              <td>1.5e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AAY28222.1</td>
+              <td>putative_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000074.5">BGC0000074.5</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>93.2</td>
+              <td>102.0</td>
+              <td>2.93e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AQZ37087.1</td>
+              <td>TetR-family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001511.5">BGC0001511.5</a></td>
+              <td>PKS</td>
+              <td>42.0</td>
+              <td>67.1</td>
+              <td>74.0</td>
+              <td>5.44e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50497.1</td>
+              <td>NapR7</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000652.5">BGC0000652.5</a></td>
+              <td>terpene</td>
+              <td>36.0</td>
+              <td>89.0</td>
+              <td>69.0</td>
+              <td>3.96e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AAM54080.1</td>
+              <td>transcriptional_repressor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000020.3">BGC0000020.3</a></td>
+              <td>PKS</td>
+              <td>52.0</td>
+              <td>36.1</td>
+              <td>69.0</td>
+              <td>7.03e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50469.1</td>
+              <td>NapR7</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001079.5">BGC0001079.5</a></td>
+              <td>PKS:Type III+terpene:Monoterpene</td>
+              <td>37.0</td>
+              <td>79.9</td>
+              <td>68.0</td>
+              <td>1.45e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50485.1</td>
+              <td>NapR3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000652.5">BGC0000652.5</a></td>
+              <td>terpene</td>
+              <td>36.0</td>
+              <td>77.2</td>
+              <td>67.0</td>
+              <td>3.88e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50457.1</td>
+              <td>NapR3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001079.5">BGC0001079.5</a></td>
+              <td>PKS:Type III+terpene:Monoterpene</td>
+              <td>36.0</td>
+              <td>77.2</td>
+              <td>67.0</td>
+              <td>3.88e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ANZ22994.1</td>
+              <td>ZinR2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001828.5">BGC0001828.5</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>56.2</td>
+              <td>64.0</td>
+              <td>3.31e-12</td>
+          </tr>
+    
+          <tr>
+              <td>CTQ34879.1</td>
+              <td>AtcB;_transcriptional_regulator,_TetR_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001301.5">BGC0001301.5</a></td>
+              <td>PKS</td>
+              <td>44.0</td>
+              <td>35.2</td>
+              <td>54.0</td>
+              <td>1.6e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AAD37459.1</td>
+              <td>putative_transcriptional_repressor</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000252.5">BGC0000252.5</a></td>
+              <td>PKS</td>
+              <td>42.0</td>
+              <td>43.4</td>
+              <td>54.0</td>
+              <td>1.66e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ALD83684.1</td>
+              <td>TetR_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001300.5">BGC0001300.5</a></td>
+              <td>PKS</td>
+              <td>47.0</td>
+              <td>28.3</td>
+              <td>52.0</td>
+              <td>5.6e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ARP51756.1</td>
+              <td>TetR_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001782.3">BGC0001782.3</a></td>
+              <td>other:other</td>
+              <td>46.0</td>
+              <td>22.8</td>
+              <td>46.0</td>
+              <td>7.89e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

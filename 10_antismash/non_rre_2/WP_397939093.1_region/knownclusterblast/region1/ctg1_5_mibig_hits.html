@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BCB17013.1</td>
+              <td>putative_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002523.2">BGC0002523.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>72.0</td>
+              <td>99.4</td>
+              <td>479.0</td>
+              <td>2.01e-170</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ52692.1</td>
+              <td>enoyl_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001073.5">BGC0001073.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>47.0</td>
+              <td>98.3</td>
+              <td>249.0</td>
+              <td>2.6e-80</td>
+          </tr>
+    
+          <tr>
+              <td>QLQ36607.1</td>
+              <td>zinc-binding_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002097.3">BGC0002097.3</a></td>
+              <td>NRPS:Type I+PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>47.0</td>
+              <td>98.3</td>
+              <td>248.0</td>
+              <td>7.34e-80</td>
+          </tr>
+    
+          <tr>
+              <td>ARG41923.1</td>
+              <td>IstT</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001622.5">BGC0001622.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>93.4</td>
+              <td>127.0</td>
+              <td>1.17e-33</td>
+          </tr>
+    
+          <tr>
+              <td>AOZ61191.1</td>
+              <td>zinc-containing_alcohol_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001762.3">BGC0001762.3</a></td>
+              <td>other:other</td>
+              <td>34.0</td>
+              <td>93.4</td>
+              <td>126.0</td>
+              <td>2.48e-33</td>
+          </tr>
+    
+          <tr>
+              <td>BAC79021.1</td>
+              <td>enoyl_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000245.5">BGC0000245.5</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>90.0</td>
+              <td>123.0</td>
+              <td>4.44e-32</td>
+          </tr>
+    
+          <tr>
+              <td>QTA30614.1</td>
+              <td>NADPH:quinone_reductase-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002143.2">BGC0002143.2</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>94.9</td>
+              <td>119.0</td>
+              <td>8.92e-31</td>
+          </tr>
+    
+          <tr>
+              <td>DAC76740.1</td>
+              <td>crotonyl-CoA_reductase/alcohol_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001885.3">BGC0001885.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>35.0</td>
+              <td>84.6</td>
+              <td>115.0</td>
+              <td>2.99e-29</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ46690.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000969.5">BGC0000969.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>32.0</td>
+              <td>94.9</td>
+              <td>114.0</td>
+              <td>3.06e-27</td>
+          </tr>
+    
+          <tr>
+              <td>AFL48526.1</td>
+              <td>laidlomycin_polyketide_synthase_(module_2)</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000084.5">BGC0000084.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>90.3</td>
+              <td>109.0</td>
+              <td>1.11e-25</td>
+          </tr>
+    
+          <tr>
+              <td>SEG87416.1</td>
+              <td>NADPH:quinone_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002712.2">BGC0002712.2</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>89.5</td>
+              <td>102.0</td>
+              <td>1.46e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AEH42472.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000032.5">BGC0000032.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>96.0</td>
+              <td>102.0</td>
+              <td>1.53e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AAF26921.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000988.5">BGC0000988.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>32.0</td>
+              <td>92.9</td>
+              <td>105.0</td>
+              <td>1.79e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ACB46195.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000989.3">BGC0000989.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>32.0</td>
+              <td>92.9</td>
+              <td>105.0</td>
+              <td>3.25e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AAF62883.1</td>
+              <td>epoD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000991.4">BGC0000991.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>31.0</td>
+              <td>92.9</td>
+              <td>104.0</td>
+              <td>4.38e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ADB12491.1</td>
+              <td>EpoD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000990.3">BGC0000990.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>31.0</td>
+              <td>92.9</td>
+              <td>103.0</td>
+              <td>1.07e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AKG06377.1</td>
+              <td>polyketide_synthase_type_1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001830.3">BGC0001830.3</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>63.0</td>
+              <td>102.0</td>
+              <td>2.52e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AKL64829.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002072.3">BGC0002072.3</a></td>
+              <td>PKS:Type I</td>
+              <td>37.0</td>
+              <td>64.7</td>
+              <td>101.0</td>
+              <td>4.75e-23</td>
+          </tr>
+    
+          <tr>
+              <td>ANR02553.1</td>
+              <td>LodL</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001648.5">BGC0001648.5</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>63.5</td>
+              <td>100.0</td>
+              <td>1.1e-22</td>
+          </tr>
+    
+          <tr>
+              <td>BCK51644.1</td>
+              <td>modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002520.2">BGC0002520.2</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>62.1</td>
+              <td>100.0</td>
+              <td>1.5e-22</td>
+          </tr>
+    
+          <tr>
+              <td>ACN69988.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000079.5">BGC0000079.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>72.1</td>
+              <td>100.0</td>
+              <td>2.06e-22</td>
+          </tr>
+    
+          <tr>
+              <td>WP_083502114.1</td>
+              <td>type_I_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001653.3">BGC0001653.3</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>63.5</td>
+              <td>99.0</td>
+              <td>2.68e-22</td>
+          </tr>
+    
+          <tr>
+              <td>CAF05651.1</td>
+              <td>TubF_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001053.5">BGC0001053.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>32.0</td>
+              <td>97.4</td>
+              <td>99.0</td>
+              <td>3.58e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AAP42857.1</td>
+              <td>NanA3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000105.5">BGC0000105.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>90.0</td>
+              <td>99.0</td>
+              <td>4.96e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AAP42873.1</td>
+              <td>NanA11</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000105.5">BGC0000105.5</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>71.8</td>
+              <td>98.0</td>
+              <td>8.46e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AAX98191.1</td>
+              <td>polyketide_synthase_type_I</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000052.5">BGC0000052.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>90.6</td>
+              <td>97.0</td>
+              <td>1.24e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AAP42859.1</td>
+              <td>NanA5</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000105.5">BGC0000105.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>90.6</td>
+              <td>97.0</td>
+              <td>1.62e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ADB12493.1</td>
+              <td>EpoF</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000990.3">BGC0000990.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>30.0</td>
+              <td>97.7</td>
+              <td>97.0</td>
+              <td>2.09e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ94389.1</td>
+              <td>modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000040.5">BGC0000040.5</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>64.1</td>
+              <td>97.0</td>
+              <td>2.18e-21</td>
+          </tr>
+    
+          <tr>
+              <td>BAW35658.1</td>
+              <td>modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002355.2">BGC0002355.2</a></td>
+              <td>PKS+other:other</td>
+              <td>36.0</td>
+              <td>63.2</td>
+              <td>96.0</td>
+              <td>3.03e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AQW35061.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001675.5">BGC0001675.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>82.1</td>
+              <td>93.0</td>
+              <td>3.11e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AGY62758.1</td>
+              <td>EbeF</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000051.5">BGC0000051.5</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>63.8</td>
+              <td>96.0</td>
+              <td>3.78e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QLD28380.2</td>
+              <td>SDR_family_NAD(P)-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002086.3">BGC0002086.3</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>90.9</td>
+              <td>96.0</td>
+              <td>3.93e-21</td>
+          </tr>
+    
+          <tr>
+              <td>SCN11952.1</td>
+              <td>ebeD-type_I_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001580.3">BGC0001580.3</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>63.8</td>
+              <td>96.0</td>
+              <td>3.94e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ANZ22989.1</td>
+              <td>ZinF</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001828.5">BGC0001828.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>73.2</td>
+              <td>96.0</td>
+              <td>5.28e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ARW71485.1</td>
+              <td>type_I_PKS_module_4,_module_5</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001812.3">BGC0001812.3</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>90.9</td>
+              <td>95.0</td>
+              <td>7.1e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QEA08906.1</td>
+              <td>JenA11</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002559.2">BGC0002559.2</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>69.8</td>
+              <td>95.0</td>
+              <td>9.04e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ACY06286.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001042.5">BGC0001042.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>33.0</td>
+              <td>69.5</td>
+              <td>95.0</td>
+              <td>9.07e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AAB66506.1</td>
+              <td>tylactone_synthase_modules_4_&amp;_5</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000166.5">BGC0000166.5</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>63.2</td>
+              <td>95.0</td>
+              <td>9.54e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QEA08888.1</td>
+              <td>JenA2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002559.2">BGC0002559.2</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>70.4</td>
+              <td>94.0</td>
+              <td>1.22e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AKA59091.1</td>
+              <td>type-I_PKS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001619.5">BGC0001619.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>93.2</td>
+              <td>94.0</td>
+              <td>1.32e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AAF62885.1</td>
+              <td>EpoF</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000991.4">BGC0000991.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>30.0</td>
+              <td>99.4</td>
+              <td>94.0</td>
+              <td>1.66e-20</td>
+          </tr>
+    
+          <tr>
+              <td>BAQ25513.1</td>
+              <td>type_I_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001288.5">BGC0001288.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>72.9</td>
+              <td>94.0</td>
+              <td>1.73e-20</td>
+          </tr>
+    
+          <tr>
+              <td>ATY46587.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001666.3">BGC0001666.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>90.3</td>
+              <td>94.0</td>
+              <td>1.75e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AHE80994.1</td>
+              <td>PieA4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001169.5">BGC0001169.5</a></td>
+              <td>PKS:Type I</td>
+              <td>32.0</td>
+              <td>91.5</td>
+              <td>94.0</td>
+              <td>2.2e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AAS79461.1</td>
+              <td>polyketide_synthase_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000035.5">BGC0000035.5</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>62.4</td>
+              <td>93.0</td>
+              <td>3.11e-20</td>
+          </tr>
+    
+          <tr>
+              <td>IF55_RS32375</td>
+              <td>SDR_family_NAD(P)-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001348.5">BGC0001348.5</a></td>
+              <td>PKS:Type I</td>
+              <td>32.0</td>
+              <td>91.5</td>
+              <td>93.0</td>
+              <td>3.12e-20</td>
+          </tr>
+    
+          <tr>
+              <td>CAO85897.1</td>
+              <td>modular_polyketide_synthase_NorB</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000110.5">BGC0000110.5</a></td>
+              <td>PKS:Type I</td>
+              <td>31.0</td>
+              <td>98.3</td>
+              <td>92.0</td>
+              <td>7.16e-20</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ16469.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000058.5">BGC0000058.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>65.0</td>
+              <td>92.0</td>
+              <td>7.18e-20</td>
+          </tr>
+    
+          <tr>
+              <td>ACB46197.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000989.3">BGC0000989.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>34.0</td>
+              <td>65.5</td>
+              <td>92.0</td>
+              <td>7.26e-20</td>
+          </tr>
+    
+          <tr>
+              <td>ABC84458.1</td>
+              <td>NigAIII</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000114.5">BGC0000114.5</a></td>
+              <td>PKS:Type I</td>
+              <td>34.0</td>
+              <td>63.2</td>
+              <td>91.0</td>
+              <td>1.37e-19</td>
+          </tr>
+    
+          <tr>
+              <td>BAD08373.1</td>
+              <td>polyketide_synthase_modules_1-3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000167.5">BGC0000167.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>91.7</td>
+              <td>91.0</td>
+              <td>1.4e-19</td>
+          </tr>
+    
+          <tr>
+              <td>CRI73799.1</td>
+              <td>CongC_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001215.5">BGC0001215.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>67.2</td>
+              <td>91.0</td>
+              <td>1.85e-19</td>
+          </tr>
+    
+          <tr>
+              <td>CAM00064.1</td>
+              <td>EryAII_Erythromycin_polyketide_synthase_modules_3_and_4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000055.5">BGC0000055.5</a></td>
+              <td>PKS:Type I+saccharide:hybrid/tailoring</td>
+              <td>33.0</td>
+              <td>72.4</td>
+              <td>91.0</td>
+              <td>2.45e-19</td>
+          </tr>
+    
+          <tr>
+              <td>TMU97101.1</td>
+              <td>SDR_family_NAD(P)-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002038.2">BGC0002038.2</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>63.2</td>
+              <td>91.0</td>
+              <td>2.47e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ANR02555.1</td>
+              <td>LodN</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001648.5">BGC0001648.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>63.5</td>
+              <td>91.0</td>
+              <td>2.51e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ACN69991.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000079.5">BGC0000079.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>72.1</td>
+              <td>90.0</td>
+              <td>3.13e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAM81586.2</td>
+              <td>putative_type_I_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000047.5">BGC0000047.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>63.2</td>
+              <td>90.0</td>
+              <td>3.29e-19</td>
+          </tr>
+    
+          <tr>
+              <td>QEA08890.1</td>
+              <td>JenA4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002559.2">BGC0002559.2</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>88.3</td>
+              <td>90.0</td>
+              <td>4.44e-19</td>
+          </tr>
+    
+          <tr>
+              <td>BAQ25482.1</td>
+              <td>type_I_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001288.5">BGC0001288.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>63.8</td>
+              <td>90.0</td>
+              <td>4.44e-19</td>
+          </tr>
+    
+          <tr>
+              <td>BAG85027.1</td>
+              <td>putative_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000086.5">BGC0000086.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>68.7</td>
+              <td>90.0</td>
+              <td>4.52e-19</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ64687.1</td>
+              <td>lasalocid_modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000087.5">BGC0000087.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>68.7</td>
+              <td>90.0</td>
+              <td>4.52e-19</td>
+          </tr>
+    
+          <tr>
+              <td>CAE02605.1</td>
+              <td>polyketide_synthase_type_I</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000024.5">BGC0000024.5</a></td>
+              <td>PKS:Type I</td>
+              <td>35.0</td>
+              <td>64.1</td>
+              <td>89.0</td>
+              <td>5.63e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ANR02554.1</td>
+              <td>LodM</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001648.5">BGC0001648.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>66.7</td>
+              <td>89.0</td>
+              <td>5.82e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAC46026.1</td>
+              <td>polyketide_synthase_modules_4_and_5</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000113.5">BGC0000113.5</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>67.0</td>
+              <td>89.0</td>
+              <td>5.93e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAO65799.1</td>
+              <td>monensin_polyketide_synthase_modules_5_and_6</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000100.5">BGC0000100.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>91.7</td>
+              <td>89.0</td>
+              <td>5.97e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ANZ52462.1</td>
+              <td>MonAIV</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001670.5">BGC0001670.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>91.7</td>
+              <td>89.0</td>
+              <td>5.97e-19</td>
+          </tr>
+    
+          <tr>
+              <td>QKV49770.1</td>
+              <td>PKS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002526.3">BGC0002526.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>89.7</td>
+              <td>89.0</td>
+              <td>8.02e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAP42856.1</td>
+              <td>NanA2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000105.5">BGC0000105.5</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>69.5</td>
+              <td>89.0</td>
+              <td>1.02e-18</td>
+          </tr>
+    
+          <tr>
+              <td>OJF16269.1</td>
+              <td>AceP2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001491.3">BGC0001491.3</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>63.5</td>
+              <td>88.0</td>
+              <td>1.46e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ANC94964.1</td>
+              <td>AlmHIII</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001396.5">BGC0001396.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>63.2</td>
+              <td>88.0</td>
+              <td>1.92e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001329.4">BGC0001329.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>33.0</td>
+              <td>69.8</td>
+              <td>87.0</td>
+              <td>2.28e-18</td>
+          </tr>
+    
+          <tr>
+              <td>BBM96639.1</td>
+              <td>modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002452.2">BGC0002452.2</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>63.5</td>
+              <td>87.0</td>
+              <td>2.6e-18</td>
+          </tr>
+    
+          <tr>
+              <td>BAC57030.1</td>
+              <td>protomycinolide_IV_synthase_3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000102.5">BGC0000102.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>62.4</td>
+              <td>87.0</td>
+              <td>3.46e-18</td>
+          </tr>
+    
+          <tr>
+              <td>QIQ28634.1</td>
+              <td>Nbc38</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002541.2">BGC0002541.2</a></td>
+              <td>other:other</td>
+              <td>31.0</td>
+              <td>92.3</td>
+              <td>87.0</td>
+              <td>3.46e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AGM05532.1</td>
+              <td>beta-ketoacyl_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002098.2">BGC0002098.2</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>82.6</td>
+              <td>87.0</td>
+              <td>3.55e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ARV85763.1</td>
+              <td>PieA4_type_I_PKS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001742.5">BGC0001742.5</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>90.6</td>
+              <td>86.0</td>
+              <td>7.92e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AQZ37086.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001511.5">BGC0001511.5</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>61.0</td>
+              <td>83.0</td>
+              <td>8.86e-18</td>
+          </tr>
+    
+          <tr>
+              <td>BAG85030.1</td>
+              <td>putative_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000086.5">BGC0000086.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>62.1</td>
+              <td>85.0</td>
+              <td>2.01e-17</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ64690.1</td>
+              <td>lasalocid_modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000087.5">BGC0000087.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>62.1</td>
+              <td>85.0</td>
+              <td>2.01e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QWF78551.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002142.2">BGC0002142.2</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>65.0</td>
+              <td>85.0</td>
+              <td>2.06e-17</td>
+          </tr>
+    
+          <tr>
+              <td>WP_159041997.1</td>
+              <td>type_I_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002033.4">BGC0002033.4</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>67.0</td>
+              <td>84.0</td>
+              <td>2.7e-17</td>
+          </tr>
+    
+          <tr>
+              <td>TMU97100.1</td>
+              <td>SDR_family_NAD(P)-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002038.2">BGC0002038.2</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>63.2</td>
+              <td>84.0</td>
+              <td>2.71e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QEA08891.1</td>
+              <td>JenA5</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002559.2">BGC0002559.2</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>62.1</td>
+              <td>83.0</td>
+              <td>6.51e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BAH02268.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000126.5">BGC0000126.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>68.7</td>
+              <td>83.0</td>
+              <td>6.68e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QOD94996.1</td>
+              <td>PldAI</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002102.2">BGC0002102.2</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>68.7</td>
+              <td>83.0</td>
+              <td>6.68e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QSV12662.1</td>
+              <td>AvmD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002456.3">BGC0002456.3</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>28.0</td>
+              <td>95.4</td>
+              <td>82.0</td>
+              <td>1.2e-16</td>
+          </tr>
+    
+          <tr>
+              <td>WP_055469549.1</td>
+              <td>type_I_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001537.5">BGC0001537.5</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>61.8</td>
+              <td>82.0</td>
+              <td>1.55e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QBG82527.1</td>
+              <td>Polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002587.2">BGC0002587.2</a></td>
+              <td>PKS</td>
+              <td>29.0</td>
+              <td>99.4</td>
+              <td>82.0</td>
+              <td>2.08e-16</td>
+          </tr>
+    
+          <tr>
+              <td>UHY14127.1</td>
+              <td>PKS_I</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002671.2">BGC0002671.2</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>70.9</td>
+              <td>81.0</td>
+              <td>2.77e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ACF35447.1</td>
+              <td>MbcAIII</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000090.4">BGC0000090.4</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>68.4</td>
+              <td>81.0</td>
+              <td>2.8e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AAP42858.1</td>
+              <td>NanA4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000105.5">BGC0000105.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>90.3</td>
+              <td>81.0</td>
+              <td>2.8e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AFL48528.1</td>
+              <td>laidlomycin_polyketide_synthase_(module_7_and_module_8)</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000084.5">BGC0000084.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>98.9</td>
+              <td>81.0</td>
+              <td>5.02e-16</td>
+          </tr>
+    
+          <tr>
+              <td>TXD00026.1</td>
+              <td>SDR_family_NAD(P)-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001877.4">BGC0001877.4</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>63.2</td>
+              <td>80.0</td>
+              <td>6.83e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AEZ54377.1</td>
+              <td>PieA4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000124.5">BGC0000124.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>90.3</td>
+              <td>79.0</td>
+              <td>1.52e-15</td>
+          </tr>
+    
+          <tr>
+              <td>BAG85026.1</td>
+              <td>putative_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000086.5">BGC0000086.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>68.7</td>
+              <td>79.0</td>
+              <td>2.18e-15</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ64686.1</td>
+              <td>lasalocid_modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000087.5">BGC0000087.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>68.7</td>
+              <td>79.0</td>
+              <td>2.18e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ACF35445.1</td>
+              <td>MbcAI</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000090.4">BGC0000090.4</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>72.4</td>
+              <td>79.0</td>
+              <td>2.21e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AVV61984.1</td>
+              <td>type_I_modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001477.5">BGC0001477.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>31.0</td>
+              <td>62.1</td>
+              <td>78.0</td>
+              <td>2.87e-15</td>
+          </tr>
+    
+          <tr>
+              <td>QDA77044.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002025.4">BGC0002025.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>31.0</td>
+              <td>66.7</td>
+              <td>78.0</td>
+              <td>3.94e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ADC45586.1</td>
+              <td>modular_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000093.5">BGC0000093.5</a></td>
+              <td>PKS:Type I</td>
+              <td>30.0</td>
+              <td>68.9</td>
+              <td>76.0</td>
+              <td>1.24e-14</td>
+          </tr>
+    
+          <tr>
+              <td>QKW94285.1</td>
+              <td>short-chain_dehydrogenase/reductase_SDR</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002342.3">BGC0002342.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>31.0</td>
+              <td>63.2</td>
+              <td>75.0</td>
+              <td>2.82e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AAS98781.1</td>
+              <td>JamJ</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001001.5">BGC0001001.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>28.0</td>
+              <td>72.6</td>
+              <td>75.0</td>
+              <td>2.9e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ACD39774.1</td>
+              <td>reducing_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000134.3">BGC0000134.3</a></td>
+              <td>PKS</td>
+              <td>27.0</td>
+              <td>94.0</td>
+              <td>73.0</td>
+              <td>1.19e-13</td>
+          </tr>
+    
+          <tr>
+              <td>OAQ63050.2</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002187.3">BGC0002187.3</a></td>
+              <td>PKS</td>
+              <td>27.0</td>
+              <td>94.0</td>
+              <td>73.0</td>
+              <td>1.19e-13</td>
+          </tr>
+    
+          <tr>
+              <td>QCP68965.1</td>
+              <td>VatK</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002296.2">BGC0002296.2</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>28.0</td>
+              <td>72.6</td>
+              <td>72.0</td>
+              <td>2.92e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AAM54079.1</td>
+              <td>quinone_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000020.3">BGC0000020.3</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>44.7</td>
+              <td>68.0</td>
+              <td>1.02e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ACR50775.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000163.5">BGC0000163.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>63.2</td>
+              <td>70.0</td>
+              <td>1.27e-12</td>
+          </tr>
+    
+          <tr>
+              <td>QNS30809.1</td>
+              <td>NADP-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002509.3">BGC0002509.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>39.0</td>
+              <td>69.0</td>
+              <td>1.5e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ACP19697.1</td>
+              <td>Ox4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000999.4">BGC0000999.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>37.0</td>
+              <td>39.0</td>
+              <td>67.0</td>
+              <td>3.63e-12</td>
+          </tr>
+    
+          <tr>
+              <td>EFL02197.1</td>
+              <td>leukotriene_B4_12-hydroxydehydrogenase/15-oxo-prostaglandin_13-reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000996.5">BGC0000996.5</a></td>
+              <td>NRPS:Type I+PKS:Iterative type I</td>
+              <td>46.0</td>
+              <td>27.9</td>
+              <td>67.0</td>
+              <td>6.53e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AQM58285.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001816.4">BGC0001816.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>23.0</td>
+              <td>89.7</td>
+              <td>64.0</td>
+              <td>8.86e-11</td>
+          </tr>
+    
+          <tr>
+              <td>CAA60460.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001040.5">BGC0001040.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>30.0</td>
+              <td>65.2</td>
+              <td>64.0</td>
+              <td>9.43e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AHV78252.1</td>
+              <td>ResS1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001246.3">BGC0001246.3</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>92.6</td>
+              <td>63.0</td>
+              <td>2.76e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AUD08666.1</td>
+              <td>zinc_binding_alcohol_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001553.5">BGC0001553.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>49.0</td>
+              <td>28.2</td>
+              <td>61.0</td>
+              <td>5.26e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AMY15068.1</td>
+              <td>hexaketide_synthase_MF-SQHKS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001339.5">BGC0001339.5</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>27.0</td>
+              <td>68.1</td>
+              <td>61.0</td>
+              <td>1.15e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AFK78066.1</td>
+              <td>putative_alcohol_dehydrogenase_zinc-binding_domain_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000666.5">BGC0000666.5</a></td>
+              <td>terpene:Sesquiterpene</td>
+              <td>43.0</td>
+              <td>27.9</td>
+              <td>58.0</td>
+              <td>3.99e-09</td>
+          </tr>
+    
+          <tr>
+              <td>APD26282.1</td>
+              <td>PtmC</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001726.4">BGC0001726.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>43.0</td>
+              <td>27.9</td>
+              <td>58.0</td>
+              <td>3.99e-09</td>
+          </tr>
+    
+          <tr>
+              <td>EAU31921.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002267.2">BGC0002267.2</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>89.7</td>
+              <td>59.0</td>
+              <td>6.3e-09</td>
+          </tr>
+    
+          <tr>
+              <td>QWM97865.1</td>
+              <td>NADP-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002434.2">BGC0002434.2</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>46.0</td>
+              <td>28.2</td>
+              <td>57.0</td>
+              <td>9.54e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AJD77025.1</td>
+              <td>IkaC</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001435.4">BGC0001435.4</a></td>
+              <td>NRPS:Type I+PKS:Iterative type I</td>
+              <td>44.0</td>
+              <td>27.9</td>
+              <td>56.0</td>
+              <td>2.28e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ACD39758.1</td>
+              <td>reducing_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000076.3">BGC0000076.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>91.2</td>
+              <td>57.0</td>
+              <td>2.57e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ACD39767.1</td>
+              <td>reducing_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000077.3">BGC0000077.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>91.2</td>
+              <td>57.0</td>
+              <td>2.57e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AHV78245.1</td>
+              <td>LasS1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001245.3">BGC0001245.3</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>92.3</td>
+              <td>56.0</td>
+              <td>3.41e-08</td>
+          </tr>
+    
+          <tr>
+              <td>WP_018540606.1</td>
+              <td>crotonyl-CoA_carboxylase/reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001332.5">BGC0001332.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>28.0</td>
+              <td>84.9</td>
+              <td>56.0</td>
+              <td>3.77e-08</td>
+          </tr>
+    
+          <tr>
+              <td>EKJ70677.1</td>
+              <td>PKS6</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002188.3">BGC0002188.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>23.0</td>
+              <td>92.6</td>
+              <td>56.0</td>
+              <td>4.54e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ABV91290.1</td>
+              <td>predicted_crotonyl-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000158.5">BGC0000158.5</a></td>
+              <td>PKS:Type I</td>
+              <td>25.0</td>
+              <td>108.8</td>
+              <td>50.0</td>
+              <td>2.02e-06</td>
+          </tr>
+    
+          <tr>
+              <td>ABI94383.1</td>
+              <td>TMC_biosynthetic_enzyme_R3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000157.5">BGC0000157.5</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>108.8</td>
+              <td>50.0</td>
+              <td>2.7e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AGC95324.1</td>
+              <td>CurS1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000045.3">BGC0000045.3</a></td>
+              <td>PKS</td>
+              <td>25.0</td>
+              <td>92.3</td>
+              <td>49.0</td>
+              <td>9.33e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

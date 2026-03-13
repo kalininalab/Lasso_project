@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QBF51799.1</td>
+              <td>NDP-hexose-3-ketoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001856.4">BGC0001856.4</a></td>
+              <td>PKS:Type I</td>
+              <td>39.0</td>
+              <td>40.5</td>
+              <td>67.0</td>
+              <td>2.4e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AAC01734.1</td>
+              <td>putative_dNTP-hexose_3-ketoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000136.5">BGC0000136.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>86.2</td>
+              <td>63.0</td>
+              <td>5.53e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AWH12643.1</td>
+              <td>Rmp10</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001759.3">BGC0001759.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>86.2</td>
+              <td>63.0</td>
+              <td>5.53e-11</td>
+          </tr>
+    
+          <tr>
+              <td>ACN38346.1</td>
+              <td>putative_NAD-dependent_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000714.5">BGC0000714.5</a></td>
+              <td>saccharide</td>
+              <td>30.0</td>
+              <td>86.5</td>
+              <td>59.0</td>
+              <td>1.11e-09</td>
+          </tr>
+    
+          <tr>
+              <td>BAP34743.1</td>
+              <td>NDP-hexose-3-ketoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000078.5">BGC0000078.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>39.5</td>
+              <td>55.0</td>
+              <td>2.76e-08</td>
+          </tr>
+    
+          <tr>
+              <td>BAF92598.1</td>
+              <td>putative_NAD_dependent_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000118.5">BGC0000118.5</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>69.7</td>
+              <td>55.0</td>
+              <td>2.88e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ACJ24872.1</td>
+              <td>putative_NAD_dependent_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000119.5">BGC0000119.5</a></td>
+              <td>PKS:Iterative type I+saccharide:hybrid/tailoring</td>
+              <td>31.0</td>
+              <td>69.7</td>
+              <td>55.0</td>
+              <td>2.88e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AZF85924.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001963.2">BGC0001963.2</a></td>
+              <td>PKS:Type I</td>
+              <td>36.0</td>
+              <td>38.2</td>
+              <td>55.0</td>
+              <td>3.63e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ52691.1</td>
+              <td>sugar_3-ketoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001073.5">BGC0001073.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>33.0</td>
+              <td>83.9</td>
+              <td>54.0</td>
+              <td>4.77e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAE06510.1</td>
+              <td>putative_NAD_dependent_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000689.3">BGC0000689.3</a></td>
+              <td>saccharide</td>
+              <td>28.0</td>
+              <td>86.5</td>
+              <td>54.0</td>
+              <td>5e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31432.1</td>
+              <td>putative_gentamicin_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000696.5">BGC0000696.5</a></td>
+              <td>saccharide</td>
+              <td>28.0</td>
+              <td>86.5</td>
+              <td>54.0</td>
+              <td>5e-08</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ52693.1</td>
+              <td>putative_NDP-hexose-3-ketoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000222.5">BGC0000222.5</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>37.8</td>
+              <td>54.0</td>
+              <td>8.84e-08</td>
+          </tr>
+    
+          <tr>
+              <td>BAE98083.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000719.5">BGC0000719.5</a></td>
+              <td>saccharide</td>
+              <td>38.0</td>
+              <td>33.6</td>
+              <td>52.0</td>
+              <td>1.33e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ADR01072.1</td>
+              <td>NocS4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000609.3">BGC0000609.3</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>31.0</td>
+              <td>82.6</td>
+              <td>52.0</td>
+              <td>2.06e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ARV75709.1</td>
+              <td>3&#39;&#39;-hydroxyl_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001603.3">BGC0001603.3</a></td>
+              <td>saccharide</td>
+              <td>28.0</td>
+              <td>82.6</td>
+              <td>51.0</td>
+              <td>4.9e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AHA81997.1</td>
+              <td>Arm28</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000199.5">BGC0000199.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>35.0</td>
+              <td>37.2</td>
+              <td>51.0</td>
+              <td>6.6e-07</td>
+          </tr>
+    
+          <tr>
+              <td>sipS11</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001452.5">BGC0001452.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>37.5</td>
+              <td>51.0</td>
+              <td>6.77e-07</td>
+          </tr>
+    
+          <tr>
+              <td>QLQ36608.1</td>
+              <td>Gfo/Idh/MocA_family_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002097.3">BGC0002097.3</a></td>
+              <td>NRPS:Type I+PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>36.0</td>
+              <td>37.2</td>
+              <td>49.0</td>
+              <td>2.09e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CAE22470.1</td>
+              <td>putative_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000720.3">BGC0000720.3</a></td>
+              <td>saccharide</td>
+              <td>29.0</td>
+              <td>82.9</td>
+              <td>49.0</td>
+              <td>2.95e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CAH18557.1</td>
+              <td>putative_hexose-3&#39;&#39;-dehydrogenase,_TobD2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000721.4">BGC0000721.4</a></td>
+              <td>saccharide</td>
+              <td>29.0</td>
+              <td>82.9</td>
+              <td>49.0</td>
+              <td>2.95e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

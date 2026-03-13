@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AJY78080.1</td>
+              <td>putative_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001902.3">BGC0001902.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>46.0</td>
+              <td>85.9</td>
+              <td>259.0</td>
+              <td>2.94e-84</td>
+          </tr>
+    
+          <tr>
+              <td>AAY93369.2</td>
+              <td>transcriptional_regulator,_AraC_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000413.5">BGC0000413.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>46.0</td>
+              <td>85.7</td>
+              <td>256.0</td>
+              <td>7.31e-83</td>
+          </tr>
+    
+          <tr>
+              <td>CAE45656.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000031.5">BGC0000031.5</a></td>
+              <td>PKS:Type I</td>
+              <td>44.0</td>
+              <td>85.7</td>
+              <td>232.0</td>
+              <td>1.12e-73</td>
+          </tr>
+    
+          <tr>
+              <td>ALV82316.1</td>
+              <td>AraC_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001533.5">BGC0001533.5</a></td>
+              <td>PKS</td>
+              <td>44.0</td>
+              <td>85.1</td>
+              <td>229.0</td>
+              <td>1.01e-72</td>
+          </tr>
+    
+          <tr>
+              <td>AGM05551.1</td>
+              <td>AraC_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002098.2">BGC0002098.2</a></td>
+              <td>PKS</td>
+              <td>41.0</td>
+              <td>87.0</td>
+              <td>214.0</td>
+              <td>7.14e-67</td>
+          </tr>
+    
+          <tr>
+              <td>TXD00030.1</td>
+              <td>helix-turn-helix_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001877.4">BGC0001877.4</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>87.3</td>
+              <td>176.0</td>
+              <td>4.23e-52</td>
+          </tr>
+    
+          <tr>
+              <td>AFY23022.1</td>
+              <td>AraC_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000274.5">BGC0000274.5</a></td>
+              <td>PKS:Type II</td>
+              <td>42.0</td>
+              <td>60.3</td>
+              <td>165.0</td>
+              <td>4.29e-48</td>
+          </tr>
+    
+          <tr>
+              <td>CAE53339.1</td>
+              <td>putative_AraC-family_transcription_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000440.5">BGC0000440.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>85.4</td>
+              <td>154.0</td>
+              <td>8.51e-44</td>
+          </tr>
+    
+          <tr>
+              <td>CAG14998.1</td>
+              <td>transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000441.4">BGC0000441.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>85.4</td>
+              <td>154.0</td>
+              <td>8.51e-44</td>
+          </tr>
+    
+          <tr>
+              <td>ADE34524.1</td>
+              <td>AraC_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000269.5">BGC0000269.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>37.0</td>
+              <td>68.6</td>
+              <td>144.0</td>
+              <td>5.38e-40</td>
+          </tr>
+    
+          <tr>
+              <td>AAY93370.1</td>
+              <td>isonitrile_hydratase_InhA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000413.5">BGC0000413.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>44.3</td>
+              <td>99.0</td>
+              <td>5.53e-24</td>
+          </tr>
+    
+          <tr>
+              <td>KFA69337.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001626.3">BGC0001626.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>53.2</td>
+              <td>80.0</td>
+              <td>7.99e-17</td>
+          </tr>
+    
+          <tr>
+              <td>ATY72534.1</td>
+              <td>AraC_family_transcriptional_regulator</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001574.5">BGC0001574.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>54.3</td>
+              <td>68.0</td>
+              <td>1.04e-12</td>
+          </tr>
+    
+          <tr>
+              <td>WP_102918838.1</td>
+              <td>DJ-1/PfpI_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002104.3">BGC0002104.3</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>29.0</td>
+              <td>54.9</td>
+              <td>57.0</td>
+              <td>6.16e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ATL73029.1</td>
+              <td>luciferase-like_monooxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001807.4">BGC0001807.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>75.0</td>
+              <td>97.7</td>
+              <td>508.0</td>
+              <td>2.7e-182</td>
+          </tr>
+    
+          <tr>
+              <td>BAF50713.1</td>
+              <td>Favin-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001116.5">BGC0001116.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>41.0</td>
+              <td>29.7</td>
+              <td>64.0</td>
+              <td>5.84e-11</td>
+          </tr>
+    
+          <tr>
+              <td>CCP20065.1</td>
+              <td>divZ_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001119.5">BGC0001119.5</a></td>
+              <td>PKS:Type I</td>
+              <td>34.0</td>
+              <td>52.6</td>
+              <td>63.0</td>
+              <td>1.09e-10</td>
+          </tr>
+    
+          <tr>
+              <td>QIE07147.1</td>
+              <td>OvmZ</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001719.4">BGC0001719.4</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>52.6</td>
+              <td>63.0</td>
+              <td>1.45e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CCP20053.1</td>
+              <td>divO_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001119.5">BGC0001119.5</a></td>
+              <td>PKS:Type I</td>
+              <td>44.0</td>
+              <td>25.3</td>
+              <td>61.0</td>
+              <td>5.95e-10</td>
+          </tr>
+    
+          <tr>
+              <td>QIE07133.1</td>
+              <td>OvmO</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001719.4">BGC0001719.4</a></td>
+              <td>PKS</td>
+              <td>44.0</td>
+              <td>25.3</td>
+              <td>61.0</td>
+              <td>5.95e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AHB82056.1</td>
+              <td>non_ribosomal_peptide_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001019.5">BGC0001019.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>37.0</td>
+              <td>33.4</td>
+              <td>61.0</td>
+              <td>8.03e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CBG67534.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002367.2">BGC0002367.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>29.7</td>
+              <td>60.0</td>
+              <td>9.96e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AXM42952.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001941.3">BGC0001941.3</a></td>
+              <td>PKS:Type I</td>
+              <td>30.0</td>
+              <td>52.6</td>
+              <td>58.0</td>
+              <td>7.58e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AHB82069.1</td>
+              <td>non_ribosomal_peptide_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001231.5">BGC0001231.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>31.0</td>
+              <td>45.9</td>
+              <td>58.0</td>
+              <td>1.03e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AHX24718.1</td>
+              <td>F420-dependent_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000200.5">BGC0000200.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>41.0</td>
+              <td>30.8</td>
+              <td>53.0</td>
+              <td>1.19e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

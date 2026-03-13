@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAC67785.1</td>
+              <td>putative_terpene_cyclase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000683.3">BGC0000683.3</a></td>
+              <td>terpene</td>
+              <td>82.0</td>
+              <td>96.0</td>
+              <td>563.0</td>
+              <td>5.28e-204</td>
+          </tr>
+    
+          <tr>
+              <td>BAC70709.1</td>
+              <td>pentalenene_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000678.5">BGC0000678.5</a></td>
+              <td>terpene</td>
+              <td>36.0</td>
+              <td>96.8</td>
+              <td>201.0</td>
+              <td>8.89e-62</td>
+          </tr>
+    
+          <tr>
+              <td>ADO85578.1</td>
+              <td>PntA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000653.5">BGC0000653.5</a></td>
+              <td>terpene</td>
+              <td>36.0</td>
+              <td>96.8</td>
+              <td>199.0</td>
+              <td>3.6e-61</td>
+          </tr>
+    
+          <tr>
+              <td>WP_005320742.1</td>
+              <td>isoafricanol_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001746.3">BGC0001746.3</a></td>
+              <td>terpene</td>
+              <td>38.0</td>
+              <td>89.4</td>
+              <td>186.0</td>
+              <td>1.01e-55</td>
+          </tr>
+    
+          <tr>
+              <td>EDY49122.1</td>
+              <td>terpene_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000674.5">BGC0000674.5</a></td>
+              <td>terpene</td>
+              <td>29.0</td>
+              <td>86.5</td>
+              <td>100.0</td>
+              <td>6.79e-24</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

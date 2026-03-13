@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAI94710.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000141.5">BGC0000141.5</a></td>
+              <td>PKS</td>
+              <td>47.0</td>
+              <td>59.4</td>
+              <td>100.0</td>
+              <td>2.54e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AAD13563.1</td>
+              <td>reductase_homolog</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000239.5">BGC0000239.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>35.0</td>
+              <td>66.8</td>
+              <td>51.0</td>
+              <td>8.52e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ACP19360.1</td>
+              <td>SaqO</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000267.5">BGC0000267.5</a></td>
+              <td>PKS:Type II+saccharide:oligosaccharide</td>
+              <td>47.0</td>
+              <td>29.4</td>
+              <td>45.0</td>
+              <td>6.53e-06</td>
+          </tr>
+    
+          <tr>
+              <td>ADB02851.1</td>
+              <td>AzicH</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000202.5">BGC0000202.5</a></td>
+              <td>PKS</td>
+              <td>44.0</td>
+              <td>34.2</td>
+              <td>45.0</td>
+              <td>8.91e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

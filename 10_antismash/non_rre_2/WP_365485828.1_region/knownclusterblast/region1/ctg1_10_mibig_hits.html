@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAC70701.1</td>
+              <td>glyceraldehyde-3-phosphate_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000678.5">BGC0000678.5</a></td>
+              <td>terpene</td>
+              <td>53.0</td>
+              <td>100.0</td>
+              <td>354.0</td>
+              <td>8.21e-122</td>
+          </tr>
+    
+          <tr>
+              <td>ADO85570.1</td>
+              <td>GapR</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000653.5">BGC0000653.5</a></td>
+              <td>terpene</td>
+              <td>53.0</td>
+              <td>100.0</td>
+              <td>352.0</td>
+              <td>6.67e-121</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001826051.1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001995.3">BGC0001995.3</a></td>
+              <td>terpene</td>
+              <td>45.0</td>
+              <td>100.3</td>
+              <td>278.0</td>
+              <td>7.51e-92</td>
+          </tr>
+    
+          <tr>
+              <td>AUV64159.1</td>
+              <td>glyceraldehyde-3-phosphate_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002436.2">BGC0002436.2</a></td>
+              <td>other:other</td>
+              <td>37.0</td>
+              <td>100.0</td>
+              <td>211.0</td>
+              <td>2.41e-64</td>
+          </tr>
+    
+          <tr>
+              <td>AAC18117.1</td>
+              <td>glyceraldehyde-3-phosphate_dehydrogenase_homolog</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000225.5">BGC0000225.5</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>100.0</td>
+              <td>208.0</td>
+              <td>2.3e-63</td>
+          </tr>
+    
+          <tr>
+              <td>BBA21060.1</td>
+              <td>putative_glyceraldehyde_3-phosphate_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001740.5">BGC0001740.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>37.0</td>
+              <td>100.9</td>
+              <td>207.0</td>
+              <td>1.42e-62</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

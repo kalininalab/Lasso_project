@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAD62207.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000873.3">BGC0000873.3</a></td>
+              <td>other:other</td>
+              <td>56.0</td>
+              <td>98.0</td>
+              <td>393.0</td>
+              <td>9.41e-135</td>
+          </tr>
+    
+          <tr>
+              <td>ACN29705.1</td>
+              <td>putative_transmembrane_efflux_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000814.3">BGC0000814.3</a></td>
+              <td>other:other</td>
+              <td>36.0</td>
+              <td>76.6</td>
+              <td>114.0</td>
+              <td>3.99e-28</td>
+          </tr>
+    
+          <tr>
+              <td>QZN83606.1</td>
+              <td>MFS_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002621.2">BGC0002621.2</a></td>
+              <td>other:other</td>
+              <td>31.0</td>
+              <td>93.5</td>
+              <td>108.0</td>
+              <td>5.29e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AEF16056.1</td>
+              <td>major_facilitator_superfamily_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000953.5">BGC0000953.5</a></td>
+              <td>saccharide:aminoglycoside</td>
+              <td>30.0</td>
+              <td>90.3</td>
+              <td>99.0</td>
+              <td>1.65e-22</td>
+          </tr>
+    
+          <tr>
+              <td>ACZ13463.1</td>
+              <td>putative_integral_membrane_transporter_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000897.5">BGC0000897.5</a></td>
+              <td>other:other</td>
+              <td>31.0</td>
+              <td>91.3</td>
+              <td>89.0</td>
+              <td>3.93e-19</td>
+          </tr>
+    
+          <tr>
+              <td>D3C59_17740</td>
+              <td>MFS_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002652.2">BGC0002652.2</a></td>
+              <td>other:other+saccharide</td>
+              <td>34.0</td>
+              <td>44.9</td>
+              <td>77.0</td>
+              <td>7.56e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ABP54623.1</td>
+              <td>drug_resistance_transporter,_EmrB/QacA_subfamily</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000241.5">BGC0000241.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>29.0</td>
+              <td>49.9</td>
+              <td>61.0</td>
+              <td>8.1e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ABS75823.1</td>
+              <td>YwfA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001184.4">BGC0001184.4</a></td>
+              <td>other:other</td>
+              <td>22.0</td>
+              <td>90.5</td>
+              <td>56.0</td>
+              <td>4.7e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

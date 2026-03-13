@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QEO75080.1</td>
+              <td>alpha/beta_hydrolase_fold_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002079.2">BGC0002079.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>90.4</td>
+              <td>67.0</td>
+              <td>1.07e-12</td>
+          </tr>
+    
+          <tr>
+              <td>OLZ50898.1</td>
+              <td>alpha/beta_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001461.5">BGC0001461.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>96.9</td>
+              <td>67.0</td>
+              <td>2.21e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AYA22319.1</td>
+              <td>Kph</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001955.4">BGC0001955.4</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>27.0</td>
+              <td>96.9</td>
+              <td>67.0</td>
+              <td>2.21e-12</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74986.1</td>
+              <td>omn11</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002078.2">BGC0002078.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>94.9</td>
+              <td>66.0</td>
+              <td>3.66e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AEF16028.1</td>
+              <td>LipE-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000379.5">BGC0000379.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>91.4</td>
+              <td>66.0</td>
+              <td>3.78e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AIG79225.1</td>
+              <td>LipE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000419.5">BGC0000419.5</a></td>
+              <td>NRPS:Type I+saccharide</td>
+              <td>26.0</td>
+              <td>96.2</td>
+              <td>64.0</td>
+              <td>2.5e-11</td>
+          </tr>
+    
+          <tr>
+              <td>EME52975.1</td>
+              <td>alpha/beta_hydrolase_fold_containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001460.5">BGC0001460.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>96.9</td>
+              <td>63.0</td>
+              <td>4.66e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AIE77075.1</td>
+              <td>alpha/beta_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000418.5">BGC0000418.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>91.1</td>
+              <td>61.0</td>
+              <td>1.56e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CAC48368.1</td>
+              <td>putative_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000311.6">BGC0000311.6</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>27.0</td>
+              <td>91.1</td>
+              <td>61.0</td>
+              <td>1.66e-10</td>
+          </tr>
+    
+          <tr>
+              <td>OLZ52443.1</td>
+              <td>alpha/beta_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001462.5">BGC0001462.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>95.9</td>
+              <td>61.0</td>
+              <td>2.86e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CAM56773.1</td>
+              <td>LipE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000354.5">BGC0000354.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>41.8</td>
+              <td>59.0</td>
+              <td>6.64e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AEI58878.1</td>
+              <td>hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000455.6">BGC0000455.6</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>25.0</td>
+              <td>96.9</td>
+              <td>59.0</td>
+              <td>9.53e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ALV86872.1</td>
+              <td>Tlo26</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001406.5">BGC0001406.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>90.8</td>
+              <td>58.0</td>
+              <td>2.21e-09</td>
+          </tr>
+    
+          <tr>
+              <td>OKA09436.1</td>
+              <td>alpha/beta_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001459.5">BGC0001459.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>96.2</td>
+              <td>57.0</td>
+              <td>3.16e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

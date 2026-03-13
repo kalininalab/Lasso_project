@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABC67273.1</td>
+              <td>glucoamylase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000723.5">BGC0000723.5</a></td>
+              <td>other:cyclitol+saccharide</td>
+              <td>58.0</td>
+              <td>100.5</td>
+              <td>698.0</td>
+              <td>4.68e-249</td>
+          </tr>
+    
+          <tr>
+              <td>ABA41513.1</td>
+              <td>glycosyl_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000722.5">BGC0000722.5</a></td>
+              <td>other:cyclitol+saccharide</td>
+              <td>58.0</td>
+              <td>100.5</td>
+              <td>697.0</td>
+              <td>9.42e-249</td>
+          </tr>
+    
+          <tr>
+              <td>ALJ01857.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001285.5">BGC0001285.5</a></td>
+              <td>other:fatty acid</td>
+              <td>54.0</td>
+              <td>99.0</td>
+              <td>620.0</td>
+              <td>1.26e-218</td>
+          </tr>
+    
+          <tr>
+              <td>AEG64675.1</td>
+              <td>glycosyl_hydrolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000379.5">BGC0000379.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>41.0</td>
+              <td>100.5</td>
+              <td>410.0</td>
+              <td>3.55e-136</td>
+          </tr>
+    
+          <tr>
+              <td>AAY93362.1</td>
+              <td>glycosyl_hydrolase,_family_15</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000413.5">BGC0000413.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>38.0</td>
+              <td>98.8</td>
+              <td>389.0</td>
+              <td>9.3e-128</td>
+          </tr>
+    
+          <tr>
+              <td>QBQ12475.1</td>
+              <td>glycoside_hydrolase_family_15_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002693.2">BGC0002693.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>38.0</td>
+              <td>99.2</td>
+              <td>385.0</td>
+              <td>2.9e-126</td>
+          </tr>
+    
+          <tr>
+              <td>MUL41460.1</td>
+              <td>glycoside_hydrolase_family_15_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002045.3">BGC0002045.3</a></td>
+              <td>PKS:Type II</td>
+              <td>40.0</td>
+              <td>99.7</td>
+              <td>362.0</td>
+              <td>1.83e-117</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

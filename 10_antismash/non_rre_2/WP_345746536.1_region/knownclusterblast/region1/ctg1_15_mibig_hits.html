@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABV97146.1</td>
+              <td>multicopper_oxidase_type_2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000137.3">BGC0000137.3</a></td>
+              <td>PKS</td>
+              <td>48.0</td>
+              <td>86.7</td>
+              <td>97.0</td>
+              <td>1e-24</td>
+          </tr>
+    
+          <tr>
+              <td>WP_244885523.1</td>
+              <td>multicopper_oxidase_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002009.4">BGC0002009.4</a></td>
+              <td>PKS</td>
+              <td>52.0</td>
+              <td>83.8</td>
+              <td>92.0</td>
+              <td>1.07e-22</td>
+          </tr>
+    
+          <tr>
+              <td>ADE22283.1</td>
+              <td>putative_spore_coat_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000279.5">BGC0000279.5</a></td>
+              <td>PKS</td>
+              <td>49.0</td>
+              <td>54.3</td>
+              <td>58.0</td>
+              <td>8.21e-11</td>
+          </tr>
+    
+          <tr>
+              <td>ABL09951.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000197.5">BGC0000197.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>48.0</td>
+              <td>57.1</td>
+              <td>55.0</td>
+              <td>7.38e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AKD43531.1</td>
+              <td>Copper_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001409.5">BGC0001409.5</a></td>
+              <td>PKS</td>
+              <td>43.0</td>
+              <td>55.2</td>
+              <td>54.0</td>
+              <td>1.35e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AQW35036.1</td>
+              <td>copper_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001675.5">BGC0001675.5</a></td>
+              <td>PKS</td>
+              <td>47.0</td>
+              <td>50.5</td>
+              <td>52.0</td>
+              <td>1.19e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

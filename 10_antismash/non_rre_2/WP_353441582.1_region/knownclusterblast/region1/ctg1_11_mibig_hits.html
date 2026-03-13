@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AFI47646.1</td>
+              <td>GyrB_R</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000834.5">BGC0000834.5</a></td>
+              <td>saccharide:hybrid/tailoring+other:aminocoumarin</td>
+              <td>50.0</td>
+              <td>70.1</td>
+              <td>534.0</td>
+              <td>4.37e-180</td>
+          </tr>
+    
+          <tr>
+              <td>AAN65247.1</td>
+              <td>clorobiocin-resistant_gyrase_B</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000832.4">BGC0000832.4</a></td>
+              <td>saccharide:hybrid/tailoring+other:aminocoumarin</td>
+              <td>49.0</td>
+              <td>67.3</td>
+              <td>518.0</td>
+              <td>2.79e-175</td>
+          </tr>
+    
+          <tr>
+              <td>AAO47225.2</td>
+              <td>DNA_gyrase_subunit_B</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000833.4">BGC0000833.4</a></td>
+              <td>saccharide:hybrid/tailoring+other:aminocoumarin</td>
+              <td>48.0</td>
+              <td>71.1</td>
+              <td>519.0</td>
+              <td>4.29e-174</td>
+          </tr>
+    
+          <tr>
+              <td>AAO47226.2</td>
+              <td>DNA_gyrase_subunit_B</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000833.4">BGC0000833.4</a></td>
+              <td>saccharide:hybrid/tailoring+other:aminocoumarin</td>
+              <td>39.0</td>
+              <td>72.8</td>
+              <td>390.0</td>
+              <td>2.89e-124</td>
+          </tr>
+    
+          <tr>
+              <td>AMP46594.1</td>
+              <td>NucP</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001387.5">BGC0001387.5</a></td>
+              <td>other:other</td>
+              <td>40.0</td>
+              <td>46.7</td>
+              <td>278.0</td>
+              <td>1.76e-82</td>
+          </tr>
+    
+          <tr>
+              <td>AAP57678.1</td>
+              <td>putative_DNA_gyrase_subunit_B</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000768.5">BGC0000768.5</a></td>
+              <td>saccharide</td>
+              <td>46.0</td>
+              <td>33.5</td>
+              <td>241.0</td>
+              <td>2.01e-71</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

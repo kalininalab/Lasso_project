@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AGS67376.1</td>
+              <td>iron-sulfur_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001227.3">BGC0001227.3</a></td>
+              <td>terpene</td>
+              <td>83.0</td>
+              <td>100.9</td>
+              <td>568.0</td>
+              <td>1.97e-206</td>
+          </tr>
+    
+          <tr>
+              <td>BAG23656.1</td>
+              <td>putative_methylesterase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000664.5">BGC0000664.5</a></td>
+              <td>terpene</td>
+              <td>76.0</td>
+              <td>98.5</td>
+              <td>511.0</td>
+              <td>9.29e-184</td>
+          </tr>
+    
+          <tr>
+              <td>crtaV</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001456.3">BGC0001456.3</a></td>
+              <td>terpene</td>
+              <td>75.0</td>
+              <td>100.6</td>
+              <td>508.0</td>
+              <td>1.08e-182</td>
+          </tr>
+    
+          <tr>
+              <td>BAB69146.1</td>
+              <td>methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000633.3">BGC0000633.3</a></td>
+              <td>terpene</td>
+              <td>71.0</td>
+              <td>105.7</td>
+              <td>494.0</td>
+              <td>9.82e-177</td>
+          </tr>
+    
+          <tr>
+              <td>AAG28702.1</td>
+              <td>CrtV</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000649.3">BGC0000649.3</a></td>
+              <td>terpene</td>
+              <td>72.0</td>
+              <td>100.0</td>
+              <td>484.0</td>
+              <td>5.93e-173</td>
+          </tr>
+    
+          <tr>
+              <td>ARS01487.1</td>
+              <td>2Fe-2S_ferredoxin</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001702.3">BGC0001702.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>65.0</td>
+              <td>93.5</td>
+              <td>416.0</td>
+              <td>2.77e-146</td>
+          </tr>
+    
+          <tr>
+              <td>BAG84256.1</td>
+              <td>putative_oxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000257.5">BGC0000257.5</a></td>
+              <td>PKS:Type I</td>
+              <td>33.0</td>
+              <td>20.5</td>
+              <td>56.0</td>
+              <td>2.23e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

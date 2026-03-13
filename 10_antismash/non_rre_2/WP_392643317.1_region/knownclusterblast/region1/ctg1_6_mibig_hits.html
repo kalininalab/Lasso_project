@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BBM96622.1</td>
+              <td>monooxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002452.2">BGC0002452.2</a></td>
+              <td>PKS</td>
+              <td>84.0</td>
+              <td>98.7</td>
+              <td>508.0</td>
+              <td>1.78e-183</td>
+          </tr>
+    
+          <tr>
+              <td>SCN11958.1</td>
+              <td>F420-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001580.3">BGC0001580.3</a></td>
+              <td>PKS</td>
+              <td>77.0</td>
+              <td>99.0</td>
+              <td>468.0</td>
+              <td>1.8e-167</td>
+          </tr>
+    
+          <tr>
+              <td>AOZ61202.1</td>
+              <td>F420-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001762.3">BGC0001762.3</a></td>
+              <td>other:other</td>
+              <td>61.0</td>
+              <td>100.0</td>
+              <td>351.0</td>
+              <td>1.65e-121</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ19083.1</td>
+              <td>putative_luciferase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000288.5">BGC0000288.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>42.0</td>
+              <td>68.4</td>
+              <td>134.0</td>
+              <td>3.29e-37</td>
+          </tr>
+    
+          <tr>
+              <td>AAC01735.3</td>
+              <td>putative_flavin-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000136.5">BGC0000136.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>85.2</td>
+              <td>84.0</td>
+              <td>5.29e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AWH12642.1</td>
+              <td>Rmp11</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001759.3">BGC0001759.3</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>82.3</td>
+              <td>79.0</td>
+              <td>1.22e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AHL46688.1</td>
+              <td>luciferase-like_monooxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001177.4">BGC0001177.4</a></td>
+              <td>PKS:Type II</td>
+              <td>32.0</td>
+              <td>76.8</td>
+              <td>79.0</td>
+              <td>3.04e-16</td>
+          </tr>
+    
+          <tr>
+              <td>CQR60484.1</td>
+              <td>Rif-orf11_homologue,_Flavin-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001287.5">BGC0001287.5</a></td>
+              <td>PKS</td>
+              <td>34.0</td>
+              <td>56.8</td>
+              <td>77.0</td>
+              <td>5.86e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QSV12652.1</td>
+              <td>AvmR</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002456.3">BGC0002456.3</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>34.0</td>
+              <td>55.2</td>
+              <td>70.0</td>
+              <td>2.73e-13</td>
+          </tr>
+    
+          <tr>
+              <td>BAF50713.1</td>
+              <td>Favin-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001116.5">BGC0001116.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>28.0</td>
+              <td>74.5</td>
+              <td>66.0</td>
+              <td>9.81e-12</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ07847.1</td>
+              <td>putative_oxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000232.5">BGC0000232.5</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>70.3</td>
+              <td>66.0</td>
+              <td>1.19e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AEH41801.1</td>
+              <td>HrmD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000374.5">BGC0000374.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>55.2</td>
+              <td>62.0</td>
+              <td>1.6e-10</td>
+          </tr>
+    
+          <tr>
+              <td>OKI81348.1</td>
+              <td>monooxygenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002478.3">BGC0002478.3</a></td>
+              <td>PKS</td>
+              <td>30.0</td>
+              <td>73.5</td>
+              <td>61.0</td>
+              <td>2.48e-10</td>
+          </tr>
+    
+          <tr>
+              <td>UPN68090.1</td>
+              <td>putative_LLM_class_flavin-dependent_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002672.2">BGC0002672.2</a></td>
+              <td>PKS</td>
+              <td>29.0</td>
+              <td>75.2</td>
+              <td>60.0</td>
+              <td>6.16e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ARU08084.1</td>
+              <td>MlcP</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001448.5">BGC0001448.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>55.5</td>
+              <td>56.0</td>
+              <td>1.74e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

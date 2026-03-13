@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAE93723.1</td>
+              <td>putative_DedA_family_membrane-associated_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000164.5">BGC0000164.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>83.8</td>
+              <td>100.0</td>
+              <td>4.64e-26</td>
+          </tr>
+    
+          <tr>
+              <td>CAM56764.1</td>
+              <td>putative_alkaline_phosphatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000354.5">BGC0000354.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>84.8</td>
+              <td>100.0</td>
+              <td>3.62e-25</td>
+          </tr>
+    
+          <tr>
+              <td>WP_016325503.1</td>
+              <td>VTT_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001283.3">BGC0001283.3</a></td>
+              <td>PKS:Type I</td>
+              <td>31.0</td>
+              <td>87.1</td>
+              <td>72.0</td>
+              <td>2.57e-15</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

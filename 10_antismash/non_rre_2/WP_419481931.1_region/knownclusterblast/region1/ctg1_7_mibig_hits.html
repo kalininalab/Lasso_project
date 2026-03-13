@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABW00316.1</td>
+              <td>pyruvate_phosphate_dikinase_PEP/pyruvate-binding</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000333.5">BGC0000333.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>51.1</td>
+              <td>195.0</td>
+              <td>5.73e-55</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ19075.1</td>
+              <td>putative_phosphoenolpyruvate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000288.5">BGC0000288.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>43.0</td>
+              <td>171.0</td>
+              <td>8.18e-44</td>
+          </tr>
+    
+          <tr>
+              <td>AGP37403.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002386.2">BGC0002386.2</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>31.0</td>
+              <td>48.2</td>
+              <td>141.0</td>
+              <td>4.2e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AHF22858.1</td>
+              <td>MarH</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000091.5">BGC0000091.5</a></td>
+              <td>PKS</td>
+              <td>33.0</td>
+              <td>43.9</td>
+              <td>137.0</td>
+              <td>5.33e-33</td>
+          </tr>
+    
+          <tr>
+              <td>WP_012015337.1</td>
+              <td>phosphoenolpyruvate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001458.4">BGC0001458.4</a></td>
+              <td>other:aminocoumarin</td>
+              <td>33.0</td>
+              <td>41.5</td>
+              <td>137.0</td>
+              <td>9.07e-33</td>
+          </tr>
+    
+          <tr>
+              <td>MBA5221222.1</td>
+              <td>phosphoenolpyruvate-utilizing_enzyme</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002090.3">BGC0002090.3</a></td>
+              <td>PKS:Type I+NRPS:Type I</td>
+              <td>34.0</td>
+              <td>43.5</td>
+              <td>136.0</td>
+              <td>1.32e-32</td>
+          </tr>
+    
+          <tr>
+              <td>WP_037611834.1</td>
+              <td>PEP/pyruvate-binding_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002381.3">BGC0002381.3</a></td>
+              <td>other:other+PKS</td>
+              <td>35.0</td>
+              <td>41.5</td>
+              <td>129.0</td>
+              <td>1.89e-30</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

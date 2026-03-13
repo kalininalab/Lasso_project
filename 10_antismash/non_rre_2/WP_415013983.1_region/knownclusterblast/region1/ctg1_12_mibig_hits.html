@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AEA60652.1</td>
+              <td>RND_efflux_system,_outer_membrane_lipoprotein,_NodT</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000892.4">BGC0000892.4</a></td>
+              <td>other:other</td>
+              <td>35.0</td>
+              <td>94.5</td>
+              <td>154.0</td>
+              <td>6.63e-41</td>
+          </tr>
+    
+          <tr>
+              <td>AOZ21318.1</td>
+              <td>SulK</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001790.4">BGC0001790.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>97.4</td>
+              <td>143.0</td>
+              <td>6.85e-37</td>
+          </tr>
+    
+          <tr>
+              <td>AAY93388.1</td>
+              <td>efflux_transporter,_outer_membrane_factor_lipoprotein,_NodT_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000413.5">BGC0000413.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>87.8</td>
+              <td>120.0</td>
+              <td>3.2e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AAY93344.1</td>
+              <td>efflux_transporter,_outer_membrane_factor_lipoprotein,_NodT_family</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000413.5">BGC0000413.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>84.9</td>
+              <td>107.0</td>
+              <td>9.75e-25</td>
+          </tr>
+    
+          <tr>
+              <td>ACV88183.1</td>
+              <td>PcoA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000329.5">BGC0000329.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>28.0</td>
+              <td>92.9</td>
+              <td>105.0</td>
+              <td>4.77e-24</td>
+          </tr>
+    
+          <tr>
+              <td>KPN90367.1</td>
+              <td>NunG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001416.5">BGC0001416.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>94.9</td>
+              <td>101.0</td>
+              <td>1.22e-22</td>
+          </tr>
+    
+          <tr>
+              <td>QBQ12455.1</td>
+              <td>efflux_transporter_outer_membrane_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002693.2">BGC0002693.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>86.4</td>
+              <td>100.0</td>
+              <td>1.61e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AAY37645.1</td>
+              <td>RND_efflux_system,_outer_membrane_lipoprotein,_NodT</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000437.5">BGC0000437.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>93.9</td>
+              <td>100.0</td>
+              <td>2.29e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AAY37659.1</td>
+              <td>RND_efflux_system,_outer_membrane_lipoprotein,_NodT</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000437.5">BGC0000437.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>28.0</td>
+              <td>84.7</td>
+              <td>97.0</td>
+              <td>3.18e-21</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

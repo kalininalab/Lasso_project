@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>WP_054234644.1</td>
+              <td>cation:proton_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002014.3">BGC0002014.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>27.0</td>
+              <td>97.6</td>
+              <td>94.0</td>
+              <td>1.07e-20</td>
+          </tr>
+    
+          <tr>
+              <td>RSO11551.1</td>
+              <td>sodium:proton_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002637.3">BGC0002637.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>97.3</td>
+              <td>89.0</td>
+              <td>4.59e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAK81829.1</td>
+              <td>integral_membrane_ion_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000326.5">BGC0000326.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>30.0</td>
+              <td>80.9</td>
+              <td>87.0</td>
+              <td>1.99e-18</td>
+          </tr>
+    
+          <tr>
+              <td>MBA0053728.1</td>
+              <td>cation/H(+)_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002096.3">BGC0002096.3</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>72.2</td>
+              <td>86.0</td>
+              <td>7.73e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ANW12121.1</td>
+              <td>putative_Na+/H+_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001374.5">BGC0001374.5</a></td>
+              <td>other:other</td>
+              <td>27.0</td>
+              <td>102.2</td>
+              <td>80.0</td>
+              <td>5.2e-16</td>
+          </tr>
+    
+          <tr>
+              <td>MCC5036788.1</td>
+              <td>cation:proton_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002638.3">BGC0002638.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>30.0</td>
+              <td>77.0</td>
+              <td>78.0</td>
+              <td>3.25e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ADE22296.1</td>
+              <td>putative_integral_membrane_ion_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000279.5">BGC0000279.5</a></td>
+              <td>PKS</td>
+              <td>29.0</td>
+              <td>99.8</td>
+              <td>77.0</td>
+              <td>7.5e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ACN38357.1</td>
+              <td>putative_cation_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000714.5">BGC0000714.5</a></td>
+              <td>saccharide</td>
+              <td>28.0</td>
+              <td>98.1</td>
+              <td>66.0</td>
+              <td>1.92e-11</td>
+          </tr>
+    
+          <tr>
+              <td>CAF34031.1</td>
+              <td>putative_integral_membrane_inon_antiporter_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000689.3">BGC0000689.3</a></td>
+              <td>saccharide</td>
+              <td>30.0</td>
+              <td>74.3</td>
+              <td>63.0</td>
+              <td>1.61e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31446.1</td>
+              <td>putative_kation_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000696.5">BGC0000696.5</a></td>
+              <td>saccharide</td>
+              <td>30.0</td>
+              <td>74.3</td>
+              <td>63.0</td>
+              <td>2.04e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ARV75723.1</td>
+              <td>putative_membrane_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001603.3">BGC0001603.3</a></td>
+              <td>saccharide</td>
+              <td>30.0</td>
+              <td>74.3</td>
+              <td>63.0</td>
+              <td>2.04e-10</td>
+          </tr>
+    
+          <tr>
+              <td>POM23768.1</td>
+              <td>High-affinity_Na(+)/H(+)_antiporter_NhaS3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002369.2">BGC0002369.2</a></td>
+              <td>PKS</td>
+              <td>27.0</td>
+              <td>88.1</td>
+              <td>56.0</td>
+              <td>3.9e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AMX23345.1</td>
+              <td>high-affinity_Na(+)/H(+)_antiporter_NhaS3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001500.3">BGC0001500.3</a></td>
+              <td>PKS</td>
+              <td>28.0</td>
+              <td>73.6</td>
+              <td>50.0</td>
+              <td>3.61e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

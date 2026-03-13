@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAU50948.1</td>
+              <td>serine_hydroxymethyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001379.5">BGC0001379.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>79.0</td>
+              <td>98.0</td>
+              <td>363.0</td>
+              <td>1.11e-125</td>
+          </tr>
+    
+          <tr>
+              <td>QBG82541.1</td>
+              <td>Serine_hydroxy_methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002587.2">BGC0002587.2</a></td>
+              <td>PKS</td>
+              <td>76.0</td>
+              <td>97.6</td>
+              <td>358.0</td>
+              <td>1.52e-123</td>
+          </tr>
+    
+          <tr>
+              <td>RIH60639.1</td>
+              <td>serine_hydroxymethyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002652.2">BGC0002652.2</a></td>
+              <td>other:other+saccharide</td>
+              <td>48.0</td>
+              <td>105.3</td>
+              <td>206.0</td>
+              <td>3.83e-64</td>
+          </tr>
+    
+          <tr>
+              <td>AEF16058.1</td>
+              <td>glycine/serine_hydroxymethyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000953.5">BGC0000953.5</a></td>
+              <td>saccharide:aminoglycoside</td>
+              <td>48.0</td>
+              <td>105.3</td>
+              <td>206.0</td>
+              <td>5.36e-64</td>
+          </tr>
+    
+          <tr>
+              <td>WP_078857614.1</td>
+              <td>serine_hydroxymethyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001368.5">BGC0001368.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>47.0</td>
+              <td>105.3</td>
+              <td>197.0</td>
+              <td>1.92e-60</td>
+          </tr>
+    
+          <tr>
+              <td>QKW60384.1</td>
+              <td>serine_hydroxymethyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002288.2">BGC0002288.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>48.0</td>
+              <td>89.5</td>
+              <td>190.0</td>
+              <td>1.23e-57</td>
+          </tr>
+    
+          <tr>
+              <td>BAP16692.1</td>
+              <td>alanine/alpha-methylserine_hydroxymethyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000376.5">BGC0000376.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>45.0</td>
+              <td>103.6</td>
+              <td>184.0</td>
+              <td>5.46e-56</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

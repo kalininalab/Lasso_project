@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAJ42346.1</td>
+              <td>putative_methionyl-tRNA_formyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000273.5">BGC0000273.5</a></td>
+              <td>PKS:Type II+saccharide:hybrid/tailoring</td>
+              <td>88.0</td>
+              <td>99.6</td>
+              <td>489.0</td>
+              <td>9.69e-177</td>
+          </tr>
+    
+          <tr>
+              <td>TXL86015.1</td>
+              <td>methionyl-tRNA_formyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002034.3">BGC0002034.3</a></td>
+              <td>other:other</td>
+              <td>83.0</td>
+              <td>99.3</td>
+              <td>466.0</td>
+              <td>2.52e-167</td>
+          </tr>
+    
+          <tr>
+              <td>ADI71471.1</td>
+              <td>putative_methionyl-tRNA_formyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000203.3">BGC0000203.3</a></td>
+              <td>PKS</td>
+              <td>62.0</td>
+              <td>98.9</td>
+              <td>311.0</td>
+              <td>2.34e-106</td>
+          </tr>
+    
+          <tr>
+              <td>QIE08749.1</td>
+              <td>N-OH-Orn-formyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002544.3">BGC0002544.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>93.8</td>
+              <td>108.0</td>
+              <td>1.78e-27</td>
+          </tr>
+    
+          <tr>
+              <td>AAC98617.1</td>
+              <td>formyl_transferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000772.5">BGC0000772.5</a></td>
+              <td>saccharide</td>
+              <td>34.0</td>
+              <td>36.1</td>
+              <td>56.0</td>
+              <td>7.88e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

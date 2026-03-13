@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QEU90618.1</td>
+              <td>PAS_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000703.4">BGC0000703.4</a></td>
+              <td>saccharide</td>
+              <td>39.0</td>
+              <td>57.6</td>
+              <td>143.0</td>
+              <td>1.1e-36</td>
+          </tr>
+    
+          <tr>
+              <td>CAF60520.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000704.3">BGC0000704.3</a></td>
+              <td>saccharide</td>
+              <td>39.0</td>
+              <td>57.6</td>
+              <td>143.0</td>
+              <td>1.1e-36</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31574.1</td>
+              <td>possible_kanamycin_regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000705.3">BGC0000705.3</a></td>
+              <td>saccharide</td>
+              <td>39.0</td>
+              <td>57.6</td>
+              <td>143.0</td>
+              <td>1.1e-36</td>
+          </tr>
+    
+          <tr>
+              <td>AFU82605.1</td>
+              <td>protein_phosphatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000998.5">BGC0000998.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>39.0</td>
+              <td>57.1</td>
+              <td>137.0</td>
+              <td>2e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AFL48546.1</td>
+              <td>putative_magnesium/manganese-dependent_protein_phosphatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000084.5">BGC0000084.5</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>59.5</td>
+              <td>139.0</td>
+              <td>3.27e-35</td>
+          </tr>
+    
+          <tr>
+              <td>ABD65941.1</td>
+              <td>PAS_protein_phosphatase_2C-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000341.5">BGC0000341.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>39.0</td>
+              <td>59.0</td>
+              <td>132.0</td>
+              <td>2.53e-33</td>
+          </tr>
+    
+          <tr>
+              <td>TXD00044.1</td>
+              <td>SpoIIE_family_protein_phosphatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001877.4">BGC0001877.4</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>57.1</td>
+              <td>130.0</td>
+              <td>1.74e-32</td>
+          </tr>
+    
+          <tr>
+              <td>WP_018891764.1</td>
+              <td>SpoIIE_family_protein_phosphatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001558.5">BGC0001558.5</a></td>
+              <td>PKS</td>
+              <td>35.0</td>
+              <td>56.6</td>
+              <td>122.0</td>
+              <td>1.48e-29</td>
+          </tr>
+    
+          <tr>
+              <td>QBG82545.1</td>
+              <td>Regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002587.2">BGC0002587.2</a></td>
+              <td>PKS</td>
+              <td>36.0</td>
+              <td>58.3</td>
+              <td>120.0</td>
+              <td>6.95e-29</td>
+          </tr>
+    
+          <tr>
+              <td>EFL36747.1</td>
+              <td>magnesium_or_manganese-dependent_protein_phosphatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000518.3">BGC0000518.3</a></td>
+              <td>ribosomal:RiPP:Lanthipeptide</td>
+              <td>34.0</td>
+              <td>56.1</td>
+              <td>115.0</td>
+              <td>2.14e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ABA41517.1</td>
+              <td>regulatory_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000722.5">BGC0000722.5</a></td>
+              <td>other:cyclitol+saccharide</td>
+              <td>34.0</td>
+              <td>71.2</td>
+              <td>102.0</td>
+              <td>2.06e-24</td>
+          </tr>
+    
+          <tr>
+              <td>QLG04852.1</td>
+              <td>Serine/threonine-protein_phosphatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002374.2">BGC0002374.2</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>68.8</td>
+              <td>71.0</td>
+              <td>6.74e-13</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

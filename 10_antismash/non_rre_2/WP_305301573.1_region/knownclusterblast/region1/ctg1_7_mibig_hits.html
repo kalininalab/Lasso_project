@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QWT72263.1</td>
+              <td>Zn-dependent_alcohol_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002430.3">BGC0002430.3</a></td>
+              <td>NRPS:Type I+saccharide</td>
+              <td>42.0</td>
+              <td>102.5</td>
+              <td>299.0</td>
+              <td>1.43e-98</td>
+          </tr>
+    
+          <tr>
+              <td>QCF28943.1</td>
+              <td>aldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002308.2">BGC0002308.2</a></td>
+              <td>other:other+PKS</td>
+              <td>39.0</td>
+              <td>101.3</td>
+              <td>256.0</td>
+              <td>4.87e-82</td>
+          </tr>
+    
+          <tr>
+              <td>CAE02620.1</td>
+              <td>Yx01_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000433.5">BGC0000433.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>40.0</td>
+              <td>99.5</td>
+              <td>256.0</td>
+              <td>8.14e-82</td>
+          </tr>
+    
+          <tr>
+              <td>QMS79063.1</td>
+              <td>zinc-type_alcohol_dehydrogenase-like_protein_C1198.01</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002198.3">BGC0002198.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>106.5</td>
+              <td>256.0</td>
+              <td>7.33e-81</td>
+          </tr>
+    
+          <tr>
+              <td>WP_036055804.1</td>
+              <td>glutathione-independent_formaldehyde_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002336.2">BGC0002336.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>39.0</td>
+              <td>102.3</td>
+              <td>248.0</td>
+              <td>5.68e-79</td>
+          </tr>
+    
+          <tr>
+              <td>AIS24861.1</td>
+              <td>Dst17</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001147.4">BGC0001147.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>38.0</td>
+              <td>99.0</td>
+              <td>219.0</td>
+              <td>7.47e-68</td>
+          </tr>
+    
+          <tr>
+              <td>QEG98952.1</td>
+              <td>Ant17</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002042.3">BGC0002042.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>99.2</td>
+              <td>219.0</td>
+              <td>7.47e-68</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ88611.1</td>
+              <td>putative_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000327.5">BGC0000327.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>96.2</td>
+              <td>218.0</td>
+              <td>2.09e-67</td>
+          </tr>
+    
+          <tr>
+              <td>TRX17531.1</td>
+              <td>formaldehyde_dehydrogenase,_glutathione-independent</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002329.2">BGC0002329.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>101.3</td>
+              <td>180.0</td>
+              <td>2.38e-52</td>
+          </tr>
+    
+          <tr>
+              <td>AEO57486.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001449.5">BGC0001449.5</a></td>
+              <td>NRPS:Type I+PKS:Iterative type I+other:other</td>
+              <td>33.0</td>
+              <td>100.5</td>
+              <td>169.0</td>
+              <td>1.07e-48</td>
+          </tr>
+    
+          <tr>
+              <td>ABW71834.1</td>
+              <td>putative_alcohol_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000303.5">BGC0000303.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>93.5</td>
+              <td>110.0</td>
+              <td>1.05e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AGI87371.1</td>
+              <td>Zinc-binding_dehydrogenase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002358.3">BGC0002358.3</a></td>
+              <td>PKS</td>
+              <td>27.0</td>
+              <td>97.7</td>
+              <td>95.0</td>
+              <td>1.6e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AVI57439.1</td>
+              <td>alcohol_dehydrogenase-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001694.4">BGC0001694.4</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>97.7</td>
+              <td>93.0</td>
+              <td>7.57e-21</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

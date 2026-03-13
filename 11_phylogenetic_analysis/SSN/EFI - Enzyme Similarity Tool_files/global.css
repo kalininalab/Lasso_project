@@ -1,0 +1,670 @@
+
+
+
+body {
+    background: #ececec url(../images/bodyBG.png) repeat-y center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0px;
+}
+
+a {
+    color: #0c4377;
+}
+
+
+
+/*********** HEADER STYLES ***********************************************************************/
+
+h1 { 
+    text-transform:uppercase;
+    font-size: 200%;
+    margin:0px 0 4px 0;
+    border-bottom: none;
+    line-height: 110%;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    font-size: 170%;
+    text-transform: uppercase;
+    padding: 2px;
+    margin: 10px 0px;
+    color: #452e36;
+}
+
+h3 {
+    font-size: 145%;
+    font-weight: bold;
+    margin: 20px 0px 3px 0px;
+}
+
+h4 {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+h5 {
+    font-size: 105%;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+h1.ruled {
+    margin: 0 0 4px 0;
+    border-bottom: 10px #000000 solid;
+    line-height: 110%;
+    font-weight: lighter;
+}
+
+div.beta {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 125%;
+    text-transform: uppercase;
+}
+
+h4.job-display {
+    font-weight: normal;
+}
+
+
+/*********** LINK STYLES *************************************************************************/
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*********** COLOR STYLES ************************************************************************/
+
+.hl-gnt, .ui-widget-content .hl-gnt {
+    color: #005591;
+}
+button.hl-gnt-bg {
+    background-color: #005591;
+    color: white;
+}
+
+.hl-est, .ui-widget-content .hl-est {
+    color: #7a0026;
+}
+
+.hl-color, .ui-widget-content .hl-color {
+    color: chocolate;
+}
+
+.hl-cgfp, .hl-shortbred, .ui-widget-content .hl-cgfp, .ui-widget-content .hl-shortbred {
+    color: #317873;
+}
+
+.hl-fam-info, .ui-widget-content .hl-fam-info {
+    color: #7d3c98;
+}
+
+.hl-taxonomy, .ui-widget-content .hl-taxonomy {
+    color: #435fa8;
+}
+
+
+/*********** NAV BAR STYLES **********************************************************************/
+
+.system-nav-container {
+    background-color: #333;
+}
+
+.system-nav {
+    width: 1050px;
+    margin: 0px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.system-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: visible;
+}
+
+.system-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.system-nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.system-nav li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+.system-nav li:last-child, li:nth-last-child(2) {
+    border-right: none;
+}
+
+.system-nav a.about {
+}
+
+.system-nav a.gnt {
+    background-color: #005591;
+}
+
+.system-nav a.est {
+    background-color: #7a0026;
+}
+
+.system-nav a.shortbred {
+    background-color: #317873;
+}
+
+.system-nav a.user-mgmt {
+    background-color: SaddleBrown;
+}
+
+.system-nav a.fam-info {
+    background-color: #7d3c98;
+}
+
+.system-nav a.taxonomy {
+    background-color: #435fa8;
+}
+
+
+/*********** FOOTER AND HEADER STYLES ************************************************************/
+
+.header-logo { 
+    width: 990px;
+    margin-left: 30px;
+    margin-top: 6px;
+    float: left;
+}
+
+.header {
+    background: url(../images/headerBG.png) top no-repeat;
+    width: 100%;
+    height: 128px;
+    margin-bottom: 4px;
+}
+
+.logo-left {
+    float: left;
+    display: inline-block;
+}
+
+.logo-right {
+    float: right;
+    display: inline-block;
+}
+
+.footer-container {
+    margin: 0px auto;
+    padding: 5px 0px;
+    background: url(../images/footerBG.png) top no-repeat;
+    height: 80px;
+    position: relative;
+    top: -15px;
+    z-index: 10;
+    width: 1050px;
+}
+
+.footer {
+/*    margin: auto;*/
+/*    width: 40%;*/
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.footer .address {
+    font-size: 65%;
+}
+
+.footer .inline {
+    float: left;
+    width: 30%;
+    margin: 0 10px;
+}
+
+
+
+/*********** FORM STYLES *************************************************************************/
+
+fieldset {
+    border-style: none;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+input.email {
+    width: 50%;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+textarea.options
+{
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+}
+
+input[type="text"] {
+    font-size: 125%;
+    padding: 6px;
+}
+
+select.bigger {
+    font-size: 1.1em;
+}
+
+input[type=checkbox].bigger {
+    transform: scale(1.5);
+}
+
+.login-form input[type=password] {
+    padding: 5px;
+}
+
+.login-form input[type=text] {
+    width: 300px;
+}
+
+
+/*********** WIDGET STYLES ***********************************************************************/
+
+.option-panel div {
+    margin-bottom: 15px;
+}
+
+#login-error { 
+    color: red;
+    font-weight: bold;
+}
+
+#login-create-error {
+    color: red;
+    font-weight: bold;
+}
+
+.update-message {
+    margin: 20px;
+    padding: 7px;
+    border: 3px solid black;
+    background-color: lightblue;
+    color: black;
+    font-size: 1.15em;
+    text-align: center;
+}
+
+.citation-message {
+    border: 3px solid black;
+    background-color: #b0b0b0;
+    color: black;
+    font-size: 1.15em;
+    text-align: center;
+    margin: 10px;
+    padding: 7px;
+}
+
+.funding-source {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+}
+.funding-citation {
+    text-transform: uppercase;
+}
+
+.error-message, .error_message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.new-feature {
+    color: red;
+    font-size: 1.8em;
+    position: absolute;
+    left: calc((100% - 1150px)/2);
+    transform: rotate(-15deg);
+}
+
+/*
+.new-feature:before {
+    content: "New!";
+}
+*/
+
+a.question {
+    display: inline-block;
+    text-shadow: 1px 1px 0px #ffffff;
+    background-color: #ededed;
+    border-radius: 42px;
+    border: 1px solid #666;
+    padding: 0px 6px;
+    margin-left: 6px;
+    font-size: 60%;
+}
+
+span.question {
+    display: inline-block;
+    text-shadow: 1px 1px 0px #ffffff;
+    background-color: #ededed;
+    border-radius: 42px;
+    border: 1px solid #666;
+    padding: 0px 6px;
+    margin-left: 6px;
+    font-size: 80%;
+}
+
+.suggestions
+{
+    background: #eee;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 20px 30px 20px;
+    font-weight: bold;
+}
+
+.tutorial-figure {
+    padding-left: 30px;
+    width: 95%;
+}
+
+
+/*********** CONTAINER STYLES ********************************************************************/
+
+.center {
+    text-align: center;
+}
+
+.hidden, .initial-hidden {
+    display: none;
+}
+
+#container {
+    margin: 0px auto;
+    width: 1050px;
+}
+
+.content-holder { 
+    margin: auto;
+    /* margin-top: 0; */
+    width: 990px;
+    padding: 10px;
+    background: #fff;
+    min-height: 300px;
+}
+
+.tab-content-normal {
+    min-height: 270px;
+}
+
+.tab-content {
+    min-height: 500px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*********** UPLOAD FILE BUTTON ******************************************************************/
+
+.file_upload {
+    border: 1px solid #bbb;
+    background-color: #ddd;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.input_file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file_download {
+    border: 1px solid #bbb;
+    background-color: #ddd;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.file_download img {
+    height: 14px;
+}
+
+
+/*********** TUTORIAL STYLES *********************************************************************/
+
+.tutorial-nav {
+    margin: 4px 6px 0 0;
+    float: left;
+    width: 25%;
+    text-transform: uppercase;
+}
+
+.tutorial-content {
+    margin-top: 4px;
+    float: left;
+    width: 74%;
+    padding-bottom: 10px;
+}
+
+.tutorial-nav li {
+    text-transform: uppercase;
+    list-style: none;
+    line-height: 120%;
+    margin-left: 0;
+    padding: 2px 0;
+    border-bottom: dotted #666 2px;
+}
+
+.tutorial-nav ul {
+    padding-left: 0;
+}
+
+.tutorial-nav ul ul {
+    padding-left: 20px;
+}
+
+
+/*********** TEXT/PARAGRAPH STYLES ***************************************************************/
+
+.indent {
+    padding-left: 40px;
+    text-indent: -40px;
+}
+
+.indentall {
+    text-indent: 0px;
+    padding-left: 40px;
+}
+
+.indent p {
+    text-indent: 0px;
+}
+
+div.indent {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.indent div {
+    text-indent: 0px;
+}
+
+.indent ul li {
+    text-indent: 0px;
+}
+
+.indent ul {
+    margin-left: 0px;
+    padding-left: 20px;
+}
+
+p.p-heading {
+    font-weight: bold;
+}
+
+span.job-metadata {
+    font-weight: normal;
+}
+
+span.job-name {
+    font-weight: bold;
+}
+
+
+
+
+div.input {
+    padding-left: 70px;
+    text-indent: -70px;
+}
+
+.input input.wide {
+    width: 70%;
+}
+
+
+.primary-input {
+    width: 86%;
+    margin-bottom: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.primary-input input[type="text"] {
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.primary-input textarea {
+    width: 100%;
+    height: 6em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.input-name {
+    font-weight: bold;
+    min-width: 80px;
+    display: inline-block;
+}
+
+.input-field {
+    max-width: 800px;
+    padding-left: 10px;
+}
+
+.input-desc {
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.secondary-input {
+    display: flex;
+}
+
+.secondary-input div {
+    margin-bottom: 0;
+}
+
+.secondary-name {
+    font-weight: bold;
+    min-width: 80px;
+}
+
+.secondary-field {
+    width: 100%;
+}
+
+.secondary-input input[type="text"] {
+    width: 100%;
+}
+
+.primary-input div {
+    margin-bottom: 0;
+}
+
+
+.m-5 {
+    margin: 5px;
+}
+
+
+
+.progress-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    padding: 30px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    box-shadow: 0 30px 40px rgba(0,0,0,.5);
+}
+.progress-loader i {
+    font-size: 4em;
+}
+.progress-loader div {
+    font-size: 1.5em;
+    font-style: italic;
+}
+.progress-loader-sm {
+    font-size: 2em;
+}
+
+
+hr.light {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+
+.lh-plus p, .lh-plus li {
+    line-height: 1.5rem;
+}
+
+

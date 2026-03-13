@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!-- saved from url=(0120)https://efi.igb.illinois.edu/efi-est/stepe.php?id=170625&key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&analysis_id=180199 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" defer="" src="./EFI - Enzyme Similarity Tool_files/matomo.js"></script><script src="chrome-extension://fgddmllnllkalaagkghckoinaemmogpe/src/scripts/content/location-spoofing.js"></script>
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/buttons.css">
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/global.css">
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/table.css">
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/jquery-custom.css">
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/table(1).css">
+    <link rel="stylesheet" type="text/css" href="./EFI - Enzyme Similarity Tool_files/est.css">
+
+    <link rel="shortcut icon" href="https://efi.igb.illinois.edu/images/favicon_efi.ico" type="image/x-icon">
+    <title>EFI - Enzyme Similarity Tool</title>
+
+    <script src="./EFI - Enzyme Similarity Tool_files/login.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/jquery.min.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/taxonomy_filter.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/taxonomy.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/form.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/archive.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/family_size_helper.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/id_helper.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/file_helper.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/archive.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/form.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/submit_app.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/index_helpers.js" type="text/javascript"></script>
+    <script src="./EFI - Enzyme Similarity Tool_files/nas.js" type="text/javascript"></script>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//www-app.igb.illinois.edu/analytics/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1270.0" data-gr-ext-installed="">
+
+    <div class="system-nav-container">
+        <div class="system-nav">
+            <ul>
+                <li><a href="https://efi.igb.illinois.edu/" class="about">About</a></li>
+                <li><a href="https://efi.igb.illinois.edu/efi-est/" class="est">EFI-EST</a></li>
+                <li><a href="https://efi.igb.illinois.edu/efi-gnt/" class="gnt">EFI-GNT</a></li>
+                <li><a href="https://efi.igb.illinois.edu/efi-cgfp/" class="shortbred">EFI-CGFP</a></li>
+                <li><a href="https://efi.igb.illinois.edu/taxonomy/" class="taxonomy">Taxonomy</a></li>
+                <li><a href="https://efi.igb.illinois.edu/seq-meta/search" target="_blank" class="about">Metadata Tool</a></li>
+                <li style="float:right"><div class="dropdown">
+    <button class="dropbtn"><i class="fas fa-bars"></i></button>
+    <div class="dropdown-content">        <a class="about" id="login-menu" href="https://efi.igb.illinois.edu/efi-est/stepe.php?id=170625&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;analysis_id=180199#"><i class="fas fa-sign-in-alt"></i> Sign In</a>    </div>
+</div></li>
+                <li style="float:right"><a href="https://efi.igb.illinois.edu/training/" class="about" title="Training Resources"><i class="fas fa-question"></i> Training</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="header">
+            <div class="header-logo">
+                <div class="logo-left"><a href="https://efi.igb.illinois.edu/efi-est"><img src="./EFI - Enzyme Similarity Tool_files/efiest_logo.png" height="75" alt="Enzyme Function Initiative Logo"></a></div>
+                <div class="logo-right"><a href="http://igb.illinois.edu/"><img src="./EFI - Enzyme Similarity Tool_files/illinois_igb_full.png" height="75" alt="Institute for Genomic Biology at University of Illinois at Urbana-Champaign logo"></a></div>
+                            </div>
+        </div>
+
+        <div class="content-holder">
+            <h1 class="ruled">EFI - Enzyme Similarity Tool</h1>
+            <div class="funding-source funding-citation">This web resource is supported by a Research Resource from the National Institute of General Medical Sciences (R24GM141196-01).</div>
+            <div class="funding-source" style="margin-bottom: 25px">The tools are available without charge or license to both academic and commercial users.</div>
+
+            <div id="update-message" class="update-message">
+    <center><span style="font-weight: bold; font-size: 2rem; color: orangered;">Important Notice</span></center><br>
+
+<p>
+The UniProtKB database used by the EFI tools is undergoing major reorganization
+starting with the just-released version 2025_04
+(<a href="https://www.uniprot.org/help/refprot_only_changes" target="_blank">https://www.uniprot.org/help/refprot_only_changes</a>).
+When the reorganization is
+fully implemented (2026_02 release, Spring 2026), the number of proteins in
+UniProtKB will decrease from ~253M accessions in the previous 2025_03 release
+to ~141M accessions in the 2026_02 release.  </p>
+
+<p>
+In response to these changes, we will provide the previous 2025_03 release
+until the 2026_02 release is available.  </p>
+
+<p>
+The current 2025_04 release removed 82M UniProt IDs; the UniProt pages
+providing functional annotation for these IDs are no longer active.  A new
+<a href="https://efi.igb.illinois.edu/seq-meta/search">Metadata Tool</a>
+provides access to the node attribute metadata for all UniProt
+IDs in the 2025_03 release that the tools continue to use during the UniProtKB
+reorganization.  The Tool is available using the tab at the top of each page.
+</p>
+
+<p>
+More information about the reorganization is located <a href="https://efi.igb.illinois.edu/efi-est/uniprot_changes.php">here</a>.  </p>
+</div>
+
+
+
+
+	
+
+<h2>Download Network Files</h2>
+
+<h4 class="job-display">Submission Name: <b>Lasso</b></h4><h4 class="job-display">Network Name: <b>Lasso</b></h4>
+<div class="tabs-efihdr tabs ui-tabs ui-corner-all ui-widget ui-widget-content">
+    <ul role="tablist" class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+        <li class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="info" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a href="https://efi.igb.illinois.edu/efi-est/stepe.php?id=170625&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;analysis_id=180199#info" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">SSN Overview</a></li>
+        <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="results" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a href="https://efi.igb.illinois.edu/efi-est/stepe.php?id=170625&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;analysis_id=180199#results" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">Network Files</a></li>
+    </ul>
+
+    <div>
+        <div id="info" aria-labelledby="ui-id-1" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="false" style="">
+            <p>
+            The parameters used for the initial submission and the finalization are summarized in the table below.
+            </p>
+        
+            <h4>Analysis Summary</h4>
+            <table width="100%" class="pretty no-stretch">
+                <tbody><tr><td>Analysis Job Number</td><td>180199</td></tr>
+<tr><td>Network Name</td><td>Lasso</td></tr>
+<tr><td>Alignment Score</td><td>6</td></tr>
+<tr><td>Minimum Length</td><td>0</td></tr>
+<tr><td>Maximum Length</td><td>50,000</td></tr>
+<tr><td>Total Number of Sequences After Filtering</td><td>490</td></tr>
+</tbody></table><br><h4>Dataset Summary</h4><table width="100%" class="pretty no-stretch"><tbody><tr><td>EST Job Number</td><td>170625 (<a href="https://efi.igb.illinois.edu/efi-est/stepc.php?id=170625&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d">Original Dataset</a>)</td></tr>
+<tr><td>Time Started -- Finished</td><td>1/27 10:21 AM -- 1/27 10:22 AM</td></tr>
+<tr><td>Database Version</td><td>UniProt: 2025-03 / InterPro: 106</td></tr>
+<tr><td>Input Option</td><td>FASTA (Option C), no FASTA header reading</td></tr>
+<tr><td>Job Name</td><td>Lasso</td></tr>
+<tr><td>E-Value for SSN Edge Calculation</td><td>5</td></tr>
+<tr><td>Uploaded FASTA File</td><td>proteins_30_50aa.fasta</td></tr>
+<tr><td>Number of Sequences in Uploaded File</td><td>490</td></tr>
+<tr><td>Exclude Fragments</td><td>No</td></tr>
+<tr><td>Total Number of Sequences in Dataset</td><td>490</td></tr>
+<tr><td>Total Number of Edges</td><td>4,508</td></tr>
+<tr><td>Number of Unique Sequences</td><td>481</td></tr>
+<tr><td>Convergence Ratio<a class="question" title="        The convergence ratio is a measure of the similarity of the sequences used in the BLAST.  It is the
+        ratio of the total number of edges retained from the BLAST (e-values less than the specified threshold;
+        default 5) to the total number of sequence pairs.  The value decreases from 1.0 for sequences that are
+        very similar (identical) to 0.0 for sequences that are very different (unrelated).">?</a></td><td>0.038</td></tr>
+            </tbody></table>
+            <div style="float: right"><a href="https://efi.igb.illinois.edu/efi-est/stepe.php?id=170625&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;analysis_id=180199&amp;as-table=1"><button class="normal">Download Information</button></a></div>
+            <div style="clear: both"></div>
+            
+        </div>
+
+
+        <div id="results" aria-labelledby="ui-id-2" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;">
+                        <div class="citation-message">
+                <div id="clipboard-citation">Please cite your use of the EFI tools:<br><br>Rémi Zallot, Nils Oberg, and John A. Gerlt, <b>The EFI Web Resource for Genomic Enzymology Tools: Leveraging Protein, Genome, and Metagenome Databases to Discover Novel Enzymes and Metabolic Pathways</b>. Biochemistry 2019 58 (41), 4169-4182. <a href="https://doi.org/10.1021/acs.biochem.9b00735">https://doi.org/10.1021/acs.biochem.9b00735</a><br><br>Nils Oberg, Rémi Zallot, and John A. Gerlt, <b>EFI-EST, EFI-GNT, and EFI-CGFP:  Enzyme Function Initiative (EFI) Web Resource for Genomic Enzymology Tools</b>. J Mol Biol 2023. <a href="https://doi.org/10.1016/j.jmb.2023.168018">https://doi.org/10.1016/j.jmb.2023.168018</a></div>
+            </div>            <p>
+            The panels below provide files for full and representative node SSNs for download
+            with the indicated numbers of nodes and edges. As an approximate guide, SSNs with
+            ~2M edges can be opened with 16 GB RAM, ~5M edges can be opened with 32 GB RAM,
+            ~10M edges can be opened with 64 GB RAM, ~20M edges can be opened with 128 GB RAM,
+            ~40M edges can be opened with 256 GB RAM, and ~120M edges can be opened with 768 GB RAM.
+            </p>
+            <p>
+            Files may be transferred to the Genome Neighborhood Tool (GNT), the Color SSN utility,
+                        the Cluster Analysis 
+            utility, or the Neighborhood Connectivity utility.
+            </p>
+            <h4>Full Network <a href="https://efi.igb.illinois.edu/efi-est/tutorial_download.php" class="question" target="_blank">?</a></h4>
+            <p>Each node in the network represents a single protein sequence.
+                            </p><table width="100%" class="pretty tbl-center">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th># Nodes</th>
+                    <th># Edges</th>
+<!--                    <th>File Size (MB)</th>-->
+                    <th></th>
+                </tr></thead>
+            
+                <tbody>
+                <tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=0"><button class="mini">Download ZIP</button></a></td>
+<td>490</td>
+<td>4,444</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=0">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=0">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=0">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=0">Genome Neighborhood Tool</a></div></div></td>
+</tr>                </tbody>
+                </table>
+            
+        
+            <p>&nbsp;</p>
+            <div class="align_left">
+                <h4>Representative Node Networks <a href="https://efi.igb.illinois.edu/efi-est/tutorial_download.php" class="question" target="_blank">?</a></h4>
+                <p>
+                    In representative node (RepNode) networks, each node in the network represents a collection of proteins grouped
+                    according to percent identity. For example, for a 75% identity RepNode network, all connected sequences
+                    that share 75% or more identity are grouped into a single node (meta node).
+                    Sequences are collapsed together to reduce the overall number of nodes, making for less complicated networks
+                    easier to load in Cytoscape.
+                </p>
+                <p>
+                    The cluster organization is not changed, and the clustering of sequences remains identical to the full network.
+                </p>
+            </div>
+            <table width="100%" class="pretty tbl-center">
+            <thead>
+                <tr><th></th>
+                <th>% ID</th>
+                <th># Nodes</th>
+                <th># Edges</th>
+<!--                <th>File Size (MB)</th>-->
+                <th></th>
+            </tr></thead>
+        
+            <tbody>
+            <tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=1"><button class="mini">Download ZIP</button></a></td>
+<td>100</td>
+<td>481</td>
+<td>4,026</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=1">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=1">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=1">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=1">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=2"><button class="mini">Download ZIP</button></a></td>
+<td>95</td>
+<td>462</td>
+<td>3,458</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=2">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=2">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=2">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=2">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=3"><button class="mini">Download ZIP</button></a></td>
+<td>90</td>
+<td>434</td>
+<td>2,578</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=3">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=3">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=3">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=3">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=4"><button class="mini">Download ZIP</button></a></td>
+<td>85</td>
+<td>398</td>
+<td>1,692</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=4">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=4">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=4">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=4">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=5"><button class="mini">Download ZIP</button></a></td>
+<td>80</td>
+<td>373</td>
+<td>1,196</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=5">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=5">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=5">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=5">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=6"><button class="mini">Download ZIP</button></a></td>
+<td>75</td>
+<td>359</td>
+<td>995</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=6">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=6">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=6">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=6">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=7"><button class="mini">Download ZIP</button></a></td>
+<td>70</td>
+<td>350</td>
+<td>886</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=7">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=7">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=7">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=7">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=8"><button class="mini">Download ZIP</button></a></td>
+<td>65</td>
+<td>340</td>
+<td>777</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=8">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=8">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=8">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=8">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=9"><button class="mini">Download ZIP</button></a></td>
+<td>60</td>
+<td>323</td>
+<td>538</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=9">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=9">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=9">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=9">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=10"><button class="mini">Download ZIP</button></a></td>
+<td>55</td>
+<td>315</td>
+<td>421</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=10">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=10">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=10">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=10">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=11"><button class="mini">Download ZIP</button></a></td>
+<td>50</td>
+<td>308</td>
+<td>336</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=11">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=11">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=11">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=11">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=12"><button class="mini">Download ZIP</button></a></td>
+<td>45</td>
+<td>298</td>
+<td>219</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=12">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=12">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=12">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=12">Genome Neighborhood Tool</a></div></div></td>
+</tr><tr><td> <a href="https://efi.igb.illinois.edu/efi-est/download.php?aid=180199&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;dl=ssn&amp;idx=13"><button class="mini">Download ZIP</button></a></td>
+<td>40</td>
+<td>285</td>
+<td>163</td>
+<td><button class="mini">Transfer To:</button><div class="btn-split"><button class="mini"><i class="fa fa-caret-down"></i></button>
+<div class="btn-split-content"><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=color&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=13">Color SSN</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=cluster&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=13">Cluster Analysis</a><a href="https://efi.igb.illinois.edu/efi-est/index.php?mode=nc&amp;est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=13">Neighborhood Connectivity</a><a href="https://efi.igb.illinois.edu/efi-gnt/index.php?est-id=180199&amp;est-key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;est-ssn=13">Genome Neighborhood Tool</a></div></div></td>
+</tr>            </tbody>
+            </table>
+        
+            <div style="margin-top: 10px; float: right;">
+                <a href="https://efi.igb.illinois.edu/efi-est/stepe.php?id=170625&amp;key=5bf0a6cacfa073fbc07f9ba86d2e3121399fa67d&amp;analysis_id=180199&amp;stats-as-table=1"><button class="mini">Download Network Statistics as Table</button></a>
+            </div>
+            <div style="clear:both"></div>
+
+            <center><p><a href="https://efi.igb.illinois.edu/efi-est/tutorial_cytoscape.php">New to Cytoscape?</a></p></center>
+        </div>
+
+    </div>
+</div>
+
+
+
+<center><p>Portions of these data are derived from the Universal Protein Resource (UniProt) databases.</p></center>
+
+
+<div id="ssn-confirm" title="Submit Confirmation" style="display: none">
+<p>
+<span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>
+Would you like to color the SSN?
+</p>    
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".colorssn-btn").click(function(evt) {
+            var aid = $(this).data("aid");
+            var ssnIndex = $(this).data("ssn-index");
+            $("#ssn-confirm").dialog({
+                resizable: false,
+                height: "auto",
+                width: 400,
+                modal: true,
+                buttons: {
+                    Yes: function() {
+                        submitStepEColorSsnForm(aid, ssnIndex);
+                        $(this).dialog("close");
+                    },
+                    No: function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        });
+
+        $(".tabs").tabs();
+    });
+</script>
+
+
+
+            <!--
+            <p>
+            Please cite your use of the EFI tools:<br><br>
+            R&eacute;mi Zallot, Nils Oberg, and John A. Gerlt, <b>The EFI Web Resource for Genomic Enzymology Tools: Leveraging Protein, Genome, and Metagenome Databases to Discover Novel Enzymes and Metabolic Pathways</b>. Biochemistry 2019 58 (41), 4169-4182. <a href="https://doi.org/10.1021/acs.biochem.9b00735">https://doi.org/10.1021/acs.biochem.9b00735</a>
+            </p>
+            -->
+            <p class="suggestions">
+                <a href="https://efi.igb.illinois.edu/feedback.php">Click here to contact us for help, reporting issues, or suggestions.</a>
+            </p>
+        </div> <!-- content-holder -->
+
+        <div class="footer-container">
+            <div class="footer">
+                <div class="address inline">
+                    Carl R. Woese Institute for Genomic Biology<br>
+                    University of Illinois at Urbana-Champaign<br>
+                    1206 W. Gregory Drive Urbana, IL 61801<br>
+                    <a href="mailto:efi@enzymefunction.org">efi@enzymefunction.org</a>
+                </div>
+                <div class="footer-logo inline">
+                    <img alt="Enzyme Function Initiative logo" src="./EFI - Enzyme Similarity Tool_files/efi_logo.png" height="38">
+                </div>
+                <div class="footer-logo inline">
+                    <a href="http://www.nigms.nih.gov/" target="_blank"><img alt="NIGMS" src="./EFI - Enzyme Similarity Tool_files/nighnew.png" style="width: 201px; height: 30px;"></a>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- container -->
+
+
+<script>
+$(document).ready(function() {
+    var updateMsg = $("#update-message");
+    if (updateMsg.children().count > 0 || updateMsg.text().trim().length > 0)
+        updateMsg.removeClass("initial-hidden");
+    addLoginActions("/user_login.php", "index.php");
+
+}).tooltip();
+</script><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+
+
+
+
+<script>
+var theButton = document.querySelector('#clipboard-citation-button');
+if (theButton) {
+    theButton.addEventListener('click' , ()=> {
+        var theText = document.querySelector("#clipboard-citation").innerText;
+        navigator.clipboard.writeText(theText).then(
+            function() {
+                /* clipboard successfully set */
+            }, 
+            function() {
+                /* clipboard write failed */
+            }
+        );
+    });
+}
+</script>
+
+
+
+
+
+
+
+<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-resizable" aria-describedby="login-form" aria-labelledby="ui-id-3" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix"><span id="ui-id-3" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="login-form" class="login-form hidden ui-dialog-content ui-widget-content" style="display: block;">
+    <div style="margin-bottom:15px">Sign in or <a href="https://efi.igb.illinois.edu/user_account.php?action=create">create an account</a> to view previous job history.</div>
+    <table border="0">
+        <tbody>
+            <tr><td>Email Address:</td><td><input type="text" name="login-email" id="login-email"></td></tr>
+            <tr><td>Password:</td><td><input type="password" name="login-password" id="login-password"></td></tr>
+        </tbody>
+    </table>
+    <div id="login-error"></div>
+</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-corner-all ui-widget">Sign In</button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><span id="F1000AnnotatorUI"><div id="f1kat-hl-ui" class="f1kat-state-closed" style="display: none"><div id="f1kat-adder"><div class="f1kat-img-editor-arrow " style="position: absolute; width: 10px; height: 6px; top: -8px; left: 9px;"></div><div style="float: left; height: 22px; font-size: 0px;"><button id="f1kat-adder-addNote" style="position: relative"><span id="f1kat-adder-addNote-F" class="f1kat-img-F-8x12 "></span></button></div></div><div id="f1kat-editor"><div class="f1kat-img-editor-arrow " style="position: absolute; width: 10px; height: 6px; top: -8px; left: 9px;"></div><textarea id="f1kat-editor-textarea" spellcheck="true" placeholder="Add an optional note..." style="height: 31px;"></textarea><div id="f1kat-editor-controls" style="position: relative; display: flex;"><div style="width: 210px; min-height: 26px;"><div id="f1kat-editor-collectionSelect-trigger" class="f1k-collectionSelect-trigger " style="width: 176px;"><span class="f1kat-collectionIdLabel " id="null" name="Unsorted"></span><span class="f1k-collectionSelect-arrow ">▼</span></div><div id="f1kat-editor-color-container" style="display: none; position: absolute; top: 0; width: 180px; font-size: 0;"><div class="f1kat-editor-color f1kat-editor-color-a " data-f1kat_color="a"></div><div class="f1kat-editor-color f1kat-editor-color-b " data-f1kat_color="b"></div><div class="f1kat-editor-color f1kat-editor-color-c " data-f1kat_color="c"></div><div class="f1kat-editor-color f1kat-editor-color-d " data-f1kat_color="d"></div><div class="f1kat-editor-color f1kat-editor-color-e " data-f1kat_color="e"></div><div class="f1kat-editor-color f1kat-editor-color-f " data-f1kat_color="f"></div></div><div id="f1kat-editor-color-trigger" class="f1kat-editor-color-e " style="float: right;"></div><div id="f1kat-comments-controls-autoMode" class="f1kat-comments-controls " style="position: absolute; margin: -2px -1px 0 0;"><button class="f1kat-comments-edit " title="Edit Annotation" style="margin-right: 1px;">Edit Annotation</button><button class="f1kat-comments-delete " title="Delete Annotation">Delete Annotation</button></div></div><div id="f1kat-editor-save-container" style="width: 58px;"><button id="f1kat-editor-save" class="f1k-ty-btn-caps " style="float: right; width: 100%; text-align: center;" data-f1kat_a_id="">SAVE</button></div></div></div><div id="f1kat-comments" style="width: 340px;"><div class="f1kat-img-comments-arrow " style="position: absolute; width: 10px; height: 6px; top: -8px; left: 9px;"></div><div id="f1kat-comments-list"></div></div></div></span></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
